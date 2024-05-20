@@ -66,29 +66,24 @@ namespace presentacion
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void menuVertical_MouseDown(object sender, MouseEventArgs e)
+        private Form? activeForm = null;
+        private void OpenChildForm(Form childForm)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void AbrirFormInPanel(object formHijo)
-        {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-
-            Form? fh = formHijo as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fh);
-            this.panelContenedor.Tag = fh;
-            fh.Show();
-
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(childForm);
+            panelContenedor.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmProductos());
+            OpenChildForm(new frmProductos());
         }
     }
 }
