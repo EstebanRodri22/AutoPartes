@@ -28,36 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            btnMinimizar = new PictureBox();
+            btnCerrar = new PictureBox();
             panel1 = new Panel();
             txtUsuario = new TextBox();
             txtContraseña = new TextBox();
             label1 = new Label();
-            btnAcceder = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            btnLogin = new Button();
+            linkContraseña = new LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // btnMinimizar
             // 
-            pictureBox1.Image = Properties.Resources.Minimize_Icon;
-            pictureBox1.Location = new Point(561, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(15, 15);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            btnMinimizar.Image = Properties.Resources.Minimize_Icon;
+            btnMinimizar.Location = new Point(561, 0);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(15, 15);
+            btnMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnMinimizar.TabIndex = 6;
+            btnMinimizar.TabStop = false;
+            btnMinimizar.Click += btnMinimizar_Click;
             // 
-            // pictureBox2
+            // btnCerrar
             // 
-            pictureBox2.Image = Properties.Resources.Close_Icon;
-            pictureBox2.Location = new Point(582, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(15, 15);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 7;
-            pictureBox2.TabStop = false;
+            btnCerrar.Image = Properties.Resources.Close_Icon;
+            btnCerrar.Location = new Point(582, 0);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(15, 15);
+            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCerrar.TabIndex = 7;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // panel1
             // 
@@ -67,6 +70,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(173, 316);
             panel1.TabIndex = 8;
+            panel1.MouseDown += panel1_MouseDown;
             // 
             // txtUsuario
             // 
@@ -77,8 +81,10 @@
             txtUsuario.Location = new Point(246, 70);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(281, 20);
-            txtUsuario.TabIndex = 9;
+            txtUsuario.TabIndex = 1;
             txtUsuario.Text = "USUARIO";
+            txtUsuario.Enter += txtUsuario_Enter;
+            txtUsuario.Leave += txtUsuario_Leave;
             // 
             // txtContraseña
             // 
@@ -89,8 +95,10 @@
             txtContraseña.Location = new Point(246, 143);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(281, 20);
-            txtContraseña.TabIndex = 10;
+            txtContraseña.TabIndex = 2;
             txtContraseña.Text = "CONTRASEÑA";
+            txtContraseña.Enter += txtContraseña_Enter;
+            txtContraseña.Leave += txtContraseña_Leave;
             // 
             // label1
             // 
@@ -103,16 +111,32 @@
             label1.TabIndex = 11;
             label1.Text = "LOGIN";
             // 
-            // btnAcceder
+            // btnLogin
             // 
-            btnAcceder.FlatStyle = FlatStyle.Flat;
-            btnAcceder.ForeColor = Color.LightGray;
-            btnAcceder.Location = new Point(229, 225);
-            btnAcceder.Name = "btnAcceder";
-            btnAcceder.Size = new Size(311, 35);
-            btnAcceder.TabIndex = 12;
-            btnAcceder.Text = "ACCEDER";
-            btnAcceder.UseVisualStyleBackColor = true;
+            btnLogin.BackColor = Color.FromArgb(40, 40, 40);
+            btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.ForeColor = Color.LightGray;
+            btnLogin.Location = new Point(229, 225);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(311, 35);
+            btnLogin.TabIndex = 3;
+            btnLogin.Text = "ACCEDER";
+            btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // linkContraseña
+            // 
+            linkContraseña.ActiveLinkColor = Color.FromArgb(0, 122, 204);
+            linkContraseña.AutoSize = true;
+            linkContraseña.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkContraseña.LinkColor = Color.DimGray;
+            linkContraseña.Location = new Point(287, 281);
+            linkContraseña.Name = "linkContraseña";
+            linkContraseña.Size = new Size(199, 17);
+            linkContraseña.TabIndex = 0;
+            linkContraseña.TabStop = true;
+            linkContraseña.Text = "¿Ha olvidado su contraseña?";
             // 
             // Login
             // 
@@ -120,31 +144,34 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 15, 15);
             ClientSize = new Size(597, 316);
-            Controls.Add(btnAcceder);
+            Controls.Add(linkContraseña);
+            Controls.Add(btnLogin);
             Controls.Add(label1);
             Controls.Add(txtContraseña);
             Controls.Add(txtUsuario);
             Controls.Add(panel1);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(btnCerrar);
+            Controls.Add(btnMinimizar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "login";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            MouseDown += Login_MouseDown;
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private PictureBox btnMinimizar;
+        private PictureBox btnCerrar;
         private Panel panel1;
         private TextBox txtUsuario;
         private TextBox txtContraseña;
         private Label label1;
-        private Button btnAcceder;
+        private Button btnLogin;
+        private LinkLabel linkContraseña;
     }
 }
