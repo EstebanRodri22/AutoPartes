@@ -24,17 +24,6 @@ namespace presentacion
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-        private void btnSlide_Click(object sender, EventArgs e)
-        {
-            if (menuVertical.Width == 250)
-            {
-                menuVertical.Width = 125;
-            }
-            else
-            {
-                menuVertical.Width = 250;
-            }
-        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -46,24 +35,42 @@ namespace presentacion
             this.WindowState = FormWindowState.Minimized;
         }
 
+        
+
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            this.Size = new Size(950, 600);
+            this.Location = new Point(LX, LY);
             btnRestaurar.Visible = false;
             btnMaximizar.Visible = true;
         }
 
+        int LX, LY;
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnRestaurar.Visible = true;
-            btnMaximizar.Visible = false;
+            if (Screen.PrimaryScreen != null)
+            {
+                LX = this.Location.X;
+                LY = this.Location.Y;
+                this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+                this.Location = Screen.PrimaryScreen.WorkingArea.Location;               
+                btnRestaurar.Visible = true;
+                btnMaximizar.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("No se pudo obtener la pantalla principal. Por favor, verifica tu configuración de pantalla.", "Error de Pantalla", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void barraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+            
         }
 
         private Form? activeForm = null;

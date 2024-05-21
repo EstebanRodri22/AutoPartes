@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             barraTitulo = new Panel();
             btnRestaurar = new PictureBox();
-            btnSlide = new PictureBox();
             btnMaximizar = new PictureBox();
             btnCerrar = new PictureBox();
             btnMinimizar = new PictureBox();
@@ -45,7 +44,6 @@
             btnProductos = new Button();
             barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnRestaurar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnSlide).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMaximizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
@@ -59,7 +57,6 @@
             // 
             barraTitulo.BackColor = Color.FromArgb(0, 80, 200);
             barraTitulo.Controls.Add(btnRestaurar);
-            barraTitulo.Controls.Add(btnSlide);
             barraTitulo.Controls.Add(btnMaximizar);
             barraTitulo.Controls.Add(btnCerrar);
             barraTitulo.Controls.Add(btnMinimizar);
@@ -84,21 +81,9 @@
             btnRestaurar.Visible = false;
             btnRestaurar.Click += btnRestaurar_Click;
             // 
-            // btnSlide
-            // 
-            btnSlide.BackColor = Color.DimGray;
-            btnSlide.Cursor = Cursors.Hand;
-            btnSlide.Image = (Image)resources.GetObject("btnSlide.Image");
-            btnSlide.Location = new Point(257, 0);
-            btnSlide.Name = "btnSlide";
-            btnSlide.Size = new Size(35, 35);
-            btnSlide.SizeMode = PictureBoxSizeMode.Zoom;
-            btnSlide.TabIndex = 0;
-            btnSlide.TabStop = false;
-            btnSlide.Click += btnSlide_Click;
-            // 
             // btnMaximizar
             // 
+            btnMaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnMaximizar.Cursor = Cursors.Hand;
             btnMaximizar.ErrorImage = null;
             btnMaximizar.Image = Properties.Resources.maxi;
@@ -264,7 +249,6 @@
             Text = "frmPrincipal";
             barraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnRestaurar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnSlide).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMaximizar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
@@ -277,7 +261,6 @@
 
         #endregion
         private Panel barraTitulo;
-        private PictureBox btnSlide;
         private Panel panelContenedor;
         private PictureBox btnCerrar;
         private PictureBox btnRestaurar;

@@ -31,13 +31,16 @@
             label1 = new Label();
             button1 = new Button();
             btnCerrar = new Label();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(331, 20);
+            label1.Location = new Point(454, 21);
             label1.Name = "label1";
             label1.Size = new Size(125, 28);
             label1.TabIndex = 0;
@@ -45,6 +48,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button1.BackColor = Color.FromArgb(0, 122, 204);
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
@@ -53,7 +57,7 @@
             button1.ForeColor = Color.White;
             button1.Image = Properties.Resources.productos1;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(273, 396);
+            button1.Location = new Point(380, 446);
             button1.Name = "button1";
             button1.Size = new Size(250, 40);
             button1.TabIndex = 2;
@@ -62,30 +66,40 @@
             // 
             // btnCerrar
             // 
-            btnCerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnCerrar.AutoSize = true;
             btnCerrar.BackColor = Color.WhiteSmoke;
             btnCerrar.Cursor = Cursors.Hand;
             btnCerrar.Font = new Font("Segoe UI", 10F);
             btnCerrar.ForeColor = Color.FromArgb(64, 64, 64);
-            btnCerrar.Location = new Point(796, 0);
+            btnCerrar.Location = new Point(12, 9);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(17, 19);
             btnCerrar.TabIndex = 3;
             btnCerrar.Text = "X";
             btnCerrar.Click += btnCerrar_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(166, 70);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(700, 324);
+            dataGridView1.TabIndex = 4;
+            // 
             // frmProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(812, 461);
+            ClientSize = new Size(950, 561);
+            Controls.Add(dataGridView1);
             Controls.Add(btnCerrar);
             Controls.Add(button1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmProductos";
             Text = "frmProductos";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -95,5 +109,6 @@
         private Label label1;
         private Button button1;
         private Label btnCerrar;
+        private DataGridView dataGridView1;
     }
 }
