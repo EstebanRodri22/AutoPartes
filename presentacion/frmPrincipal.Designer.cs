@@ -39,12 +39,23 @@
             lblHora = new Label();
             lblFecha = new Label();
             pictureBox2 = new PictureBox();
+            panelProductoSubMenu = new Panel();
+            btnRegistrarProducto = new FontAwesome.Sharp.IconButton();
+            btnBuscarProducto = new FontAwesome.Sharp.IconButton();
             menuVertical = new Panel();
+            panel1 = new Panel();
+            btnInventario = new FontAwesome.Sharp.IconButton();
+            panelVentaSubMenu = new Panel();
+            btnRegistrarVenta = new FontAwesome.Sharp.IconButton();
+            btnBuscarVentas = new FontAwesome.Sharp.IconButton();
+            btnVentas = new FontAwesome.Sharp.IconButton();
+            panelCompraSubMenu = new Panel();
+            btnRegistrarCompra = new FontAwesome.Sharp.IconButton();
+            btnBuscarCompras = new FontAwesome.Sharp.IconButton();
+            btnCompras = new FontAwesome.Sharp.IconButton();
+            btnProductos = new FontAwesome.Sharp.IconButton();
+            panel2 = new Panel();
             pictureBox1 = new PictureBox();
-            btnInventario = new Button();
-            btnVentas = new Button();
-            btnCompras = new Button();
-            btnProductos = new Button();
             panelPrincipal = new Panel();
             tmFechaHora = new System.Windows.Forms.Timer(components);
             barraTitulo.SuspendLayout();
@@ -54,7 +65,12 @@
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
             panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panelProductoSubMenu.SuspendLayout();
             menuVertical.SuspendLayout();
+            panel1.SuspendLayout();
+            panelVentaSubMenu.SuspendLayout();
+            panelCompraSubMenu.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelPrincipal.SuspendLayout();
             SuspendLayout();
@@ -78,7 +94,7 @@
             btnRestaurar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnRestaurar.Cursor = Cursors.Hand;
             btnRestaurar.Image = Properties.Resources.res;
-            btnRestaurar.Location = new Point(882, 7);
+            btnRestaurar.Location = new Point(891, 7);
             btnRestaurar.Name = "btnRestaurar";
             btnRestaurar.Size = new Size(25, 25);
             btnRestaurar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -93,7 +109,7 @@
             btnMaximizar.Cursor = Cursors.Hand;
             btnMaximizar.ErrorImage = null;
             btnMaximizar.Image = Properties.Resources.maxi;
-            btnMaximizar.Location = new Point(882, 7);
+            btnMaximizar.Location = new Point(891, 7);
             btnMaximizar.Name = "btnMaximizar";
             btnMaximizar.Size = new Size(25, 25);
             btnMaximizar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -107,7 +123,7 @@
             btnCerrar.BackColor = Color.FromArgb(0, 80, 200);
             btnCerrar.Cursor = Cursors.Hand;
             btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
-            btnCerrar.Location = new Point(913, 7);
+            btnCerrar.Location = new Point(922, 7);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(25, 25);
             btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -122,7 +138,7 @@
             btnMinimizar.Cursor = Cursors.Hand;
             btnMinimizar.ErrorImage = null;
             btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
-            btnMinimizar.Location = new Point(851, 7);
+            btnMinimizar.Location = new Point(860, 7);
             btnMinimizar.Name = "btnMinimizar";
             btnMinimizar.Size = new Size(25, 25);
             btnMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -141,6 +157,7 @@
             panelContenedor.Name = "panelContenedor";
             panelContenedor.Size = new Size(703, 562);
             panelContenedor.TabIndex = 2;
+            panelContenedor.Paint += panelContenedor_Paint;
             // 
             // lblHora
             // 
@@ -149,7 +166,7 @@
             lblHora.BackColor = Color.FromArgb(49, 66, 82);
             lblHora.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblHora.ForeColor = Color.LightGray;
-            lblHora.Location = new Point(509, 488);
+            lblHora.Location = new Point(496, 482);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(151, 39);
             lblHora.TabIndex = 0;
@@ -162,7 +179,7 @@
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblFecha.ForeColor = Color.White;
-            lblFecha.Location = new Point(496, 527);
+            lblFecha.Location = new Point(474, 521);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(173, 17);
             lblFecha.TabIndex = 1;
@@ -172,22 +189,71 @@
             // 
             pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(261, 123);
+            pictureBox2.Location = new Point(278, 161);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(263, 176);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
+            // panelProductoSubMenu
+            // 
+            panelProductoSubMenu.Controls.Add(btnRegistrarProducto);
+            panelProductoSubMenu.Controls.Add(btnBuscarProducto);
+            panelProductoSubMenu.Dock = DockStyle.Top;
+            panelProductoSubMenu.Location = new Point(0, 57);
+            panelProductoSubMenu.Name = "panelProductoSubMenu";
+            panelProductoSubMenu.Size = new Size(230, 84);
+            panelProductoSubMenu.TabIndex = 7;
+            // 
+            // btnRegistrarProducto
+            // 
+            btnRegistrarProducto.Dock = DockStyle.Top;
+            btnRegistrarProducto.FlatAppearance.BorderSize = 0;
+            btnRegistrarProducto.FlatStyle = FlatStyle.Flat;
+            btnRegistrarProducto.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRegistrarProducto.ForeColor = Color.White;
+            btnRegistrarProducto.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
+            btnRegistrarProducto.IconColor = Color.White;
+            btnRegistrarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnRegistrarProducto.IconSize = 40;
+            btnRegistrarProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRegistrarProducto.Location = new Point(0, 41);
+            btnRegistrarProducto.Name = "btnRegistrarProducto";
+            btnRegistrarProducto.Padding = new Padding(35, 0, 20, 0);
+            btnRegistrarProducto.Size = new Size(230, 41);
+            btnRegistrarProducto.TabIndex = 4;
+            btnRegistrarProducto.Text = "Registrar";
+            btnRegistrarProducto.UseVisualStyleBackColor = true;
+            btnRegistrarProducto.Click += btnRegistrarProducto_Click;
+            // 
+            // btnBuscarProducto
+            // 
+            btnBuscarProducto.Dock = DockStyle.Top;
+            btnBuscarProducto.FlatAppearance.BorderSize = 0;
+            btnBuscarProducto.FlatStyle = FlatStyle.Flat;
+            btnBuscarProducto.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBuscarProducto.ForeColor = Color.White;
+            btnBuscarProducto.IconChar = FontAwesome.Sharp.IconChar.Search;
+            btnBuscarProducto.IconColor = Color.White;
+            btnBuscarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnBuscarProducto.IconSize = 40;
+            btnBuscarProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBuscarProducto.Location = new Point(0, 0);
+            btnBuscarProducto.Name = "btnBuscarProducto";
+            btnBuscarProducto.Padding = new Padding(35, 0, 20, 0);
+            btnBuscarProducto.Size = new Size(230, 41);
+            btnBuscarProducto.TabIndex = 3;
+            btnBuscarProducto.Text = "Consultar";
+            btnBuscarProducto.UseVisualStyleBackColor = true;
+            btnBuscarProducto.Click += btnBuscarProducto_Click;
+            // 
             // menuVertical
             // 
             menuVertical.AutoScroll = true;
             menuVertical.BackColor = Color.FromArgb(26, 32, 40);
-            menuVertical.Controls.Add(pictureBox1);
-            menuVertical.Controls.Add(btnInventario);
-            menuVertical.Controls.Add(btnVentas);
-            menuVertical.Controls.Add(btnCompras);
-            menuVertical.Controls.Add(btnProductos);
+            menuVertical.Controls.Add(panel1);
+            menuVertical.Controls.Add(panel2);
             menuVertical.Dock = DockStyle.Left;
             menuVertical.Location = new Point(0, 38);
             menuVertical.Name = "menuVertical";
@@ -195,84 +261,231 @@
             menuVertical.TabIndex = 1;
             menuVertical.Paint += menuVertical_Paint;
             // 
-            // pictureBox1
+            // panel1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(62, 25);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(117, 102);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            panel1.AutoScroll = true;
+            panel1.Controls.Add(btnInventario);
+            panel1.Controls.Add(panelVentaSubMenu);
+            panel1.Controls.Add(btnVentas);
+            panel1.Controls.Add(panelCompraSubMenu);
+            panel1.Controls.Add(btnCompras);
+            panel1.Controls.Add(panelProductoSubMenu);
+            panel1.Controls.Add(btnProductos);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 146);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(247, 416);
+            panel1.TabIndex = 1;
             // 
             // btnInventario
             // 
+            btnInventario.Dock = DockStyle.Top;
             btnInventario.FlatAppearance.BorderSize = 0;
-            btnInventario.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
             btnInventario.FlatStyle = FlatStyle.Flat;
-            btnInventario.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnInventario.Font = new Font("Century Gothic", 11.25F);
             btnInventario.ForeColor = Color.White;
-            btnInventario.Image = (Image)resources.GetObject("btnInventario.Image");
-            btnInventario.ImageAlign = ContentAlignment.TopCenter;
-            btnInventario.Location = new Point(0, 391);
+            btnInventario.IconChar = FontAwesome.Sharp.IconChar.Box;
+            btnInventario.IconColor = Color.White;
+            btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnInventario.IconSize = 40;
+            btnInventario.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInventario.Location = new Point(0, 440);
             btnInventario.Name = "btnInventario";
-            btnInventario.Size = new Size(247, 63);
-            btnInventario.TabIndex = 4;
+            btnInventario.Padding = new Padding(10, 0, 20, 0);
+            btnInventario.Size = new Size(230, 57);
+            btnInventario.TabIndex = 12;
             btnInventario.Text = "Inventario";
+            btnInventario.TextAlign = ContentAlignment.MiddleLeft;
             btnInventario.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnInventario.UseVisualStyleBackColor = true;
             // 
+            // panelVentaSubMenu
+            // 
+            panelVentaSubMenu.Controls.Add(btnRegistrarVenta);
+            panelVentaSubMenu.Controls.Add(btnBuscarVentas);
+            panelVentaSubMenu.Dock = DockStyle.Top;
+            panelVentaSubMenu.Location = new Point(0, 339);
+            panelVentaSubMenu.Name = "panelVentaSubMenu";
+            panelVentaSubMenu.Size = new Size(230, 101);
+            panelVentaSubMenu.TabIndex = 11;
+            // 
+            // btnRegistrarVenta
+            // 
+            btnRegistrarVenta.Dock = DockStyle.Top;
+            btnRegistrarVenta.FlatAppearance.BorderSize = 0;
+            btnRegistrarVenta.FlatStyle = FlatStyle.Flat;
+            btnRegistrarVenta.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRegistrarVenta.ForeColor = Color.White;
+            btnRegistrarVenta.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
+            btnRegistrarVenta.IconColor = Color.White;
+            btnRegistrarVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnRegistrarVenta.IconSize = 40;
+            btnRegistrarVenta.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRegistrarVenta.Location = new Point(0, 41);
+            btnRegistrarVenta.Name = "btnRegistrarVenta";
+            btnRegistrarVenta.Padding = new Padding(35, 0, 20, 0);
+            btnRegistrarVenta.Size = new Size(230, 41);
+            btnRegistrarVenta.TabIndex = 4;
+            btnRegistrarVenta.Text = "REGISTRAR";
+            btnRegistrarVenta.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscarVentas
+            // 
+            btnBuscarVentas.Dock = DockStyle.Top;
+            btnBuscarVentas.FlatAppearance.BorderSize = 0;
+            btnBuscarVentas.FlatStyle = FlatStyle.Flat;
+            btnBuscarVentas.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBuscarVentas.ForeColor = Color.White;
+            btnBuscarVentas.IconChar = FontAwesome.Sharp.IconChar.Search;
+            btnBuscarVentas.IconColor = Color.White;
+            btnBuscarVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnBuscarVentas.IconSize = 40;
+            btnBuscarVentas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBuscarVentas.Location = new Point(0, 0);
+            btnBuscarVentas.Name = "btnBuscarVentas";
+            btnBuscarVentas.Padding = new Padding(35, 0, 20, 0);
+            btnBuscarVentas.Size = new Size(230, 41);
+            btnBuscarVentas.TabIndex = 3;
+            btnBuscarVentas.Text = "CONSULTAR";
+            btnBuscarVentas.UseVisualStyleBackColor = true;
+            // 
             // btnVentas
             // 
+            btnVentas.Dock = DockStyle.Top;
             btnVentas.FlatAppearance.BorderSize = 0;
-            btnVentas.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
             btnVentas.FlatStyle = FlatStyle.Flat;
-            btnVentas.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVentas.Font = new Font("Century Gothic", 11.25F);
             btnVentas.ForeColor = Color.White;
-            btnVentas.Image = (Image)resources.GetObject("btnVentas.Image");
-            btnVentas.ImageAlign = ContentAlignment.TopCenter;
-            btnVentas.Location = new Point(0, 308);
+            btnVentas.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            btnVentas.IconColor = Color.White;
+            btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnVentas.IconSize = 40;
+            btnVentas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVentas.Location = new Point(0, 282);
             btnVentas.Name = "btnVentas";
-            btnVentas.Size = new Size(247, 63);
-            btnVentas.TabIndex = 3;
+            btnVentas.Padding = new Padding(10, 0, 20, 0);
+            btnVentas.Size = new Size(230, 57);
+            btnVentas.TabIndex = 10;
             btnVentas.Text = "Ventas";
+            btnVentas.TextAlign = ContentAlignment.MiddleLeft;
             btnVentas.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVentas.UseVisualStyleBackColor = true;
             // 
+            // panelCompraSubMenu
+            // 
+            panelCompraSubMenu.Controls.Add(btnRegistrarCompra);
+            panelCompraSubMenu.Controls.Add(btnBuscarCompras);
+            panelCompraSubMenu.Dock = DockStyle.Top;
+            panelCompraSubMenu.Location = new Point(0, 198);
+            panelCompraSubMenu.Name = "panelCompraSubMenu";
+            panelCompraSubMenu.Size = new Size(230, 84);
+            panelCompraSubMenu.TabIndex = 9;
+            // 
+            // btnRegistrarCompra
+            // 
+            btnRegistrarCompra.Dock = DockStyle.Top;
+            btnRegistrarCompra.FlatAppearance.BorderSize = 0;
+            btnRegistrarCompra.FlatStyle = FlatStyle.Flat;
+            btnRegistrarCompra.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRegistrarCompra.ForeColor = Color.White;
+            btnRegistrarCompra.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
+            btnRegistrarCompra.IconColor = Color.White;
+            btnRegistrarCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnRegistrarCompra.IconSize = 40;
+            btnRegistrarCompra.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRegistrarCompra.Location = new Point(0, 41);
+            btnRegistrarCompra.Name = "btnRegistrarCompra";
+            btnRegistrarCompra.Padding = new Padding(35, 0, 20, 0);
+            btnRegistrarCompra.Size = new Size(230, 41);
+            btnRegistrarCompra.TabIndex = 4;
+            btnRegistrarCompra.Text = "REGISTRAR";
+            btnRegistrarCompra.UseVisualStyleBackColor = true;
+            btnRegistrarCompra.Click += btnRegistrarCompra_Click;
+            // 
+            // btnBuscarCompras
+            // 
+            btnBuscarCompras.Dock = DockStyle.Top;
+            btnBuscarCompras.FlatAppearance.BorderSize = 0;
+            btnBuscarCompras.FlatStyle = FlatStyle.Flat;
+            btnBuscarCompras.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBuscarCompras.ForeColor = Color.White;
+            btnBuscarCompras.IconChar = FontAwesome.Sharp.IconChar.Search;
+            btnBuscarCompras.IconColor = Color.White;
+            btnBuscarCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnBuscarCompras.IconSize = 40;
+            btnBuscarCompras.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBuscarCompras.Location = new Point(0, 0);
+            btnBuscarCompras.Name = "btnBuscarCompras";
+            btnBuscarCompras.Padding = new Padding(35, 0, 20, 0);
+            btnBuscarCompras.Size = new Size(230, 41);
+            btnBuscarCompras.TabIndex = 3;
+            btnBuscarCompras.Text = "CONSULTAR";
+            btnBuscarCompras.UseVisualStyleBackColor = true;
+            // 
             // btnCompras
             // 
+            btnCompras.Dock = DockStyle.Top;
             btnCompras.FlatAppearance.BorderSize = 0;
-            btnCompras.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
             btnCompras.FlatStyle = FlatStyle.Flat;
-            btnCompras.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCompras.Font = new Font("Century Gothic", 11.25F);
             btnCompras.ForeColor = Color.White;
-            btnCompras.Image = (Image)resources.GetObject("btnCompras.Image");
-            btnCompras.ImageAlign = ContentAlignment.TopCenter;
-            btnCompras.Location = new Point(0, 232);
+            btnCompras.IconChar = FontAwesome.Sharp.IconChar.Shop;
+            btnCompras.IconColor = Color.White;
+            btnCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnCompras.IconSize = 40;
+            btnCompras.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCompras.Location = new Point(0, 141);
             btnCompras.Name = "btnCompras";
-            btnCompras.Size = new Size(247, 63);
-            btnCompras.TabIndex = 2;
+            btnCompras.Padding = new Padding(10, 0, 20, 0);
+            btnCompras.Size = new Size(230, 57);
+            btnCompras.TabIndex = 8;
             btnCompras.Text = "Compras";
+            btnCompras.TextAlign = ContentAlignment.MiddleLeft;
             btnCompras.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCompras.UseVisualStyleBackColor = true;
             btnCompras.Click += btnCompras_Click;
             // 
             // btnProductos
             // 
+            btnProductos.Dock = DockStyle.Top;
             btnProductos.FlatAppearance.BorderSize = 0;
-            btnProductos.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
             btnProductos.FlatStyle = FlatStyle.Flat;
-            btnProductos.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnProductos.Font = new Font("Century Gothic", 11.25F);
             btnProductos.ForeColor = Color.White;
-            btnProductos.Image = (Image)resources.GetObject("btnProductos.Image");
-            btnProductos.Location = new Point(0, 163);
+            btnProductos.IconChar = FontAwesome.Sharp.IconChar.Automobile;
+            btnProductos.IconColor = Color.White;
+            btnProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnProductos.IconSize = 40;
+            btnProductos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProductos.Location = new Point(0, 0);
             btnProductos.Name = "btnProductos";
-            btnProductos.Size = new Size(247, 63);
-            btnProductos.TabIndex = 1;
+            btnProductos.Padding = new Padding(10, 0, 20, 0);
+            btnProductos.Size = new Size(230, 57);
+            btnProductos.TabIndex = 5;
             btnProductos.Text = "Productos";
+            btnProductos.TextAlign = ContentAlignment.MiddleLeft;
             btnProductos.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnProductos.UseVisualStyleBackColor = true;
             btnProductos.Click += btnProductos_Click;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(pictureBox1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(247, 146);
+            panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.ELPEÑON;
+            pictureBox1.Location = new Point(36, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(165, 131);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // panelPrincipal
             // 
@@ -309,7 +522,12 @@
             panelContenedor.ResumeLayout(false);
             panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panelProductoSubMenu.ResumeLayout(false);
             menuVertical.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panelVentaSubMenu.ResumeLayout(false);
+            panelCompraSubMenu.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelPrincipal.ResumeLayout(false);
             ResumeLayout(false);
@@ -322,10 +540,6 @@
         private PictureBox btnRestaurar;
         private Panel menuVertical;
         private PictureBox pictureBox1;
-        private Button btnInventario;
-        private Button btnVentas;
-        private Button btnCompras;
-        private Button btnProductos;
         private PictureBox pictureBox2;
         private PictureBox btnMinimizar;
         private PictureBox btnMaximizar;
@@ -333,5 +547,20 @@
         private Label lblFecha;
         private Label lblHora;
         private System.Windows.Forms.Timer tmFechaHora;
+        private Panel panelProductoSubMenu;
+        private FontAwesome.Sharp.IconButton btnBuscarProducto;
+        private Panel panel2;
+        private FontAwesome.Sharp.IconButton btnProductos;
+        private FontAwesome.Sharp.IconButton btnRegistrarProducto;
+        private Panel panel1;
+        private FontAwesome.Sharp.IconButton btnCompras;
+        private FontAwesome.Sharp.IconButton btnInventario;
+        private Panel panelVentaSubMenu;
+        private FontAwesome.Sharp.IconButton btnRegistrarVenta;
+        private FontAwesome.Sharp.IconButton btnBuscarVentas;
+        private FontAwesome.Sharp.IconButton btnVentas;
+        private Panel panelCompraSubMenu;
+        private FontAwesome.Sharp.IconButton btnRegistrarCompra;
+        private FontAwesome.Sharp.IconButton btnBuscarCompras;
     }
 }

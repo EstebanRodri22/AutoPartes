@@ -17,6 +17,12 @@ namespace presentacion
         public frmPrincipal()
         {
             InitializeComponent();
+            CustomizeDesing();
+            //from para que se pueda ajustar a la pantalla, activar el borde
+            //this.Text = string.Empty;
+            //this.ControlBox = false; 
+            //this.DoubleBuffered = true;
+            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
@@ -135,7 +141,7 @@ namespace presentacion
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmProductos());
+            ShowSubMenu(panelProductoSubMenu);
         }
 
         private void menuVertical_Paint(object sender, PaintEventArgs e)
@@ -155,7 +161,74 @@ namespace presentacion
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
+            ShowSubMenu(panelCompraSubMenu);
+        }
+
+        //Personalizar los botones y los submenus
+        private void CustomizeDesing()
+        {
+            panelProductoSubMenu.Visible = false;
+            panelCompraSubMenu.Visible = false;
+            panelVentaSubMenu.Visible = false;
+
+        }
+
+        private void HideSubMenu()
+        {
+            if (panelProductoSubMenu.Visible == true)
+            {
+                panelProductoSubMenu.Visible = false;
+            }
+
+            if (panelCompraSubMenu.Visible == true)
+            {
+                panelCompraSubMenu.Visible = false;
+            }
+
+            if (panelVentaSubMenu.Visible == true)
+            {
+                panelVentaSubMenu.Visible = false;
+            }
+        }
+
+        private void ShowSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                HideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
+        private void btnBuscarProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrarProducto_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmProductos());
+            HideSubMenu();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRegistrarCompra_Click(object sender, EventArgs e)
+        {
             OpenChildForm(new frmCompras());
+            HideSubMenu();
         }
     }
 }
