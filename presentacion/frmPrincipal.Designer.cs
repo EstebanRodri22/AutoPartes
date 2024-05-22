@@ -36,9 +36,8 @@
             btnCerrar = new PictureBox();
             btnMinimizar = new PictureBox();
             panelContenedor = new Panel();
-            panelHoraFecha = new Panel();
-            lblFecha = new Label();
             lblHora = new Label();
+            lblFecha = new Label();
             pictureBox2 = new PictureBox();
             menuVertical = new Panel();
             pictureBox1 = new PictureBox();
@@ -54,7 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
             panelContenedor.SuspendLayout();
-            panelHoraFecha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             menuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -135,7 +133,8 @@
             // panelContenedor
             // 
             panelContenedor.BackColor = Color.FromArgb(49, 66, 82);
-            panelContenedor.Controls.Add(panelHoraFecha);
+            panelContenedor.Controls.Add(lblHora);
+            panelContenedor.Controls.Add(lblFecha);
             panelContenedor.Controls.Add(pictureBox2);
             panelContenedor.Dock = DockStyle.Fill;
             panelContenedor.Location = new Point(247, 38);
@@ -143,16 +142,19 @@
             panelContenedor.Size = new Size(703, 562);
             panelContenedor.TabIndex = 2;
             // 
-            // panelHoraFecha
+            // lblHora
             // 
-            panelHoraFecha.BackColor = Color.FromArgb(55, 61, 69);
-            panelHoraFecha.Controls.Add(lblFecha);
-            panelHoraFecha.Controls.Add(lblHora);
-            panelHoraFecha.Dock = DockStyle.Bottom;
-            panelHoraFecha.Location = new Point(0, 489);
-            panelHoraFecha.Name = "panelHoraFecha";
-            panelHoraFecha.Size = new Size(703, 73);
-            panelHoraFecha.TabIndex = 3;
+            lblHora.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lblHora.AutoSize = true;
+            lblHora.BackColor = Color.FromArgb(49, 66, 82);
+            lblHora.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblHora.ForeColor = Color.LightGray;
+            lblHora.Location = new Point(509, 488);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(151, 39);
+            lblHora.TabIndex = 0;
+            lblHora.Text = "21:49:45";
+            lblHora.Click += lblHora_Click;
             // 
             // lblFecha
             // 
@@ -160,25 +162,11 @@
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblFecha.ForeColor = Color.White;
-            lblFecha.Location = new Point(502, 47);
+            lblFecha.Location = new Point(496, 527);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(173, 17);
             lblFecha.TabIndex = 1;
             lblFecha.Text = "sabado, 25 de Mayo 2024";
-            // 
-            // lblHora
-            // 
-            lblHora.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            lblHora.AutoSize = true;
-            lblHora.BackColor = Color.FromArgb(55, 61, 69);
-            lblHora.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblHora.ForeColor = Color.LightGray;
-            lblHora.Location = new Point(509, 8);
-            lblHora.Name = "lblHora";
-            lblHora.Size = new Size(151, 39);
-            lblHora.TabIndex = 0;
-            lblHora.Text = "21:49:45";
-            lblHora.Click += lblHora_Click;
             // 
             // pictureBox2
             // 
@@ -225,10 +213,10 @@
             btnInventario.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnInventario.ForeColor = Color.White;
             btnInventario.Image = (Image)resources.GetObject("btnInventario.Image");
-            btnInventario.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInventario.Location = new Point(3, 389);
+            btnInventario.ImageAlign = ContentAlignment.TopCenter;
+            btnInventario.Location = new Point(0, 391);
             btnInventario.Name = "btnInventario";
-            btnInventario.Size = new Size(244, 40);
+            btnInventario.Size = new Size(247, 63);
             btnInventario.TabIndex = 4;
             btnInventario.Text = "Inventario";
             btnInventario.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -242,10 +230,10 @@
             btnVentas.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVentas.ForeColor = Color.White;
             btnVentas.Image = (Image)resources.GetObject("btnVentas.Image");
-            btnVentas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnVentas.Location = new Point(3, 318);
+            btnVentas.ImageAlign = ContentAlignment.TopCenter;
+            btnVentas.Location = new Point(0, 308);
             btnVentas.Name = "btnVentas";
-            btnVentas.Size = new Size(244, 40);
+            btnVentas.Size = new Size(247, 63);
             btnVentas.TabIndex = 3;
             btnVentas.Text = "Ventas";
             btnVentas.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -259,14 +247,15 @@
             btnCompras.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCompras.ForeColor = Color.White;
             btnCompras.Image = (Image)resources.GetObject("btnCompras.Image");
-            btnCompras.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCompras.Location = new Point(3, 244);
+            btnCompras.ImageAlign = ContentAlignment.TopCenter;
+            btnCompras.Location = new Point(0, 232);
             btnCompras.Name = "btnCompras";
-            btnCompras.Size = new Size(244, 40);
+            btnCompras.Size = new Size(247, 63);
             btnCompras.TabIndex = 2;
             btnCompras.Text = "Compras";
             btnCompras.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCompras.UseVisualStyleBackColor = true;
+            btnCompras.Click += btnCompras_Click;
             // 
             // btnProductos
             // 
@@ -276,10 +265,9 @@
             btnProductos.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnProductos.ForeColor = Color.White;
             btnProductos.Image = (Image)resources.GetObject("btnProductos.Image");
-            btnProductos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProductos.Location = new Point(3, 175);
+            btnProductos.Location = new Point(0, 163);
             btnProductos.Name = "btnProductos";
-            btnProductos.Size = new Size(244, 40);
+            btnProductos.Size = new Size(247, 63);
             btnProductos.TabIndex = 1;
             btnProductos.Text = "Productos";
             btnProductos.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -311,6 +299,7 @@
             FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(950, 600);
             Name = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmPrincipal";
             barraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnRestaurar).EndInit();
@@ -318,8 +307,7 @@
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
             panelContenedor.ResumeLayout(false);
-            panelHoraFecha.ResumeLayout(false);
-            panelHoraFecha.PerformLayout();
+            panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             menuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -342,7 +330,6 @@
         private PictureBox btnMinimizar;
         private PictureBox btnMaximizar;
         private Panel panelPrincipal;
-        private Panel panelHoraFecha;
         private Label lblFecha;
         private Label lblHora;
         private System.Windows.Forms.Timer tmFechaHora;

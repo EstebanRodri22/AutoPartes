@@ -40,7 +40,7 @@
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(256, 20);
+            label1.Location = new Point(272, 20);
             label1.Name = "label1";
             label1.Size = new Size(125, 28);
             label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             button1.ForeColor = Color.White;
             button1.Image = Properties.Resources.productos1;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(210, 425);
+            button1.Location = new Point(243, 425);
             button1.Name = "button1";
             button1.Size = new Size(250, 40);
             button1.TabIndex = 2;
@@ -84,7 +84,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(42, 71);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(578, 325);
+            dataGridView1.Size = new Size(611, 325);
             dataGridView1.TabIndex = 4;
             // 
             // frmProductos
@@ -92,7 +92,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(670, 562);
+            ClientSize = new Size(703, 562);
             Controls.Add(dataGridView1);
             Controls.Add(btnCerrar);
             Controls.Add(button1);
