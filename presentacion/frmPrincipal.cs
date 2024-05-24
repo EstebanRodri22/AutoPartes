@@ -148,6 +148,7 @@ namespace presentacion
         {
 
         }
+
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {
             lblFecha.Text = DateTime.Now.ToLongDateString();

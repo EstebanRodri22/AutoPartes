@@ -36,6 +36,7 @@
             // 
             // iconButton1
             // 
+            iconButton1.Font = new Font("Century Gothic", 9.75F);
             iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton1.IconColor = Color.Black;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -48,6 +49,7 @@
             // 
             // iconButton2
             // 
+            iconButton2.Font = new Font("Century Gothic", 9.75F);
             iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton2.IconColor = Color.Black;
             iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;

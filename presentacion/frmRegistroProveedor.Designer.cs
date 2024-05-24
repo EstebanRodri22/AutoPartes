@@ -44,8 +44,13 @@
             txtTelefono = new TextBox();
             label6 = new Label();
             pictureBox1 = new PictureBox();
+            btnCargarImage = new FontAwesome.Sharp.IconButton();
+            label7 = new Label();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
             barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // barraTitulo
@@ -85,7 +90,7 @@
             // 
             // txtIdentificacion
             // 
-            txtIdentificacion.Location = new Point(187, 65);
+            txtIdentificacion.Location = new Point(186, 95);
             txtIdentificacion.Name = "txtIdentificacion";
             txtIdentificacion.Size = new Size(247, 23);
             txtIdentificacion.TabIndex = 8;
@@ -96,7 +101,7 @@
             btnCancelar.FlatAppearance.BorderSize = 0;
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Century Gothic", 9.75F);
-            btnCancelar.Location = new Point(453, 289);
+            btnCancelar.Location = new Point(339, 307);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(109, 34);
             btnCancelar.TabIndex = 15;
@@ -110,7 +115,7 @@
             btnGuardar.FlatAppearance.BorderSize = 0;
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.Font = new Font("Century Gothic", 9.75F);
-            btnGuardar.Location = new Point(251, 289);
+            btnGuardar.Location = new Point(186, 307);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(109, 34);
             btnGuardar.TabIndex = 13;
@@ -121,7 +126,7 @@
             // 
             cmbTipoDocumento.FormattingEnabled = true;
             cmbTipoDocumento.Items.AddRange(new object[] { "CEDULA", "TARGETA IDENTIDAD", "CEDULA EXTRANGERA" });
-            cmbTipoDocumento.Location = new Point(187, 229);
+            cmbTipoDocumento.Location = new Point(186, 59);
             cmbTipoDocumento.Name = "cmbTipoDocumento";
             cmbTipoDocumento.Size = new Size(247, 23);
             cmbTipoDocumento.TabIndex = 12;
@@ -130,59 +135,59 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 9.75F);
-            label5.Location = new Point(53, 191);
+            label5.Location = new Point(91, 219);
             label5.Name = "label5";
-            label5.Size = new Size(75, 17);
+            label5.Size = new Size(70, 17);
             label5.TabIndex = 18;
-            label5.Text = "TELEFONO:";
+            label5.Text = "Telefono :";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 9.75F);
-            label4.Location = new Point(50, 152);
+            label4.Location = new Point(99, 182);
             label4.Name = "label4";
-            label4.Size = new Size(78, 17);
+            label4.Size = new Size(74, 17);
             label4.TabIndex = 17;
-            label4.Text = "APELLIDOS:";
+            label4.Text = "Apellidos :";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 9.75F);
-            label3.Location = new Point(50, 110);
+            label3.Location = new Point(99, 140);
             label3.Name = "label3";
-            label3.Size = new Size(72, 17);
+            label3.Size = new Size(74, 17);
             label3.TabIndex = 16;
-            label3.Text = "NOMBRES:";
+            label3.Text = "Nombres :";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 9.75F);
-            label2.Location = new Point(50, 67);
+            label2.Location = new Point(69, 97);
             label2.Name = "label2";
-            label2.Size = new Size(114, 17);
+            label2.Size = new Size(104, 17);
             label2.TabIndex = 14;
-            label2.Text = "IDENTIFICACION:";
+            label2.Text = "Identificacion :";
             // 
             // txtApellidos
             // 
-            txtApellidos.Location = new Point(187, 150);
+            txtApellidos.Location = new Point(186, 176);
             txtApellidos.Name = "txtApellidos";
             txtApellidos.Size = new Size(247, 23);
             txtApellidos.TabIndex = 11;
             // 
             // txtNombres
             // 
-            txtNombres.Location = new Point(187, 104);
+            txtNombres.Location = new Point(186, 134);
             txtNombres.Name = "txtNombres";
             txtNombres.Size = new Size(247, 23);
             txtNombres.TabIndex = 10;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(187, 189);
+            txtTelefono.Location = new Point(186, 219);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(247, 23);
             txtTelefono.TabIndex = 19;
@@ -191,27 +196,67 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 9.75F);
-            label6.Location = new Point(50, 231);
+            label6.Location = new Point(49, 61);
             label6.Name = "label6";
-            label6.Size = new Size(127, 17);
+            label6.Size = new Size(124, 17);
             label6.TabIndex = 20;
-            label6.Text = "TIPO DOCUMENTO:";
+            label6.Text = "Tipo Documento :";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.icono_cliente;
-            pictureBox1.Location = new Point(470, 74);
+            pictureBox1.Location = new Point(490, 86);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(146, 138);
+            pictureBox1.Size = new Size(120, 119);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
+            // 
+            // btnCargarImage
+            // 
+            btnCargarImage.IconChar = FontAwesome.Sharp.IconChar.None;
+            btnCargarImage.IconColor = Color.Black;
+            btnCargarImage.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnCargarImage.Location = new Point(186, 264);
+            btnCargarImage.Name = "btnCargarImage";
+            btnCargarImage.Size = new Size(247, 23);
+            btnCargarImage.TabIndex = 22;
+            btnCargarImage.Text = "Cargar Imagen";
+            btnCargarImage.UseVisualStyleBackColor = true;
+            btnCargarImage.Click += btnCargarImage_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 9.75F);
+            label7.Location = new Point(30, 267);
+            label7.Name = "label7";
+            label7.Size = new Size(131, 17);
+            label7.TabIndex = 23;
+            label7.Text = "Tarjeta Propiedad :";
+            // 
+            // statusStrip1
+            // 
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip1.Location = new Point(0, 344);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(665, 22);
+            statusStrip1.TabIndex = 24;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(118, 17);
+            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // frmRegistroProveedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(665, 349);
+            ClientSize = new Size(665, 366);
+            Controls.Add(statusStrip1);
+            Controls.Add(label7);
+            Controls.Add(btnCargarImage);
             Controls.Add(pictureBox1);
             Controls.Add(label6);
             Controls.Add(txtTelefono);
@@ -233,6 +278,8 @@
             barraTitulo.ResumeLayout(false);
             barraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -255,5 +302,9 @@
         private Label label6;
         private Button btnCerrar;
         private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton btnCargarImage;
+        private Label label7;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
