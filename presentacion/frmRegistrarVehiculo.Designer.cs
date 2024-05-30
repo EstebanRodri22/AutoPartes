@@ -42,27 +42,29 @@
             btnGuardar = new Button();
             btnCancelar = new Button();
             pictureBox1 = new PictureBox();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            label6 = new Label();
             barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtModelo
             // 
-            txtModelo.Location = new Point(126, 95);
+            txtModelo.Location = new Point(192, 106);
             txtModelo.Name = "txtModelo";
             txtModelo.Size = new Size(269, 23);
             txtModelo.TabIndex = 1;
             // 
             // txtVin
             // 
-            txtVin.Location = new Point(126, 139);
+            txtVin.Location = new Point(192, 150);
             txtVin.Name = "txtVin";
             txtVin.Size = new Size(269, 23);
             txtVin.TabIndex = 2;
             // 
             // txtPlaca
             // 
-            txtPlaca.Location = new Point(128, 52);
+            txtPlaca.Location = new Point(194, 63);
             txtPlaca.Name = "txtPlaca";
             txtPlaca.Size = new Size(269, 23);
             txtPlaca.TabIndex = 0;
@@ -75,7 +77,7 @@
             barraTitulo.Dock = DockStyle.Top;
             barraTitulo.Location = new Point(0, 0);
             barraTitulo.Name = "barraTitulo";
-            barraTitulo.Size = new Size(628, 38);
+            barraTitulo.Size = new Size(705, 38);
             barraTitulo.TabIndex = 3;
             // 
             // btnCerrar
@@ -84,7 +86,7 @@
             btnCerrar.FlatAppearance.BorderSize = 0;
             btnCerrar.FlatStyle = FlatStyle.Flat;
             btnCerrar.Image = Properties.Resources.Close;
-            btnCerrar.Location = new Point(590, -2);
+            btnCerrar.Location = new Point(664, -3);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(38, 38);
             btnCerrar.TabIndex = 1;
@@ -106,7 +108,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 9.75F);
-            label2.Location = new Point(37, 55);
+            label2.Location = new Point(82, 69);
             label2.Name = "label2";
             label2.Size = new Size(55, 17);
             label2.TabIndex = 4;
@@ -116,7 +118,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 9.75F);
-            label3.Location = new Point(37, 97);
+            label3.Location = new Point(69, 108);
             label3.Name = "label3";
             label3.Size = new Size(68, 17);
             label3.TabIndex = 5;
@@ -126,7 +128,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 9.75F);
-            label4.Location = new Point(37, 139);
+            label4.Location = new Point(103, 150);
             label4.Name = "label4";
             label4.Size = new Size(34, 17);
             label4.TabIndex = 6;
@@ -136,7 +138,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 9.75F);
-            label5.Location = new Point(32, 181);
+            label5.Location = new Point(77, 194);
             label5.Name = "label5";
             label5.Size = new Size(60, 17);
             label5.TabIndex = 7;
@@ -146,7 +148,7 @@
             // 
             cmbMarca.FormattingEnabled = true;
             cmbMarca.Items.AddRange(new object[] { "MAZDA", "TOYOTA" });
-            cmbMarca.Location = new Point(126, 181);
+            cmbMarca.Location = new Point(192, 192);
             cmbMarca.Name = "cmbMarca";
             cmbMarca.Size = new Size(271, 23);
             cmbMarca.TabIndex = 3;
@@ -157,7 +159,7 @@
             btnGuardar.FlatAppearance.BorderSize = 0;
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.Font = new Font("Century Gothic", 9.75F);
-            btnGuardar.Location = new Point(191, 245);
+            btnGuardar.Location = new Point(192, 296);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(109, 34);
             btnGuardar.TabIndex = 4;
@@ -170,7 +172,7 @@
             btnCancelar.FlatAppearance.BorderSize = 0;
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Century Gothic", 9.75F);
-            btnCancelar.Location = new Point(351, 245);
+            btnCancelar.Location = new Point(345, 296);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(109, 34);
             btnCancelar.TabIndex = 5;
@@ -181,18 +183,43 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.car;
-            pictureBox1.Location = new Point(445, 67);
+            pictureBox1.Location = new Point(508, 78);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(141, 137);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
+            // iconButton1
+            // 
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(192, 254);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(271, 23);
+            iconButton1.TabIndex = 12;
+            iconButton1.Text = "cargar imagen";
+            iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Century Gothic", 9.75F);
+            label6.Location = new Point(34, 254);
+            label6.Name = "label6";
+            label6.Size = new Size(137, 17);
+            label6.TabIndex = 13;
+            label6.Tag = "";
+            label6.Text = "Targeta Propiedad :";
+            // 
             // frmRegistrarVehiculo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(628, 309);
+            ClientSize = new Size(705, 357);
+            Controls.Add(label6);
+            Controls.Add(iconButton1);
             Controls.Add(pictureBox1);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
@@ -232,5 +259,7 @@
         private Button btnGuardar;
         private Button btnCancelar;
         private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private Label label6;
     }
 }

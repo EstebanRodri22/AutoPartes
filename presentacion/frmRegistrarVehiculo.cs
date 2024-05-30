@@ -26,5 +26,10 @@ namespace presentacion
         {
             this.Close();
         }
+
+        private void cmbMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

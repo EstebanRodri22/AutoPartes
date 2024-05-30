@@ -135,7 +135,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 9.75F);
-            label5.Location = new Point(91, 219);
+            label5.Location = new Point(99, 219);
             label5.Name = "label5";
             label5.Size = new Size(70, 17);
             label5.TabIndex = 18;
@@ -228,16 +228,17 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 9.75F);
-            label7.Location = new Point(30, 267);
+            label7.Location = new Point(118, 267);
             label7.Name = "label7";
-            label7.Size = new Size(131, 17);
+            label7.Size = new Size(51, 17);
             label7.TabIndex = 23;
-            label7.Text = "Tarjeta Propiedad :";
+            label7.Text = "Firma :";
+            label7.Click += label7_Click;
             // 
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip1.Location = new Point(0, 344);
+            statusStrip1.Location = new Point(0, 353);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(665, 22);
             statusStrip1.TabIndex = 24;
@@ -253,7 +254,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(665, 366);
+            ClientSize = new Size(665, 375);
             Controls.Add(statusStrip1);
             Controls.Add(label7);
             Controls.Add(btnCargarImage);
