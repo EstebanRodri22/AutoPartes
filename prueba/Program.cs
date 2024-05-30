@@ -10,11 +10,18 @@ namespace prueba
     {
         static void Main(string[] args)
         {
-            BILL.RegionServices regionServices = new BILL.RegionServices();
-            var lista = regionServices.ConsultarRegiones();
-            foreach (var item in lista)
+            //BILL.RegionServices regionServices = new BILL.RegionServices();
+            //var lista = regionServices.ConsultarRegiones();
+            //foreach (var item in lista)
+            //{
+            //    Console.WriteLine(item.Region_Name);
+            //}
+
+            BILL.MarcaServices marcaServices = new BILL.MarcaServices();
+            var lista = marcaServices.ConsultarMarcas();
+            foreach ( var item in lista )
             {
-                Console.WriteLine(item.Region_Name);
+                Console.WriteLine(item.name_marca);
             }
             Console.ReadKey();
         }

@@ -8,9 +8,11 @@ namespace ENTITY
 {
     public class Marca
     {
-        private string IdMarca {  get; set; }
+        public string IdMarca {  get; set; }
 
-        private string name_marca { get; set; }
+        public string name_marca { get; set; }
+
+        public Marca() { }
 
         public Marca(string idMarca, string name_marca)
         {

@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDatos.cs" />
+    <Compile Include="MarcaRepository.cs" />
     <Compile Include="RegionRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

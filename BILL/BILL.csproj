@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MarcaServices.cs" />
     <Compile Include="RegionServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
