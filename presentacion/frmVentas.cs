@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace presentacion
 {
-    public partial class frmCompras : Form
+    public partial class frmVentas : Form
     {
-        public frmCompras()
+        public frmVentas()
         {
             InitializeComponent();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

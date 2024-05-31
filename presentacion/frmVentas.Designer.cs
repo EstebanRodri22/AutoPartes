@@ -1,6 +1,6 @@
 ﻿namespace presentacion
 {
-    partial class frmCompras
+    partial class frmVentas
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             dataGridView1 = new DataGridView();
             btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtFiltro = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             SuspendLayout();
@@ -39,9 +39,9 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(52, 47);
+            dataGridView1.Location = new Point(90, 45);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(564, 328);
+            dataGridView1.Size = new Size(486, 324);
             dataGridView1.TabIndex = 0;
             // 
             // btnCerrar
@@ -51,45 +51,45 @@
             btnCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
             btnCerrar.IconColor = SystemColors.ControlText;
             btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnCerrar.IconSize = 22;
-            btnCerrar.Location = new Point(12, 11);
+            btnCerrar.IconSize = 31;
+            btnCerrar.Location = new Point(3, 3);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(25, 22);
-            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCerrar.Size = new Size(32, 31);
             btnCerrar.TabIndex = 1;
             btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(247, 12);
+            label1.Location = new Point(254, 9);
             label1.Name = "label1";
-            label1.Size = new Size(177, 21);
+            label1.Size = new Size(156, 21);
             label1.TabIndex = 2;
-            label1.Text = "HISTORIAL COMPRAS";
+            label1.Text = "HISTORIAL VENTAS";
             // 
-            // textBox1
+            // txtFiltro
             // 
-            textBox1.Location = new Point(218, 392);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 23);
-            textBox1.TabIndex = 3;
-            textBox1.Text = "BUSCAR";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            txtFiltro.Location = new Point(214, 399);
+            txtFiltro.Name = "txtFiltro";
+            txtFiltro.Size = new Size(238, 23);
+            txtFiltro.TabIndex = 3;
+            txtFiltro.Text = "BUSCAR";
+            txtFiltro.TextAlign = HorizontalAlignment.Center;
             // 
-            // frmCompras
+            // frmVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(689, 450);
-            Controls.Add(textBox1);
+            ClientSize = new Size(643, 450);
+            Controls.Add(txtFiltro);
             Controls.Add(label1);
             Controls.Add(btnCerrar);
             Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "frmCompras";
-            Text = "frmCompras";
+            Name = "frmVentas";
+            Text = "frmVentas";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ResumeLayout(false);
@@ -101,6 +101,6 @@
         private DataGridView dataGridView1;
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtFiltro;
     }
 }

@@ -42,10 +42,13 @@
             btnGuardar = new Button();
             btnCancelar = new Button();
             pictureBox1 = new PictureBox();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
+            btnCargarImage = new FontAwesome.Sharp.IconButton();
             label6 = new Label();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
             barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // txtModelo
@@ -190,17 +193,18 @@
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
-            // iconButton1
+            // btnCargarImage
             // 
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton1.IconColor = Color.Black;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(192, 254);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(271, 23);
-            iconButton1.TabIndex = 12;
-            iconButton1.Text = "cargar imagen";
-            iconButton1.UseVisualStyleBackColor = true;
+            btnCargarImage.IconChar = FontAwesome.Sharp.IconChar.None;
+            btnCargarImage.IconColor = Color.Black;
+            btnCargarImage.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnCargarImage.Location = new Point(192, 254);
+            btnCargarImage.Name = "btnCargarImage";
+            btnCargarImage.Size = new Size(271, 23);
+            btnCargarImage.TabIndex = 12;
+            btnCargarImage.Text = "cargar imagen";
+            btnCargarImage.UseVisualStyleBackColor = true;
+            btnCargarImage.Click += btnCargarImage_Click;
             // 
             // label6
             // 
@@ -213,13 +217,29 @@
             label6.Tag = "";
             label6.Text = "Targeta Propiedad :";
             // 
+            // statusStrip1
+            // 
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip1.Location = new Point(0, 335);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(705, 22);
+            statusStrip1.TabIndex = 14;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(118, 17);
+            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
             // frmRegistrarVehiculo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(705, 357);
+            Controls.Add(statusStrip1);
             Controls.Add(label6);
-            Controls.Add(iconButton1);
+            Controls.Add(btnCargarImage);
             Controls.Add(pictureBox1);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
@@ -239,6 +259,8 @@
             barraTitulo.ResumeLayout(false);
             barraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -259,7 +281,9 @@
         private Button btnGuardar;
         private Button btnCancelar;
         private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnCargarImage;
         private Label label6;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
