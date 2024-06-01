@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //libreria para mover la ventanas
 using System.Runtime.InteropServices;
+using gui;
 
 namespace presentacion
 {
@@ -212,7 +213,7 @@ namespace presentacion
 
         private void btnRegistrarProducto_Click(object sender, EventArgs e)
         {
-        //    OpenChildForm(new frmRepuestos());
+          OpenChildForm(new frmRepuestos());
             HideSubMenu();
         }
 
@@ -228,7 +229,7 @@ namespace presentacion
 
         private void btnRegistrarCompra_Click(object sender, EventArgs e)
         {
-          //  OpenChildForm(new frmRegistrarCompras());
+           OpenChildForm(new frmRegistrarCompra2());
             HideSubMenu();
         }
 
@@ -239,7 +240,7 @@ namespace presentacion
 
         private void btnBuscarVentas_Click(object sender, EventArgs e)
         {
-        //    OpenChildForm(new frmVentas());
+         OpenChildForm(new frmVentas2());
             HideSubMenu();
         }
     }

@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace presentacion
 {
-    partial class frmPrincipal1
+    partial class frmPrincipal1 
     {
         /// <summary>
         /// Required designer variable.
@@ -91,18 +91,20 @@ namespace presentacion
             this.barraTitulo.Name = "barraTitulo";
             this.barraTitulo.Size = new System.Drawing.Size(814, 33);
             this.barraTitulo.TabIndex = 1;
+            this.barraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraTitulo_MouseDown);
             // 
             // btnRestaurar
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Location = new System.Drawing.Point(764, 6);
+            this.btnRestaurar.Location = new System.Drawing.Point(764, 5);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(21, 22);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRestaurar.TabIndex = 4;
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Visible = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnMaximizar
             // 
@@ -115,6 +117,7 @@ namespace presentacion
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 3;
             this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
             // btnCerrar
             // 
@@ -127,6 +130,7 @@ namespace presentacion
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 2;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnMinimizar
             // 
@@ -140,6 +144,7 @@ namespace presentacion
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 1;
             this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // panelContenedor
             // 
@@ -217,6 +222,7 @@ namespace presentacion
             this.btnRegistrarProducto.TabIndex = 4;
             this.btnRegistrarProducto.Text = "Registrar";
             this.btnRegistrarProducto.UseVisualStyleBackColor = true;
+            this.btnRegistrarProducto.Click += new System.EventHandler(this.btnRegistrarProducto_Click);
             // 
             // btnBuscarProducto
             // 
@@ -237,6 +243,7 @@ namespace presentacion
             this.btnBuscarProducto.TabIndex = 3;
             this.btnBuscarProducto.Text = "Consultar";
             this.btnBuscarProducto.UseVisualStyleBackColor = true;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
             // 
             // menuVertical
             // 
@@ -337,6 +344,7 @@ namespace presentacion
             this.btnBuscarVentas.TabIndex = 3;
             this.btnBuscarVentas.Text = "CONSULTAR";
             this.btnBuscarVentas.UseVisualStyleBackColor = true;
+            this.btnBuscarVentas.Click += new System.EventHandler(this.btnBuscarVentas_Click);
             // 
             // btnVentas
             // 
@@ -359,6 +367,7 @@ namespace presentacion
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // panelCompraSubMenu
             // 
@@ -389,6 +398,7 @@ namespace presentacion
             this.btnRegistrarCompra.TabIndex = 4;
             this.btnRegistrarCompra.Text = "REGISTRAR";
             this.btnRegistrarCompra.UseVisualStyleBackColor = true;
+            this.btnRegistrarCompra.Click += new System.EventHandler(this.btnRegistrarCompra_Click);
             // 
             // btnBuscarCompras
             // 
@@ -431,6 +441,7 @@ namespace presentacion
             this.btnCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCompras.UseVisualStyleBackColor = true;
+            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
             // btnProductos
             // 
@@ -453,6 +464,7 @@ namespace presentacion
             this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // panel2
             // 
@@ -487,7 +499,7 @@ namespace presentacion
             // 
             this.tmFechaHora.Enabled = true;
             // 
-            // Form1
+            // frmPrincipal1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -495,7 +507,7 @@ namespace presentacion
             this.Controls.Add(this.panelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(814, 520);
-            this.Name = "Form1";
+            this.Name = "frmPrincipal1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
             this.barraTitulo.ResumeLayout(false);

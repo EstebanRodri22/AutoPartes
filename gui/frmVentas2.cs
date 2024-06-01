@@ -7,16 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BILL;
 
 namespace gui
 {
     public partial class frmVentas2 : Form
     {
-        //private PruebasServices bll;
+        private PruebasServices bll;
         public frmVentas2()
         {
             InitializeComponent();
-            //   bll = new PruebasServices();
+            bll = new PruebasServices();
         }
 
 
@@ -27,7 +28,7 @@ namespace gui
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //   gridVentas.DataSource = bll.getVentas();
+            gridVentas.DataSource = bll.getVentas("get_ventas");
         }
     }
 }

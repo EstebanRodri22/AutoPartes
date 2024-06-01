@@ -1,4 +1,5 @@
-﻿using System;
+﻿using presentacion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace gui
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrueba());
+            Application.Run(new frmPrincipal1());
         }
     }
 }

@@ -33,84 +33,85 @@ namespace gui
             /// </summary>
             private void InitializeComponent()
             {
-                gridVentas = new DataGridView();
-                btnCerrar = new FontAwesome.Sharp.IconPictureBox();
-                label1 = new Label();
-                txtFiltro = new TextBox();
-                button1 = new Button();
-                ((System.ComponentModel.ISupportInitialize)gridVentas).BeginInit();
-                ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
-                SuspendLayout();
-                // 
-                // gridVentas
-                // 
-                gridVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-                gridVentas.Location = new Point(78, 51);
-                gridVentas.Name = "gridVentas";
-                gridVentas.Size = new Size(486, 324);
-                gridVentas.TabIndex = 0;
-                // 
-                // btnCerrar
-                // 
-                btnCerrar.BackColor = SystemColors.Control;
-                btnCerrar.ForeColor = SystemColors.ControlText;
-                btnCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
-                btnCerrar.IconColor = SystemColors.ControlText;
-                btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-                btnCerrar.IconSize = 31;
-                btnCerrar.Location = new Point(3, 3);
-                btnCerrar.Name = "btnCerrar";
-                btnCerrar.Size = new Size(32, 31);
-                btnCerrar.TabIndex = 1;
-                btnCerrar.TabStop = false;
-                btnCerrar.Click += btnCerrar_Click;
-                // 
-                // label1
-                // 
-                label1.AutoSize = true;
-                label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-                label1.Location = new Point(254, 9);
-                label1.Name = "label1";
-                label1.Size = new Size(156, 21);
-                label1.TabIndex = 2;
-                label1.Text = "HISTORIAL VENTAS";
-                // 
-                // txtFiltro
-                // 
-                txtFiltro.Location = new Point(214, 399);
-                txtFiltro.Name = "txtFiltro";
-                txtFiltro.Size = new Size(238, 23);
-                txtFiltro.TabIndex = 3;
-                txtFiltro.Text = "BUSCAR";
-                txtFiltro.TextAlign = HorizontalAlignment.Center;
-                // 
-                // button1
-                // 
-                button1.Location = new Point(78, 398);
-                button1.Name = "button1";
-                button1.Size = new Size(75, 23);
-                button1.TabIndex = 4;
-                button1.Text = "button1";
-                button1.UseVisualStyleBackColor = true;
-                button1.Click += button1_Click;
-                // 
-                // frmVentas
-                // 
-                AutoScaleDimensions = new SizeF(7F, 15F);
-                AutoScaleMode = AutoScaleMode.Font;
-                ClientSize = new Size(643, 450);
-                Controls.Add(button1);
-                Controls.Add(txtFiltro);
-                Controls.Add(label1);
-                Controls.Add(btnCerrar);
-                Controls.Add(gridVentas);
-                FormBorderStyle = FormBorderStyle.None;
-                Name = "frmVentas";
-                Text = "frmVentas";
-                ((System.ComponentModel.ISupportInitialize)gridVentas).EndInit();
-                ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
-                ResumeLayout(false);
-                PerformLayout();
+            this.gridVentas = new System.Windows.Forms.DataGridView();
+            this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gridVentas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gridVentas
+            // 
+            this.gridVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridVentas.Location = new System.Drawing.Point(67, 44);
+            this.gridVentas.Name = "gridVentas";
+            this.gridVentas.Size = new System.Drawing.Size(417, 281);
+            this.gridVentas.TabIndex = 0;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.btnCerrar.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.IconSize = 27;
+            this.btnCerrar.Location = new System.Drawing.Point(3, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(27, 27);
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(218, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 21);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "HISTORIAL VENTAS";
+            // 
+            // txtFiltro
+            // 
+            this.txtFiltro.Location = new System.Drawing.Point(183, 346);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(205, 20);
+            this.txtFiltro.TabIndex = 3;
+            this.txtFiltro.Text = "BUSCAR";
+            this.txtFiltro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(67, 345);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(64, 20);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // frmVentas2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(551, 390);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtFiltro);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.gridVentas);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmVentas2";
+            this.Text = "frmVentas";
+            ((System.ComponentModel.ISupportInitialize)(this.gridVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
             }
 
             #endregion

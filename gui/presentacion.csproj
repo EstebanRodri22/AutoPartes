@@ -138,8 +138,17 @@
     <EmbeddedResource Include="frmPrueba.resx">
       <DependentUpon>frmPrueba.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarCompra2.resx">
+      <DependentUpon>frmRegistrarCompra2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarRepuestos.resx">
+      <DependentUpon>frmRegistrarRepuestos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegistroCliente2.resx">
       <DependentUpon>frmRegistroCliente2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas2.resx">
+      <DependentUpon>frmVentas2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
