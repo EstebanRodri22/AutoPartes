@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace gui
 {
-    public partial class Form1 : Form
+    public partial class frmPrueba : Form
     {
-        public Form1()
+        public frmPrueba()
         {
             InitializeComponent();
         }
