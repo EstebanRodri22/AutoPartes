@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            gridVentas = new DataGridView();
             btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             label1 = new Label();
             txtFiltro = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)gridVentas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // gridVentas
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(90, 45);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(486, 324);
-            dataGridView1.TabIndex = 0;
+            gridVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridVentas.Location = new Point(78, 51);
+            gridVentas.Name = "gridVentas";
+            gridVentas.Size = new Size(486, 324);
+            gridVentas.TabIndex = 0;
             // 
             // btnCerrar
             // 
@@ -78,19 +79,30 @@
             txtFiltro.Text = "BUSCAR";
             txtFiltro.TextAlign = HorizontalAlignment.Center;
             // 
+            // button1
+            // 
+            button1.Location = new Point(78, 398);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // frmVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(643, 450);
+            Controls.Add(button1);
             Controls.Add(txtFiltro);
             Controls.Add(label1);
             Controls.Add(btnCerrar);
-            Controls.Add(dataGridView1);
+            Controls.Add(gridVentas);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmVentas";
             Text = "frmVentas";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridVentas).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -98,9 +110,10 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView gridVentas;
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
         private Label label1;
         private TextBox txtFiltro;
+        private Button button1;
     }
 }

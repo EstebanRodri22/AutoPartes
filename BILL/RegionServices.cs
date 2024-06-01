@@ -17,6 +17,7 @@ namespace BILL
             regionRepository = new RegionRepository();
             regiones = regionRepository.GetAll();
         }
+
         public List<Region> ConsultarRegiones()
         {
             return regiones;

@@ -348,6 +348,7 @@
             btnBuscarVentas.TabIndex = 3;
             btnBuscarVentas.Text = "CONSULTAR";
             btnBuscarVentas.UseVisualStyleBackColor = true;
+            btnBuscarVentas.Click += btnBuscarVentas_Click;
             // 
             // btnVentas
             // 
@@ -370,6 +371,7 @@
             btnVentas.TextAlign = ContentAlignment.MiddleLeft;
             btnVentas.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVentas.UseVisualStyleBackColor = true;
+            btnVentas.Click += btnVentas_Click;
             // 
             // panelCompraSubMenu
             // 
