@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86B2B0E6-AC3F-4388-A5AB-4E4CAF8669BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gui</RootNamespace>
+    <AssemblyName>gui</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCompras2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompras2.Designer.cs">
+      <DependentUpon>frmCompras2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptionClientes2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptionClientes2.Designer.cs">
+      <DependentUpon>frmOptionClientes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal1.Designer.cs">
+      <DependentUpon>frmPrincipal1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrueba.Designer.cs">
+      <DependentUpon>frmPrueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarCompra2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarCompra2.Designer.cs">
+      <DependentUpon>frmRegistrarCompra2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarVehiculo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarVehiculo2.Designer.cs">
+      <DependentUpon>frmRegistrarVehiculo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroCliente2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroCliente2.Designer.cs">
+      <DependentUpon>frmRegistroCliente2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroProveedor2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroProveedor2.Designer.cs">
+      <DependentUpon>frmRegistroProveedor2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarRepuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarRepuestos.Designer.cs">
+      <DependentUpon>frmRegistrarRepuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepuestos.Designer.cs">
+      <DependentUpon>frmRepuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas2.Designer.cs">
+      <DependentUpon>frmVentas2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmOptionClientes2.resx">
+      <DependentUpon>frmOptionClientes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal1.resx">
+      <DependentUpon>frmPrincipal1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrueba.resx">
+      <DependentUpon>frmPrueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarCompra2.resx">
+      <DependentUpon>frmRegistrarCompra2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarRepuestos.resx">
+      <DependentUpon>frmRegistrarRepuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroCliente2.resx">
+      <DependentUpon>frmRegistroCliente2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas2.resx">
+      <DependentUpon>frmVentas2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BILL\BILL.csproj">
+      <Project>{46fca0d6-ed5b-4983-a793-8bcba6d7290a}</Project>
+      <Name>BILL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENTITY\ENTITY.csproj">
+      <Project>{02250d79-bcc7-4efc-bb27-f1859257b8fe}</Project>
+      <Name>ENTITY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\btnCerrar.Image.png" />
+    <Content Include="Resources\btnMinimizar.Image.png" />
+    <Content Include="Resources\car.png" />
+    <Content Include="Resources\cerrar.png" />
+    <Content Include="Resources\clientes.png" />
+    <Content Include="Resources\Close.png" />
+    <Content Include="Resources\Close_Icon.png" />
+    <Content Include="Resources\compras.png" />
+    <Content Include="Resources\ELPEÑON.png" />
+    <Content Include="Resources\empleados.png" />
+    <Content Include="Resources\icono-cliente.png" />
+    <Content Include="Resources\inventario.png" />
+    <Content Include="Resources\LOGOS.png" />
+    <Content Include="Resources\maxi.png" />
+    <Content Include="Resources\maximizar.png" />
+    <Content Include="Resources\minimazar.png" />
+    <Content Include="Resources\Minimize_Icon.png" />
+    <Content Include="Resources\pagos.png" />
+    <Content Include="Resources\pictureBox2.Image.png" />
+    <Content Include="Resources\producto.png" />
+    <Content Include="Resources\producto1.png" />
+    <Content Include="Resources\productos.png" />
+    <Content Include="Resources\productos1.png" />
+    <Content Include="Resources\productos2.png" />
+    <Content Include="Resources\reportes.png" />
+    <Content Include="Resources\res.png" />
+    <Content Include="Resources\search-interface-symbol.png" />
+    <Content Include="Resources\slide.png" />
+    <Content Include="Resources\venta.png" />
+    <Content Include="Resources\ventas.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

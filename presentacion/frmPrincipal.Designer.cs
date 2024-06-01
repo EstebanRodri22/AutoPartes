@@ -348,6 +348,7 @@
             btnBuscarVentas.TabIndex = 3;
             btnBuscarVentas.Text = "CONSULTAR";
             btnBuscarVentas.UseVisualStyleBackColor = true;
+            btnBuscarVentas.Click += btnBuscarVentas_Click;
             // 
             // btnVentas
             // 
@@ -370,6 +371,7 @@
             btnVentas.TextAlign = ContentAlignment.MiddleLeft;
             btnVentas.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVentas.UseVisualStyleBackColor = true;
+            btnVentas.Click += btnVentas_Click;
             // 
             // panelCompraSubMenu
             // 
@@ -462,7 +464,7 @@
             btnProductos.Padding = new Padding(10, 0, 20, 0);
             btnProductos.Size = new Size(230, 57);
             btnProductos.TabIndex = 5;
-            btnProductos.Text = "Productos";
+            btnProductos.Text = "Repuestos";
             btnProductos.TextAlign = ContentAlignment.MiddleLeft;
             btnProductos.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnProductos.UseVisualStyleBackColor = true;

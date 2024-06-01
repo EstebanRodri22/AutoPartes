@@ -212,7 +212,7 @@ namespace presentacion
 
         private void btnRegistrarProducto_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmProductos());
+            OpenChildForm(new frmRepuestos());
             HideSubMenu();
         }
 
@@ -228,7 +228,18 @@ namespace presentacion
 
         private void btnRegistrarCompra_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmCompras());
+            OpenChildForm(new frmRegistrarCompras());
+            HideSubMenu();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(panelVentaSubMenu);
+        }
+
+        private void btnBuscarVentas_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmVentas());
             HideSubMenu();
         }
     }

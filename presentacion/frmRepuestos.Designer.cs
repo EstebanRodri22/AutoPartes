@@ -1,6 +1,6 @@
 ﻿namespace presentacion
 {
-    partial class frmProductos
+    partial class frmRepuestos
     {
         /// <summary>
         /// Required designer variable.
@@ -44,11 +44,11 @@
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(290, 9);
+            label1.Location = new Point(287, 23);
             label1.Name = "label1";
-            label1.Size = new Size(125, 28);
+            label1.Size = new Size(115, 28);
             label1.TabIndex = 0;
-            label1.Text = "PRODUCTOS";
+            label1.Text = "REPUESTOS";
             // 
             // btnCerrar
             // 

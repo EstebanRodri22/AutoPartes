@@ -10,7 +10,7 @@ namespace ENTITY
     {
         private string observaciones { get; set; }
 
-        public Compras(string noFactura, int cantidad, DateTime fechaFactura, string valorFactura) : base(noFactura, cantidad, fechaFactura, valorFactura)
+        public Compras(string noFactura, int cantidad, DateTime fechaFactura, double valorFactura) : base(noFactura, cantidad, fechaFactura, valorFactura)
         {
         }
 
