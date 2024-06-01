@@ -16,12 +16,14 @@ namespace prueba
             //{
             //    Console.WriteLine(item.Region_Name);
             //}
+            BILL.PruebasServices pruebasServices = new BILL.PruebasServices();
+           // BILL.MarcaServices marcaServices = new BILL.MarcaServices();
+            //var lista = marcaServices.ConsultarMarcas();
 
-            BILL.MarcaServices marcaServices = new BILL.MarcaServices();
-            var lista = marcaServices.ConsultarMarcas();
-            foreach ( var item in lista )
+            var datatable = pruebasServices.getVentas("get_ventas");
+            foreach ( var item in datatable.Rows)
             {
-                Console.WriteLine(item.name_marca);
+                Console.WriteLine(item);
             }
             Console.ReadKey();
         }
