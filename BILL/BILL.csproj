@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginServices.cs" />
     <Compile Include="MarcaServices.cs" />
     <Compile Include="PruebasServices.cs" />
     <Compile Include="RegionServices.cs" />

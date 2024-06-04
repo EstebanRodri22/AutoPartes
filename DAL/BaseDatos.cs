@@ -8,16 +8,21 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace DAL
 {
-    public class BaseDatos
+    public abstract class  BaseDatos
     {
-        public OracleConnection con;
-        string cadenConexion = "Data Source=localhost:1521/xepdb1;" +
-                                "User Id=administrador;" +
-                                "Password=oracle;";
+
+        private readonly string cadenConexion;
+        private OracleConnection con;
+        protected OracleConnection Connection => con;
         public BaseDatos()
         {
+            cadenConexion = "Data Source=localhost:1521/xepdb1;" +
+                                "User Id=administrador;" +
+                                "Password=oracle;";
             con = new OracleConnection(cadenConexion);
         }
+
+        
         public bool AbrirConexion()
         {
             try

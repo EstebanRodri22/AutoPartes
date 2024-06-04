@@ -20,20 +20,35 @@ namespace DAL
         public List<Marca> GetAll()
         {
             var list = new List<Marca>();
-            string _sql = "select * from marcas";
-            cmd.CommandText = _sql;
-            cmd.Connection = con;
+            string _sql = "SELECT * FROM marcas";
 
-            // Agrega los parámetros
-
-
-            AbrirConexion();
-            var reader = cmd.ExecuteReader();
-            while (reader.Read())
+            using (OracleCommand cmd = new OracleCommand())
             {
-                list.Add(Map(reader));
+                cmd.CommandText = _sql;
+                cmd.Connection = Connection;
+
+                AbrirConexion();
+                try
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            list.Add(Map(reader));
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Maneja la excepción si es necesario
+                    throw new Exception("Error al ejecutar la consulta para obtener todas las marcas.", ex);
+                }
+                finally
+                {
+                    CerrarConexion();
+                }
             }
-            CerrarConexion();
+
             return list;
         }
 

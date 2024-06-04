@@ -8,8 +8,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BILL;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace gui
+namespace presentacion
 {
     public partial class login : Form
     {
@@ -23,41 +25,41 @@ namespace gui
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-        private void txtUsuario_Enter(object sender, EventArgs e)
+        private void txtUsername_Enter(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "USUARIO")
+            if (txtUsername.Text == "USERNAME")
             {
-                txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.LightGray;
+                txtUsername.Text = "";
+                txtUsername.ForeColor = Color.LightGray;
             }
         }
 
-        private void txtUsuario_Leave(object sender, EventArgs e)
+        private void txtUsername_Leave(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "")
+            if (txtUsername.Text == "")
             {
-                txtUsuario.Text = "USUARIO";
-                txtUsuario.ForeColor = Color.DimGray;
+                txtUsername.Text = "USERNAME";
+                txtUsername.ForeColor = Color.DimGray;
             }
         }
 
-        private void txtContraseña_Enter(object sender, EventArgs e)
+        private void txtPassword_Enter(object sender, EventArgs e)
         {
-            if (txtContraseña.Text == "CONTRASEÑA")
+            if (txtPassword.Text == "PASSWORD")
             {
-                txtContraseña.Text = "";
-                txtContraseña.ForeColor = Color.LightGray;
-                txtContraseña.UseSystemPasswordChar = true;
+                txtPassword.Text = "";
+                txtPassword.ForeColor = Color.LightGray;
+                txtPassword.UseSystemPasswordChar = true;
             }
         }
 
-        private void txtContraseña_Leave(object sender, EventArgs e)
+        private void txtPassword_Leave(object sender, EventArgs e)
         {
-            if (txtContraseña.Text == "")
+            if (txtPassword.Text == "")
             {
-                txtContraseña.Text = "CONTRASEÑA";
-                txtContraseña.ForeColor = Color.DimGray;
-                txtContraseña.UseSystemPasswordChar = false;
+                txtPassword.Text = "PASSWORD";
+                txtPassword.ForeColor = Color.DimGray;
+                txtPassword.UseSystemPasswordChar = false;
             }
         }
 
@@ -82,5 +84,45 @@ namespace gui
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text != "USERNAME")
+            {
+                if (txtPassword.Text != "PASSWORD")
+                {
+                    LoginServices loginServices = new LoginServices();
+                    var validLogin = loginServices.loginUser(txtUsername.Text, txtPassword.Text);
+                    if (validLogin == true)
+                    {
+                        frmPrincipal1 frmPrincipal1 = new frmPrincipal1();
+                        frmPrincipal1.ShowDialog();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("Incorrect username or password entered. \n   Please try again.");
+                        txtPassword.Text = "PASSWORD";
+                        txtPassword.UseSystemPasswordChar = false;
+                        txtUsername.Focus();
+                    }
+                }
+                else msgError("Please enter password.");
+
+
+            }
+            else msgError("Please enter username.");
+            
+           
+        }
+
+        public void msgError(string msg)
+        {
+            lblErrorMessage.Text = "       " + msg;
+            lblErrorMessage.Visible = true;
+        }
+
     }
-}
+
+    }
+

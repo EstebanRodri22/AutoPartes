@@ -21,7 +21,7 @@ namespace DAL
             var list = new List<Region>();
             string _sql = "select * from regions";
             cmd.CommandText = _sql;
-            cmd.Connection = con;
+            cmd.Connection = Connection;
 
             // Agrega los parámetros
 

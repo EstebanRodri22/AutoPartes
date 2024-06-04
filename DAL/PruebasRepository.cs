@@ -26,7 +26,7 @@ namespace DAL
             {
                 AbrirConexion();
 
-                using (cmd = new OracleCommand(procedureName, con))
+                using (cmd = new OracleCommand(procedureName, Connection))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
