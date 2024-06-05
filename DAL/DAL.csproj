@@ -81,6 +81,7 @@
     <Compile Include="BaseDatos.cs" />
     <Compile Include="LoginRepository.cs" />
     <Compile Include="MarcaRepository.cs" />
+    <Compile Include="ProveedoresRepository.cs" />
     <Compile Include="PruebasRepository.cs" />
     <Compile Include="RegionRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

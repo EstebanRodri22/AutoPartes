@@ -8,15 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace presentacion
+namespace gui
 {
-    public partial class frmRegistrarCompras : Form
+    public partial class frmRegistrarCompra : Form
     {
-        public frmRegistrarCompras()
+        public frmRegistrarCompra()
         {
             InitializeComponent();
         }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -24,13 +23,13 @@ namespace presentacion
 
         private void btnVehiculo_Click(object sender, EventArgs e)
         {
-            frmRegistrarVehiculo frmRegistroVehiculo = new frmRegistrarVehiculo();
-            frmRegistroVehiculo.ShowDialog();
+           // frmRegistrarVehiculo frmRegistroVehiculo = new frmRegistrarVehiculo();
+          //  frmRegistroVehiculo.ShowDialog();
         }
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
-            frmRegistroProveedor frmRegistroProveedor = new frmRegistroProveedor();
+          frmRegistroProveedor frmRegistroProveedor = new frmRegistroProveedor();
             frmRegistroProveedor.ShowDialog();
         }
     }

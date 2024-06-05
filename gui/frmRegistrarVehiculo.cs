@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace gui
 {
-    public partial class frmRegistroProveedor2 : Form
+    public partial class frmRegistrarVehiculo : Form
     {
-        public frmRegistroProveedor2()
+        public frmRegistrarVehiculo()
         {
             InitializeComponent();
-            toolStripStatusLabel1.Visible = false;
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -28,8 +22,19 @@ namespace gui
             this.Close();
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cmbMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnCargarImage_Click(object sender, EventArgs e)
         {
+
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.Filter = "Archivos de Imagen|*.jpg;*.jpeg;*.png;*.gif|Todos los archivos|*.*";
@@ -39,14 +44,10 @@ namespace gui
                     string rutaImagen = openFileDialog.FileName;
 
                     // Carga la imagen en un PictureBox o en otro control según tus necesidades
-                    //toolStripStatusLabel1.Text = "Imagen cargada: " + Path.GetFileName(rutaImagen);
+                   // toolStripStatusLabel1.Text = "Imagen cargada: " + Path.GetFileName(rutaImagen);
                     toolStripStatusLabel1.Visible = true;
                 }
             }
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
 
         }
     }

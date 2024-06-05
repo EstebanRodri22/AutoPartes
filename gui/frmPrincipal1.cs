@@ -229,7 +229,7 @@ namespace presentacion
 
         private void btnRegistrarCompra_Click(object sender, EventArgs e)
         {
-           OpenChildForm(new frmRegistrarCompra2());
+           OpenChildForm(new frmRegistrarCompra());
             HideSubMenu();
         }
 

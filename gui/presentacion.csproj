@@ -79,17 +79,17 @@
     <Compile Include="frmPrueba.Designer.cs">
       <DependentUpon>frmPrueba.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistrarCompra2.cs">
+    <Compile Include="frmRegistrarCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegistrarCompra2.Designer.cs">
-      <DependentUpon>frmRegistrarCompra2.cs</DependentUpon>
+    <Compile Include="frmRegistrarCompra.Designer.cs">
+      <DependentUpon>frmRegistrarCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistrarVehiculo2.cs">
+    <Compile Include="frmRegistrarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegistrarVehiculo2.Designer.cs">
-      <DependentUpon>frmRegistrarVehiculo2.cs</DependentUpon>
+    <Compile Include="frmRegistrarVehiculo.Designer.cs">
+      <DependentUpon>frmRegistrarVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegistroCliente2.cs">
       <SubType>Form</SubType>
@@ -97,11 +97,11 @@
     <Compile Include="frmRegistroCliente2.Designer.cs">
       <DependentUpon>frmRegistroCliente2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistroProveedor2.cs">
+    <Compile Include="frmRegistroProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegistroProveedor2.Designer.cs">
-      <DependentUpon>frmRegistroProveedor2.cs</DependentUpon>
+    <Compile Include="frmRegistroProveedor.Designer.cs">
+      <DependentUpon>frmRegistroProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegistrarRepuestos.cs">
       <SubType>Form</SubType>
@@ -138,14 +138,17 @@
     <EmbeddedResource Include="frmPrueba.resx">
       <DependentUpon>frmPrueba.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegistrarCompra2.resx">
-      <DependentUpon>frmRegistrarCompra2.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegistrarCompra.resx">
+      <DependentUpon>frmRegistrarCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrarRepuestos.resx">
       <DependentUpon>frmRegistrarRepuestos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistroCliente2.resx">
       <DependentUpon>frmRegistroCliente2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroProveedor.resx">
+      <DependentUpon>frmRegistroProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentas2.resx">
       <DependentUpon>frmVentas2.cs</DependentUpon>

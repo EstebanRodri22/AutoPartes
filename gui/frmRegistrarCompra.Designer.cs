@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace gui
 {
-    partial class frmRegistrarCompra2
+    partial class frmRegistrarCompra
     {
         /// <summary>
         /// Required designer variable.

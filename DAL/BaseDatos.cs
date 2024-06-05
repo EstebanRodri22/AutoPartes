@@ -16,7 +16,7 @@ namespace DAL
         protected OracleConnection Connection => con;
         public BaseDatos()
         {
-            cadenConexion = "Data Source=localhost:1521/xepdb1;" +
+            cadenConexion = "Data Source=localhost/xepdb1;" +
                                 "User Id=administrador;" +
                                 "Password=oracle;";
             con = new OracleConnection(cadenConexion);

@@ -8,19 +8,24 @@ namespace ENTITY
 {
     public class Persona
     {
-        private string identificacion {  get; set; }
+        public string identificacion {  get; set; }
 
-        private string primerNombre { get; set; }
+        public string primerNombre { get; set; }
 
-        private string segundoNombre { get; set; }
+        public string segundoNombre { get; set; }
 
-        private string primerApellido { get; set; }
+        public string primerApellido { get; set; }
 
-        private string segundoApellido { get; set; }
-        
-        private string telefono { get; set; }
+        public string segundoApellido { get; set; }
 
-        private TipoDocumento TipoDocumento { get; set; }
+        public string telefono { get; set; }
+
+        public TipoDocumento TipoDocumento { get; set; }
+
+        public Persona()
+        {
+
+        }
 
         public Persona(string identificacion, string primerNombre, string segundoNombre, string primerApellido, string segundoApellido, string telefono, TipoDocumento tipoDocumento)
         {
@@ -42,6 +47,12 @@ namespace ENTITY
             this.TipoDocumento = TipoDocumento;
         }
 
-
+        public Persona(string identificacion, string primerNombre, string primerApellido, string telefono)
+        {
+            this.identificacion = identificacion;
+            this.primerNombre = primerNombre;
+            this.primerApellido = primerApellido;
+            this.telefono = telefono;
+        }
     }
 }

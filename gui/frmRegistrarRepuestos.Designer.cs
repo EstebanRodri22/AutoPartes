@@ -58,7 +58,7 @@ namespace gui
             this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.barraTitulo.Location = new System.Drawing.Point(0, 0);
             this.barraTitulo.Name = "barraTitulo";
-            this.barraTitulo.Size = new System.Drawing.Size(465, 29);
+            this.barraTitulo.Size = new System.Drawing.Size(500, 29);
             this.barraTitulo.TabIndex = 0;
             // 
             // label6
@@ -80,7 +80,7 @@ namespace gui
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 24;
-            this.iconPictureBox1.Location = new System.Drawing.Point(438, 0);
+            this.iconPictureBox1.Location = new System.Drawing.Point(469, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(24, 27);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,7 +203,7 @@ namespace gui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 325);
+            this.ClientSize = new System.Drawing.Size(500, 325);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.comboBox1);

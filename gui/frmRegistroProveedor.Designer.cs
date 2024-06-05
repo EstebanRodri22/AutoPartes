@@ -1,4 +1,8 @@
-﻿namespace presentacion
+﻿using System.Drawing;
+using System.Windows.Forms;
+using FontAwesome.Sharp;
+
+namespace gui
 {
     partial class frmRegistroProveedor
     {
@@ -28,261 +32,263 @@
         /// </summary>
         private void InitializeComponent()
         {
-            barraTitulo = new Panel();
-            btnCerrar = new Button();
-            label1 = new Label();
-            txtIdentificacion = new TextBox();
-            btnCancelar = new Button();
-            btnGuardar = new Button();
-            cmbTipoDocumento = new ComboBox();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            txtApellidos = new TextBox();
-            txtNombres = new TextBox();
-            txtTelefono = new TextBox();
-            label6 = new Label();
-            pictureBox1 = new PictureBox();
-            btnCargarImage = new FontAwesome.Sharp.IconButton();
-            label7 = new Label();
-            statusStrip1 = new StatusStrip();
-            toolStripStatusLabel1 = new ToolStripStatusLabel();
-            barraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            statusStrip1.SuspendLayout();
-            SuspendLayout();
+            this.barraTitulo = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.cmbTipoDocumento = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCargarImage = new FontAwesome.Sharp.IconButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.barraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.statusStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // barraTitulo
             // 
-            barraTitulo.BackColor = Color.FromArgb(26, 32, 40);
-            barraTitulo.Controls.Add(btnCerrar);
-            barraTitulo.Controls.Add(label1);
-            barraTitulo.Dock = DockStyle.Top;
-            barraTitulo.Location = new Point(0, 0);
-            barraTitulo.Name = "barraTitulo";
-            barraTitulo.Size = new Size(665, 38);
-            barraTitulo.TabIndex = 0;
+            this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.barraTitulo.Controls.Add(this.btnCerrar);
+            this.barraTitulo.Controls.Add(this.label1);
+            this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.barraTitulo.Name = "barraTitulo";
+            this.barraTitulo.Size = new System.Drawing.Size(570, 33);
+            this.barraTitulo.TabIndex = 0;
             // 
             // btnCerrar
             // 
-            btnCerrar.Cursor = Cursors.Hand;
-            btnCerrar.FlatAppearance.BorderSize = 0;
-            btnCerrar.FlatStyle = FlatStyle.Flat;
-            btnCerrar.Image = Properties.Resources.Close;
-            btnCerrar.Location = new Point(627, -3);
-            btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(38, 38);
-            btnCerrar.TabIndex = 10;
-            btnCerrar.UseVisualStyleBackColor = true;
-            btnCerrar.Click += btnCerrar_Click;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Location = new System.Drawing.Point(537, -3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(33, 33);
+            this.btnCerrar.TabIndex = 10;
+            this.btnCerrar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10F);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(287, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(131, 17);
-            label1.TabIndex = 9;
-            label1.Text = "Registro Proveedor";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(246, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 17);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Registro Proveedor";
             // 
             // txtIdentificacion
             // 
-            txtIdentificacion.Location = new Point(186, 95);
-            txtIdentificacion.Name = "txtIdentificacion";
-            txtIdentificacion.Size = new Size(247, 23);
-            txtIdentificacion.TabIndex = 8;
+            this.txtIdentificacion.Location = new System.Drawing.Point(159, 82);
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Size = new System.Drawing.Size(212, 20);
+            this.txtIdentificacion.TabIndex = 8;
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = Color.FromArgb(0, 122, 204);
-            btnCancelar.FlatAppearance.BorderSize = 0;
-            btnCancelar.FlatStyle = FlatStyle.Flat;
-            btnCancelar.Font = new Font("Century Gothic", 9.75F);
-            btnCancelar.Location = new Point(339, 307);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(109, 34);
-            btnCancelar.TabIndex = 15;
-            btnCancelar.Text = "CANCELAR";
-            btnCancelar.UseVisualStyleBackColor = false;
-            btnCancelar.Click += btnCancelar_Click;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnCancelar.Location = new System.Drawing.Point(291, 266);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(93, 29);
+            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnGuardar
             // 
-            btnGuardar.BackColor = Color.FromArgb(0, 122, 204);
-            btnGuardar.FlatAppearance.BorderSize = 0;
-            btnGuardar.FlatStyle = FlatStyle.Flat;
-            btnGuardar.Font = new Font("Century Gothic", 9.75F);
-            btnGuardar.Location = new Point(186, 307);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(109, 34);
-            btnGuardar.TabIndex = 13;
-            btnGuardar.Text = "GUARDAR";
-            btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnGuardar.Location = new System.Drawing.Point(159, 266);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(93, 29);
+            this.btnGuardar.TabIndex = 13;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // cmbTipoDocumento
             // 
-            cmbTipoDocumento.FormattingEnabled = true;
-            cmbTipoDocumento.Items.AddRange(new object[] { "CEDULA", "TARGETA IDENTIDAD", "CEDULA EXTRANGERA" });
-            cmbTipoDocumento.Location = new Point(186, 59);
-            cmbTipoDocumento.Name = "cmbTipoDocumento";
-            cmbTipoDocumento.Size = new Size(247, 23);
-            cmbTipoDocumento.TabIndex = 12;
+            this.cmbTipoDocumento.FormattingEnabled = true;
+            this.cmbTipoDocumento.Items.AddRange(new object[] {
+            "CEDULA",
+            "TARGETA IDENTIDAD",
+            "CEDULA EXTRANGERA"});
+            this.cmbTipoDocumento.Location = new System.Drawing.Point(159, 51);
+            this.cmbTipoDocumento.Name = "cmbTipoDocumento";
+            this.cmbTipoDocumento.Size = new System.Drawing.Size(212, 21);
+            this.cmbTipoDocumento.TabIndex = 12;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 9.75F);
-            label5.Location = new Point(99, 219);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 17);
-            label5.TabIndex = 18;
-            label5.Text = "Telefono :";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label5.Location = new System.Drawing.Point(85, 190);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 17);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Telefono :";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 9.75F);
-            label4.Location = new Point(99, 182);
-            label4.Name = "label4";
-            label4.Size = new Size(74, 17);
-            label4.TabIndex = 17;
-            label4.Text = "Apellidos :";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label4.Location = new System.Drawing.Point(85, 156);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Apellidos :";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 9.75F);
-            label3.Location = new Point(99, 140);
-            label3.Name = "label3";
-            label3.Size = new Size(74, 17);
-            label3.TabIndex = 16;
-            label3.Text = "Nombres :";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label3.Location = new System.Drawing.Point(85, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Nombres :";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 9.75F);
-            label2.Location = new Point(69, 97);
-            label2.Name = "label2";
-            label2.Size = new Size(104, 17);
-            label2.TabIndex = 14;
-            label2.Text = "Identificacion :";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label2.Location = new System.Drawing.Point(59, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 17);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Identificacion :";
             // 
             // txtApellidos
             // 
-            txtApellidos.Location = new Point(186, 176);
-            txtApellidos.Name = "txtApellidos";
-            txtApellidos.Size = new Size(247, 23);
-            txtApellidos.TabIndex = 11;
+            this.txtApellidos.Location = new System.Drawing.Point(159, 155);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(212, 20);
+            this.txtApellidos.TabIndex = 11;
             // 
             // txtNombres
             // 
-            txtNombres.Location = new Point(186, 134);
-            txtNombres.Name = "txtNombres";
-            txtNombres.Size = new Size(247, 23);
-            txtNombres.TabIndex = 10;
+            this.txtNombres.Location = new System.Drawing.Point(159, 116);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(212, 20);
+            this.txtNombres.TabIndex = 10;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(186, 219);
-            txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new Size(247, 23);
-            txtTelefono.TabIndex = 19;
+            this.txtTelefono.Location = new System.Drawing.Point(159, 190);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(212, 20);
+            this.txtTelefono.TabIndex = 19;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Century Gothic", 9.75F);
-            label6.Location = new Point(49, 61);
-            label6.Name = "label6";
-            label6.Size = new Size(124, 17);
-            label6.TabIndex = 20;
-            label6.Text = "Tipo Documento :";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label6.Location = new System.Drawing.Point(42, 53);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 17);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Tipo Documento :";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(490, 86);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(120, 119);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 21;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(420, 75);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 103);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // btnCargarImage
             // 
-            btnCargarImage.IconChar = FontAwesome.Sharp.IconChar.None;
-            btnCargarImage.IconColor = Color.Black;
-            btnCargarImage.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnCargarImage.Location = new Point(186, 264);
-            btnCargarImage.Name = "btnCargarImage";
-            btnCargarImage.Size = new Size(247, 23);
-            btnCargarImage.TabIndex = 22;
-            btnCargarImage.Text = "Cargar Imagen";
-            btnCargarImage.UseVisualStyleBackColor = true;
-            btnCargarImage.Click += btnCargarImage_Click;
+            this.btnCargarImage.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCargarImage.IconColor = System.Drawing.Color.Black;
+            this.btnCargarImage.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarImage.Location = new System.Drawing.Point(159, 227);
+            this.btnCargarImage.Name = "btnCargarImage";
+            this.btnCargarImage.Size = new System.Drawing.Size(212, 24);
+            this.btnCargarImage.TabIndex = 22;
+            this.btnCargarImage.Text = "Cargar Imagen";
+            this.btnCargarImage.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Century Gothic", 9.75F);
-            label7.Location = new Point(118, 267);
-            label7.Name = "label7";
-            label7.Size = new Size(51, 17);
-            label7.TabIndex = 23;
-            label7.Text = "Firma :";
-            label7.Click += label7_Click;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label7.Location = new System.Drawing.Point(101, 231);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 17);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Firma :";
             // 
             // statusStrip1
             // 
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip1.Location = new Point(0, 353);
-            statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(665, 22);
-            statusStrip1.TabIndex = 24;
-            statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 312);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(570, 22);
+            this.statusStrip1.TabIndex = 24;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(118, 17);
-            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // frmRegistroProveedor
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(665, 375);
-            Controls.Add(statusStrip1);
-            Controls.Add(label7);
-            Controls.Add(btnCargarImage);
-            Controls.Add(pictureBox1);
-            Controls.Add(label6);
-            Controls.Add(txtTelefono);
-            Controls.Add(txtIdentificacion);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnGuardar);
-            Controls.Add(cmbTipoDocumento);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(txtApellidos);
-            Controls.Add(txtNombres);
-            Controls.Add(barraTitulo);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "frmRegistroProveedor";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "frmRegistroProveedor";
-            barraTitulo.ResumeLayout(false);
-            barraTitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            statusStrip1.ResumeLayout(false);
-            statusStrip1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(570, 334);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnCargarImage);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtIdentificacion);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.cmbTipoDocumento);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.txtNombres);
+            this.Controls.Add(this.barraTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmRegistroProveedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "frmRegistroProveedor";
+            this.barraTitulo.ResumeLayout(false);
+            this.barraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

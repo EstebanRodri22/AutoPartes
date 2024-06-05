@@ -4,7 +4,7 @@ using FontAwesome.Sharp;
 
 namespace gui
 {
-    partial class frmRegistrarVehiculo2
+    partial class frmRegistrarVehiculo
     {
         /// <summary>
         /// Required designer variable.
