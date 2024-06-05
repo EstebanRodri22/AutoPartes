@@ -22,12 +22,14 @@ namespace DAL
         }
         public  string insertar2(Proveedor proveedor, string procedureName)
         {
+
             try
             {
                 AbrirConexion();
 
                 using (command = new OracleCommand(procedureName, Connection))
                 {
+
                     command.CommandType = CommandType.StoredProcedure;
 
                     // Parámetros de entrada
@@ -35,11 +37,14 @@ namespace DAL
                     command.Parameters.Add("p_primer_nombre", OracleDbType.Varchar2).Value = proveedor.primerNombre;
                     command.Parameters.Add("p_primer_apellido", OracleDbType.Varchar2).Value = proveedor.primerApellido;
                     command.Parameters.Add("p_telefono", OracleDbType.Varchar2).Value = proveedor.telefono;
+                    command.Parameters.Add("p_idtipodocumento", OracleDbType.Varchar2).Value = proveedor.TipoDocumento.id_documento;
+                    
+                    command.ExecuteNonQuery();
 
-                    return "Proveedor insertado exitosamente.";
+                    return $"se agrego a {proveedor.primerNombre} corectamente ";
                 }
             }
-            catch (SqlException ex)
+            catch (OracleException ex)
             {
                 throw new Exception("Error al insertar el proveedor: " + ex.Message, ex);
             }

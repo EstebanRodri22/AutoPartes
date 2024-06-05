@@ -127,10 +127,6 @@ namespace gui
             // cmbTipoDocumento
             // 
             this.cmbTipoDocumento.FormattingEnabled = true;
-            this.cmbTipoDocumento.Items.AddRange(new object[] {
-            "CEDULA",
-            "TARGETA IDENTIDAD",
-            "CEDULA EXTRANGERA"});
             this.cmbTipoDocumento.Location = new System.Drawing.Point(159, 51);
             this.cmbTipoDocumento.Name = "cmbTipoDocumento";
             this.cmbTipoDocumento.Size = new System.Drawing.Size(212, 21);
@@ -281,6 +277,7 @@ namespace gui
             this.Name = "frmRegistroProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmRegistroProveedor";
+            this.Load += new System.EventHandler(this.frmRegistroProveedor_load);
             this.barraTitulo.ResumeLayout(false);
             this.barraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

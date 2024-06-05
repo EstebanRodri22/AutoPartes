@@ -16,6 +16,7 @@ namespace gui
     {
         Proveedor proveedor = new Proveedor();
         ProveedorServices services = new ProveedorServices();
+        TipoDocServices tipoDocServices = new TipoDocServices();
 
         public frmRegistroProveedor()
         {
@@ -57,18 +58,32 @@ namespace gui
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-              
+            try
+            {
+                proveedor.identificacion = txtIdentificacion.Text;
+                proveedor.primerNombre = txtNombres.Text;
+                proveedor.primerApellido = txtApellidos.Text;
+                proveedor.telefono = txtTelefono.Text;
+                proveedor.TipoDocumento = (TipoDocumento)cmbTipoDocumento.SelectedItem;
 
-            proveedor.identificacion = txtIdentificacion.Text;
-            proveedor.primerNombre = txtNombres.Text;
-            proveedor.primerApellido = txtApellidos.Text;
-            proveedor.telefono = txtTelefono.Text;
+                var resultado = services.insertarProveedor(proveedor, "insertar_proveedor");
+                MessageBox.Show(resultado, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error al insertar el proveedor: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
-            var message = services.insertarProveedor(proveedor, "insertar_proveedor");
+        }
 
-            MessageBox.Show(message);
+        private void frmRegistroProveedor_load(object sender, EventArgs e)
+        {
+            List<TipoDocumento> ListTiposDocumentos = new List<TipoDocumento>();
+            ListTiposDocumentos = tipoDocServices.GetTipoDocumentos();
 
-
+            cmbTipoDocumento.DisplayMember = "descripcion";
+            cmbTipoDocumento.ValueMember = "id_tipodocumento";
+            cmbTipoDocumento.DataSource = ListTiposDocumentos;
         }
     }
 }

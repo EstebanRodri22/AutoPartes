@@ -18,7 +18,14 @@ namespace BILL
 
         public string insertarProveedor(Proveedor proveedor, string procedureName)
         {
-            return ProveedoresRepository.insertar2(proveedor, procedureName);
+            try 
+            {
+                return ProveedoresRepository.insertar2(proveedor, procedureName);
+            }
+            catch(Exception ex) 
+            {
+                throw new Exception("Error en la capa de negocio: " + ex.Message, ex);
+            }
         }
     }
 }
