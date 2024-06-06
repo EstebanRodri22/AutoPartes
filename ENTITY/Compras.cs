@@ -8,7 +8,12 @@ namespace ENTITY
 {
     public class Compras : Movimientos
     {
-        private string observaciones { get; set; }
+        public string observaciones { get; set; }
+
+        public Proveedor proveedor { get; set; }
+
+        public Automovil automovil { get; set; }
+        public Compras() { }
 
         public Compras(string noFactura, int cantidad, DateTime fechaFactura, double valorFactura) : base(noFactura, cantidad, fechaFactura, valorFactura)
         {

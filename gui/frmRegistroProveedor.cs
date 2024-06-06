@@ -14,14 +14,36 @@ namespace gui
 {
     public partial class frmRegistroProveedor : Form
     {
-        Proveedor proveedor = new Proveedor();
+        public Proveedor proveedor { get; private set; }
         ProveedorServices services = new ProveedorServices();
         ComboBoxServices comboBoxServices = new ComboBoxServices();
 
-        public frmRegistroProveedor()
+        public frmRegistroProveedor(Proveedor proveedor2 = null)
         {
             InitializeComponent();
+            cargarTipoDocumentos();
             toolStripStatusLabel1.Visible = false;
+            if(proveedor2 != null)
+            {
+                proveedor = proveedor2;
+                txtIdentificacion.Text = proveedor2.identificacion;
+                txtNombres.Text = proveedor2.primerNombre;
+                txtApellidos.Text = proveedor2.primerApellido;
+                txtTelefono.Text = proveedor2.telefono;
+                if (cmbTipoDocumento.Items.Count > 0)
+                {
+                    for (int i = 0; i < cmbTipoDocumento.Items.Count; i++)
+                    {
+                        TipoDocumento tipoDocumento = (TipoDocumento)cmbTipoDocumento.Items[i];
+                        if (tipoDocumento.id_documento == proveedor2.TipoDocumento.id_documento)
+                        {
+                            cmbTipoDocumento.SelectedIndex = i;
+                            break;
+                        }
+                    }
+                }
+
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -58,25 +80,21 @@ namespace gui
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            try
+            if(proveedor == null)
             {
+                proveedor = new Proveedor();
+            }
                 proveedor.identificacion = txtIdentificacion.Text;
                 proveedor.primerNombre = txtNombres.Text;
                 proveedor.primerApellido = txtApellidos.Text;
                 proveedor.telefono = txtTelefono.Text;
                 proveedor.TipoDocumento = (TipoDocumento)cmbTipoDocumento.SelectedItem;
 
-                var resultado = services.insertarProveedor(proveedor, "insertar_proveedor");
-                MessageBox.Show(resultado, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error al insertar el proveedor: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            this.DialogResult = DialogResult.OK;
+            this.Close();
 
         }
-
-        private void frmRegistroProveedor_load(object sender, EventArgs e)
+        private void cargarTipoDocumentos()
         {
             List<TipoDocumento> ListTiposDocumentos;
             ListTiposDocumentos = comboBoxServices.GetTipoDocumentos();
@@ -84,6 +102,21 @@ namespace gui
             cmbTipoDocumento.DisplayMember = "descripcion";
             cmbTipoDocumento.ValueMember = "id_tipodocumento";
             cmbTipoDocumento.DataSource = ListTiposDocumentos;
+        }
+
+        private void frmRegistroProveedor_load(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

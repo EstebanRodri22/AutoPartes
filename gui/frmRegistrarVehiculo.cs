@@ -16,13 +16,41 @@ namespace gui
     {
         ComboBoxServices comboBoxServices = new ComboBoxServices();
         AutomovilServices automovilServices = new AutomovilServices();
-        Automovil automovil = new Automovil();
+        public Automovil automovil { get; private set; }
+
         Marca marca = new Marca();
 
-        public frmRegistrarVehiculo()
+        public frmRegistrarVehiculo(Automovil automovil2 = null)
         {
             InitializeComponent();
+            CargarMarcas();
+            if (automovil2 != null)
+            {
+                automovil = automovil2;
+                txtPlaca.Text = automovil2.Placa;                            
+                txtModelo.Text = automovil2.Modelo;
+                txtVin.Text = automovil2.VIN;
+
+                if (cmbMarca.Items.Count > 0)
+                {
+                    for (int i = 0; i < cmbMarca.Items.Count; i++)
+                    {
+                        Marca marca = (Marca)cmbMarca.Items[i];
+                        if (marca.IdMarca == automovil2.Marca.IdMarca)
+                        {
+                            cmbMarca.SelectedIndex = i;
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                automovil = new Automovil();
+            }
+        
         }
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -60,30 +88,41 @@ namespace gui
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            try
+            if(automovil == null)
             {
-                automovil.Placa = txtPlaca.Text;
-                automovil.Modelo = txtModelo.Text;
-                automovil.VIN = txtVin.Text;
-                automovil.Marca = (Marca)cmbMarca.SelectedItem;
+                automovil = new Automovil();
+            }
 
-                var resultado = automovilServices.insertarAutomovil(automovil);
-                MessageBox.Show(resultado, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al insertar el proveedor: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            automovil.Placa = txtPlaca.Text;
+            automovil.Modelo = txtModelo.Text;
+            automovil.VIN = txtVin.Text;
+            automovil.Marca = (Marca)cmbMarca.SelectedItem;
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+
+        }
+
+        private void CargarMarcas()
+        {
+            // Cargar las marcas desde la base de datos o de donde sea necesario
+            List<Marca> marcas = comboBoxServices.GetMarcas();
+
+            // Configurar el ComboBox
+
+            cmbMarca.DisplayMember = "NOMBRE_MARCA";
+            cmbMarca.ValueMember = "id_marca";
+            cmbMarca.DataSource = marcas;
+
         }
 
         private void frmRegistrarVehiculo_Load(object sender, EventArgs e)
         {
-            List<Marca> MarcasList;
-            MarcasList = comboBoxServices.GetMarcas();
+           
+        }
 
-            cmbMarca.DisplayMember = "NOMBRE_MARCA";
-            cmbMarca.ValueMember = "id_marca";
-            cmbMarca.DataSource = MarcasList;
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

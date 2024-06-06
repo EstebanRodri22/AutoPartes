@@ -8,11 +8,15 @@ namespace ENTITY
 {
     public class Movimientos
     {
-        private string NoFactura {  get; set; }
-        private int Cantidad { get; set;}
-        private DateTime FechaFactura { get; set; }
+        public string NoFactura {  get; set; }
+        public int Cantidad { get; set;}
+        public DateTime FechaFactura { get; set; }
 
-        private double ValorFactura { get; set; }
+        public double ValorFactura { get; set; }
+
+        public Movimientos() { }
+
+        
 
         public Movimientos(string noFactura, int cantidad, DateTime fechaFactura, double valorFactura)
         {

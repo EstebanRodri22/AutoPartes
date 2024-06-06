@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDatos.cs" />
+    <Compile Include="ComprasRepository.cs" />
     <Compile Include="LoginRepository.cs" />
     <Compile Include="ProveedoresRepository.cs" />
     <Compile Include="PruebasRepository.cs" />

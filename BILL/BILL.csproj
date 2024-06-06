@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutomovilServices.cs" />
+    <Compile Include="ComprasServices.cs" />
     <Compile Include="LoginServices.cs" />
     <Compile Include="ProveedorServices.cs" />
     <Compile Include="PruebasServices.cs" />

@@ -32,14 +32,14 @@ namespace gui
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtValor = new System.Windows.Forms.TextBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.btnVehiculo = new System.Windows.Forms.Button();
             this.btnProveedor = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnRegistrarCompra = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,19 +49,9 @@ namespace gui
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label1.Location = new System.Drawing.Point(92, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.Size = new System.Drawing.Size(56, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Valor";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label2.Location = new System.Drawing.Point(80, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "cantidad";
+            this.label1.Text = "Valor :";
             // 
             // txtValor
             // 
@@ -70,19 +60,12 @@ namespace gui
             this.txtValor.Size = new System.Drawing.Size(327, 20);
             this.txtValor.TabIndex = 0;
             // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(182, 175);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(327, 20);
-            this.txtCantidad.TabIndex = 1;
-            // 
             // btnVehiculo
             // 
             this.btnVehiculo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehiculo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVehiculo.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnVehiculo.Location = new System.Drawing.Point(357, 253);
+            this.btnVehiculo.Location = new System.Drawing.Point(373, 239);
             this.btnVehiculo.Name = "btnVehiculo";
             this.btnVehiculo.Size = new System.Drawing.Size(136, 51);
             this.btnVehiculo.TabIndex = 3;
@@ -94,7 +77,7 @@ namespace gui
             // btnProveedor
             // 
             this.btnProveedor.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedor.Location = new System.Drawing.Point(119, 253);
+            this.btnProveedor.Location = new System.Drawing.Point(96, 239);
             this.btnProveedor.Name = "btnProveedor";
             this.btnProveedor.Size = new System.Drawing.Size(136, 51);
             this.btnProveedor.TabIndex = 2;
@@ -103,15 +86,16 @@ namespace gui
             this.btnProveedor.UseVisualStyleBackColor = true;
             this.btnProveedor.Click += new System.EventHandler(this.btnProveedor_Click);
             // 
-            // btnRegistrar
+            // btnRegistrarCompra
             // 
-            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(224, 355);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(172, 32);
-            this.btnRegistrar.TabIndex = 4;
-            this.btnRegistrar.Text = "REGISTRAR";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrarCompra.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCompra.Location = new System.Drawing.Point(209, 356);
+            this.btnRegistrarCompra.Name = "btnRegistrarCompra";
+            this.btnRegistrarCompra.Size = new System.Drawing.Size(172, 32);
+            this.btnRegistrarCompra.TabIndex = 4;
+            this.btnRegistrarCompra.Text = "REGISTRAR";
+            this.btnRegistrarCompra.UseVisualStyleBackColor = true;
+            this.btnRegistrarCompra.Click += new System.EventHandler(this.btnRegistrarCompra_Click);
             // 
             // btnCerrar
             // 
@@ -134,23 +118,41 @@ namespace gui
             this.label3.TabIndex = 6;
             this.label3.Text = "REGISTRAR COMPRA";
             // 
-            // frmRegistrarCompra2
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Location = new System.Drawing.Point(182, 153);
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(327, 20);
+            this.txtObservaciones.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label4.Location = new System.Drawing.Point(30, 151);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Observaciones :";
+            // 
+            // frmRegistrarCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 453);
+            this.Controls.Add(this.txtObservaciones);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.btnRegistrarCompra);
             this.Controls.Add(this.btnProveedor);
             this.Controls.Add(this.btnVehiculo);
-            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmRegistrarCompra2";
+            this.Name = "frmRegistrarCompra";
             this.Text = "frmCompras";
+            this.Load += new System.EventHandler(this.frmRegistrarCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -160,13 +162,13 @@ namespace gui
         #endregion
 
         private Label label1;
-        private Label label2;
         private TextBox txtValor;
-        private TextBox txtCantidad;
         private Button btnVehiculo;
         private Button btnProveedor;
-        private Button btnRegistrar;
+        private Button btnRegistrarCompra;
         private PictureBox btnCerrar;
         private Label label3;
+        private TextBox txtObservaciones;
+        private Label label4;
     }
 }

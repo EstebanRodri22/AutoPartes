@@ -18,7 +18,6 @@ namespace DAL
 
        public ProveedoresRepository()
         {
-            command = new OracleCommand();
         }
         public  string insertar2(Proveedor proveedor, string procedureName)
         {
