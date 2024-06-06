@@ -19,5 +19,10 @@ namespace ENTITY
             IdMarca = idMarca;
             this.name_marca = name_marca;
         }
+
+        public override string ToString()
+        {
+            return name_marca;
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace gui
     {
         Proveedor proveedor = new Proveedor();
         ProveedorServices services = new ProveedorServices();
-        TipoDocServices tipoDocServices = new TipoDocServices();
+        ComboBoxServices comboBoxServices = new ComboBoxServices();
 
         public frmRegistroProveedor()
         {
@@ -78,8 +78,8 @@ namespace gui
 
         private void frmRegistroProveedor_load(object sender, EventArgs e)
         {
-            List<TipoDocumento> ListTiposDocumentos = new List<TipoDocumento>();
-            ListTiposDocumentos = tipoDocServices.GetTipoDocumentos();
+            List<TipoDocumento> ListTiposDocumentos;
+            ListTiposDocumentos = comboBoxServices.GetTipoDocumentos();
 
             cmbTipoDocumento.DisplayMember = "descripcion";
             cmbTipoDocumento.ValueMember = "id_tipodocumento";

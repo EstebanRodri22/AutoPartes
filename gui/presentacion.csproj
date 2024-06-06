@@ -144,6 +144,9 @@
     <EmbeddedResource Include="frmRegistrarRepuestos.resx">
       <DependentUpon>frmRegistrarRepuestos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarVehiculo.resx">
+      <DependentUpon>frmRegistrarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegistroCliente2.resx">
       <DependentUpon>frmRegistroCliente2.cs</DependentUpon>
     </EmbeddedResource>

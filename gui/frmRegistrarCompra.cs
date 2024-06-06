@@ -23,8 +23,8 @@ namespace gui
 
         private void btnVehiculo_Click(object sender, EventArgs e)
         {
-           // frmRegistrarVehiculo frmRegistroVehiculo = new frmRegistrarVehiculo();
-          //  frmRegistroVehiculo.ShowDialog();
+           frmRegistrarVehiculo frmRegistroVehiculo = new frmRegistrarVehiculo();
+           frmRegistroVehiculo.ShowDialog();
         }
 
         private void btnProveedor_Click(object sender, EventArgs e)
