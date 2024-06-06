@@ -36,7 +36,7 @@ namespace gui
                     for (int i = 0; i < cmbMarca.Items.Count; i++)
                     {
                         Marca marca = (Marca)cmbMarca.Items[i];
-                        if (marca.IdMarca == automovil2.Marca.IdMarca)
+                        if (marca.Id == automovil2.Marca.Id)
                         {
                             cmbMarca.SelectedIndex = i;
                             break;

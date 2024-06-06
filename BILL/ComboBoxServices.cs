@@ -11,7 +11,7 @@ namespace BILL
 {
     public class ComboBoxServices
     {
-        CombosBoxRepository combosBoxRepository;
+        private readonly CombosBoxRepository combosBoxRepository;
         
         public ComboBoxServices()
         {
@@ -20,12 +20,12 @@ namespace BILL
 
         public List<TipoDocumento> GetTipoDocumentos()
         {
-            return combosBoxRepository.GetTiposDocumento();
+            return combosBoxRepository.GetEntities<TipoDocumento>("Tipo_documento");
         }
 
         public List<Marca> GetMarcas()
         {
-            return combosBoxRepository.GetMarcaList();
+            return combosBoxRepository.GetEntities<Marca>("Marcas");
         }
     }
 }

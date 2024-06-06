@@ -30,7 +30,7 @@ namespace DAL
                 cmd.Parameters.Add(":placa", OracleDbType.Varchar2).Value = automovil.Placa;
                 cmd.Parameters.Add(":modelo", OracleDbType.Varchar2).Value = automovil.Modelo;
                 cmd.Parameters.Add(":vin", OracleDbType.Varchar2).Value = automovil.VIN;
-                cmd.Parameters.Add(":id_marca", OracleDbType.Varchar2).Value = automovil.Marca.IdMarca;
+                cmd.Parameters.Add(":id_marca", OracleDbType.Varchar2).Value = automovil.Marca.Id;
 
                 AbrirConexion();
                 cmd.ExecuteNonQuery();

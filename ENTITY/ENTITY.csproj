@@ -47,6 +47,7 @@
     <Compile Include="Compras.cs" />
     <Compile Include="EstadoGarantia.cs" />
     <Compile Include="EstadoInventario.cs" />
+    <Compile Include="IBaseEntity.cs" />
     <Compile Include="InfoGarantia.cs" />
     <Compile Include="InventarioAutomovil.cs" />
     <Compile Include="Marca.cs" />
