@@ -15,10 +15,10 @@ namespace DAL
 
         public CombosBoxRepository() { }
 
-        public List<Marca> GetMarcaList()
+        public List<T> GetEntities<T>(string tableName) where T : IBaseEntity, new()
         {
-            var list = new List<Marca>();
-            string _sql = "SELECT * FROM Marcas";
+            var list = new List<T>();
+            string _sql = $"SELECT * FROM {tableName}";
             try
             {
                 AbrirConexion();
@@ -31,14 +31,14 @@ namespace DAL
                     {
                         while (reader.Read())
                         {
-                            list.Add(MapMarca(reader));
+                            list.Add(Map<T>(reader));
                         }
                     }
                 }
             }
-            catch(OracleException ex) 
+            catch (OracleException ex)
             {
-                throw new Exception("Error al ejecutar la consulta para obtener todas las marcas", ex);
+                throw new Exception($"Error al ejecutar la consulta para obtener datos de la tabla {tableName}", ex);
             }
             finally
             {
@@ -47,54 +47,15 @@ namespace DAL
             return list;
         }
 
-        public List<TipoDocumento> GetTiposDocumento()
+        private T Map<T>(OracleDataReader reader) where T : IBaseEntity, new()
         {
-            var list = new List<TipoDocumento>();
-            string _sql = "SELECT * FROM Tipo_documento";
-            try
+            T entity = new T
             {
-                AbrirConexion();
-                using(cmd = new OracleCommand())
-                {
-                    cmd.CommandText = _sql;
-                    cmd.Connection = Connection;
+                Id = reader.GetString(0),
+                Descripcion = reader.GetString(1)
+            };
+            return entity;
+        }   
 
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            list.Add(Map(reader));
-                        }
-                    }
-
-
-                }
-
-            }catch (Exception ex)
-            {
-                throw new Exception("Error al ejecutar la consulta para obtener todas los tipos de documentos", ex);
-            }
-            finally
-            {
-                CerrarConexion();
-            }
-            return list;
-        }
-
-        private TipoDocumento Map(OracleDataReader reader)
-        {
-            TipoDocumento tipoDocumento = new TipoDocumento();
-            tipoDocumento.id_documento = reader.GetString(0);
-            tipoDocumento.descripcion = reader.GetString(1);
-            return tipoDocumento;
-        }
-
-        private Marca MapMarca(OracleDataReader reader)
-        {
-            Marca marca = new Marca();
-            marca.IdMarca = reader.GetString(0);
-            marca.name_marca = reader.GetString(1);
-            return marca;
-        }
     }
 }

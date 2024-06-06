@@ -36,7 +36,7 @@ namespace DAL
                     command.Parameters.Add("p_primer_nombre", OracleDbType.Varchar2).Value = proveedor.primerNombre;
                     command.Parameters.Add("p_primer_apellido", OracleDbType.Varchar2).Value = proveedor.primerApellido;
                     command.Parameters.Add("p_telefono", OracleDbType.Varchar2).Value = proveedor.telefono;
-                    command.Parameters.Add("p_idtipodocumento", OracleDbType.Varchar2).Value = proveedor.TipoDocumento.id_documento;
+                    command.Parameters.Add("p_idtipodocumento", OracleDbType.Varchar2).Value = proveedor.TipoDocumento.Id;
                     
                     command.ExecuteNonQuery();
 

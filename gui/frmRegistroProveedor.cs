@@ -35,7 +35,7 @@ namespace gui
                     for (int i = 0; i < cmbTipoDocumento.Items.Count; i++)
                     {
                         TipoDocumento tipoDocumento = (TipoDocumento)cmbTipoDocumento.Items[i];
-                        if (tipoDocumento.id_documento == proveedor2.TipoDocumento.id_documento)
+                        if (tipoDocumento.Id == proveedor2.TipoDocumento.Id)
                         {
                             cmbTipoDocumento.SelectedIndex = i;
                             break;

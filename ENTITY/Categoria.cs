@@ -8,9 +8,11 @@ namespace ENTITY
 {
     public class Categoria
     {
-        private string IdCategoria {  get; set; }
+        public string IdCategoria {  get; set; }
 
-        private string NameCategoria { get; set; }
+        public string NameCategoria { get; set; }
+
+        public Categoria() { }
 
         public Categoria(string idCategoria, string nameCategoria)
         {
