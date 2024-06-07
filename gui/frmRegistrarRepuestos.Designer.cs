@@ -35,17 +35,19 @@ namespace gui
             this.label6 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDetalle = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.btnRegistrar = new FontAwesome.Sharp.IconButton();
+            this.btnCancelar = new FontAwesome.Sharp.IconButton();
+            this.cmbAutomoviles = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -91,130 +93,151 @@ namespace gui
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label1.Location = new System.Drawing.Point(114, 56);
+            this.label1.Location = new System.Drawing.Point(167, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID :";
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtID.Location = new System.Drawing.Point(209, 94);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(185, 20);
+            this.txtID.TabIndex = 2;
             // 
-            // textBox2
+            // txtPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtPrecio.Location = new System.Drawing.Point(209, 134);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(185, 20);
+            this.txtPrecio.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label2.Location = new System.Drawing.Point(80, 97);
+            this.label2.Location = new System.Drawing.Point(134, 222);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(62, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Nombre :";
+            this.label2.Text = "Detalle :";
             // 
-            // textBox3
+            // txtStock
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 140);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtStock.Location = new System.Drawing.Point(209, 179);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(185, 20);
+            this.txtStock.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label3.Location = new System.Drawing.Point(91, 141);
+            this.label3.Location = new System.Drawing.Point(140, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Precio :";
             // 
-            // textBox4
+            // txtDetalle
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 180);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtDetalle.Location = new System.Drawing.Point(209, 219);
+            this.txtDetalle.Name = "txtDetalle";
+            this.txtDetalle.Size = new System.Drawing.Size(185, 20);
+            this.txtDetalle.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label4.Location = new System.Drawing.Point(91, 182);
+            this.label4.Location = new System.Drawing.Point(145, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "Stock :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label5.Location = new System.Drawing.Point(68, 222);
+            this.label5.Location = new System.Drawing.Point(113, 52);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Categoria :";
             // 
-            // comboBox1
+            // cmbCategoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(156, 220);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 21);
-            this.comboBox1.TabIndex = 10;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(209, 52);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(185, 21);
+            this.cmbCategoria.TabIndex = 10;
             // 
-            // iconButton1
+            // btnRegistrar
             // 
-            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(131, 270);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(91, 36);
-            this.iconButton1.TabIndex = 11;
-            this.iconButton1.Text = "Registrar";
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnRegistrar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnRegistrar.IconColor = System.Drawing.Color.Black;
+            this.btnRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRegistrar.Location = new System.Drawing.Point(148, 303);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(91, 36);
+            this.btnRegistrar.TabIndex = 11;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
             // 
-            // iconButton2
+            // btnCancelar
             // 
-            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(281, 270);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(91, 36);
-            this.iconButton2.TabIndex = 12;
-            this.iconButton2.Text = "Cancelar";
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCancelar.IconColor = System.Drawing.Color.Black;
+            this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCancelar.Location = new System.Drawing.Point(285, 303);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(91, 36);
+            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // cmbAutomoviles
+            // 
+            this.cmbAutomoviles.FormattingEnabled = true;
+            this.cmbAutomoviles.Location = new System.Drawing.Point(209, 257);
+            this.cmbAutomoviles.Name = "cmbAutomoviles";
+            this.cmbAutomoviles.Size = new System.Drawing.Size(185, 21);
+            this.cmbAutomoviles.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label7.Location = new System.Drawing.Point(113, 257);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Automovil :";
             // 
             // frmRegistrarRepuestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 325);
-            this.Controls.Add(this.iconButton2);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(500, 361);
+            this.Controls.Add(this.cmbAutomoviles);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.barraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -233,17 +256,19 @@ namespace gui
         private Panel barraTitulo;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtID;
+        private TextBox txtPrecio;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox txtStock;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox txtDetalle;
         private Label label4;
         private Label label5;
-        private ComboBox comboBox1;
+        private ComboBox cmbCategoria;
         private Label label6;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnRegistrar;
+        private FontAwesome.Sharp.IconButton btnCancelar;
+        private ComboBox cmbAutomoviles;
+        private Label label7;
     }
 }

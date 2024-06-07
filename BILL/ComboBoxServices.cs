@@ -27,5 +27,11 @@ namespace BILL
         {
             return combosBoxRepository.GetEntities<Marca>("Marcas");
         }
+
+        public List<Categoria> GetCategorias()
+        {
+            return combosBoxRepository.GetEntities<Categoria>("Categorias");
+        }
+
     }
 }

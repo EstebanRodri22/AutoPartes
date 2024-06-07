@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace gui
 {
-    public partial class frmRegistrarRepuestos : Form
+    public partial class frmInventario : Form
     {
-        public frmRegistrarRepuestos()
+        public frmInventario()
         {
             InitializeComponent();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

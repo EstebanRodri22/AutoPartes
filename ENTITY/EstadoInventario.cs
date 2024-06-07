@@ -8,16 +8,11 @@ namespace ENTITY
 {
     public class EstadoInventario
     {
-        private string IdEstadoInventario {  get; set; }
-        private int PiezaRecuperadas {  get; set; }
-        private string EstadoDesmontaje { get; set; }
+        public string IdEstadoInventario {  get; set; }
+        public int PiezaRecuperadas {  get; set; }
+        public string EstadoDesmontaje { get; set; }
 
-        public EstadoInventario(string idEstadoInventario, int piezaRecuperadas, string estadoDesmontaje)
-        {
-            IdEstadoInventario = idEstadoInventario;
-            PiezaRecuperadas = piezaRecuperadas;
-            EstadoDesmontaje = estadoDesmontaje;
-        }
+       public EstadoInventario() { }
 
 
     }

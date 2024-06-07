@@ -8,17 +8,19 @@ namespace ENTITY
 {
     public class InventarioAutomovil
     {
-        private string IdRegistro {  get; set; }
-        private DateTime FechaIngreso { get; set; }
-        private Automovil Automovil { get; set; }
-        private EstadoInventario EstadoInventario { get;}
+        public string IdRegistro {  get; set; }
+        public DateTime FechaIngreso { get; set; }
+        public string placa { get; set; }
+        public EstadoInventario estadoInventario { get; set; }
 
-        public InventarioAutomovil(string idRegistro, DateTime fechaIngreso, Automovil automovil, EstadoInventario estadoInventario)
+        public InventarioAutomovil() 
         {
-            IdRegistro = idRegistro;
-            FechaIngreso = fechaIngreso;
-            Automovil = automovil;
-            EstadoInventario = estadoInventario;
+            estadoInventario = new EstadoInventario();
+        }
+
+        public override string ToString()
+        {
+            return IdRegistro;
         }
     }
 }

@@ -227,6 +227,12 @@ namespace presentacion
 
         }
 
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmAuromoviles());
+            HideSubMenu();
+        }
+
         private void btnRegistrarCompra_Click(object sender, EventArgs e)
         {
            OpenChildForm(new frmRegistrarCompra());

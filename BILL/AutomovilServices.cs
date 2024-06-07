@@ -10,16 +10,20 @@ namespace BILL
 {
     public class AutomovilServices
     {
-        VehiculoRepository VehiculoRepository;
+        VehiculoRepository vehiculoRepository;
 
         public AutomovilServices()
         {
-            VehiculoRepository = new VehiculoRepository();
+            vehiculoRepository = new VehiculoRepository();
+        }
+        public List<Automovil> GetAutomovils()
+        {
+            return vehiculoRepository.GetAutomovils();
         }
 
         public string insertarAutomovil(Automovil automovil)
         {
-            return VehiculoRepository.insertarAutomovil(automovil);
+            return vehiculoRepository.insertarAutomovil(automovil);
         }
     }
 }
