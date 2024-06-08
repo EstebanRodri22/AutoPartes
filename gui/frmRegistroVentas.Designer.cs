@@ -82,6 +82,7 @@
             this.btnCobrar.TabIndex = 4;
             this.btnCobrar.Text = "Cobrar";
             this.btnCobrar.UseVisualStyleBackColor = true;
+            this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
             // 
             // label2
             // 

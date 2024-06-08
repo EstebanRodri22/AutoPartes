@@ -9,15 +9,17 @@ namespace ENTITY
     public class InfoGarantia
     {
 
-        private string IdGarantia {  get; set; }
+        public string IdGarantia {  get; set; }
         
-        private  DateTime FechaInicio { get; set; }
+        public  DateTime FechaInicio { get; set; }
 
-        private DateTime FechaFin { get; set; }
+        public DateTime FechaFin { get; set; }
 
-        private string detalles {  get; set; }
+        public string detalles {  get; set; }
 
-        private EstadoGarantia EstadoGarantia { get; set; }
+        public EstadoGarantia EstadoGarantia { get; set; }
+
+        public InfoGarantia() { }
 
         public InfoGarantia(string idGarantia, DateTime fechaInicio, DateTime fechaFin, string detalles, EstadoGarantia estadoGarantia)
         {

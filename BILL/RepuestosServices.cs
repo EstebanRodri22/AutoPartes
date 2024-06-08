@@ -24,5 +24,10 @@ namespace BILL
 
             return repuestosTable;
         }
+
+        public string actualizarNoFactura(string idRepuesto, string NoFactura)
+        {
+            return repuesto.actualizarNoFactura(idRepuesto, NoFactura);
+        }
     }
 }

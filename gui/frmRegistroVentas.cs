@@ -15,6 +15,7 @@ namespace gui
     public partial class frmRegistroVentas : Form
     {
         RepuestosServices repuestosServices = new RepuestosServices();
+        VentasServices ventasServices = new VentasServices();
         public frmRegistroVentas()
         {
             InitializeComponent();
@@ -66,6 +67,40 @@ namespace gui
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void btnCobrar_Click(object sender, EventArgs e)
+        {
+            Ventas venta = new Ventas();
+            try
+            {
+                // Generar un nuevo número de factura
+                string noFactura = ventasServices.obtenerNoFactura();
+
+                // Insertar una nueva venta en la tabla Ventas y obtener el ID de la nueva venta
+                venta.NoFactura = noFactura;
+                venta.Cantidad = 2;
+                venta.ValorFactura = 1200;
+                venta.Cliente.identificacion = "1135";
+                MessageBox.Show(ventasServices.registrarVentas(venta, "PR_Insertar_ventas") );
+
+                foreach (DataGridViewRow row in dgvMostrarRepuestos.Rows)
+                {
+                    if (row.Cells["ID_Repuesto"].Value != null)
+                    {
+                        string idRepuesto = row.Cells["ID_Repuesto"].Value.ToString();
+
+                        // Actualizar la columna VentaID en la tabla Repuestos
+                        repuestosServices.actualizarNoFactura(idRepuesto, noFactura);
+                    }
+                }
+
+                MessageBox.Show("Venta guardada y repuestos actualizados correctamente.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar la venta: {ex.Message}");
             }
         }
     }
