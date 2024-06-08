@@ -13,30 +13,13 @@ namespace ENTITY
         private int Precio { get; set; }
         private int Stocks { get; set; }
         private string NoFactura { get; set; }
-        private Automovil Automovil { get; set; }
-        private Categoria Categoria { get; set; }
+        private Automovil automovil { get; set; }
+        private Categoria categoria { get; set; }
 
-
-
-        public Repuesto(string idRepuesto, string detalles, int precio, int stocks, string noFactura, Automovil automovil, Categoria categoria)
+        public Repuesto()
         {
-            this.idRepuesto = idRepuesto;
-            Detalles = detalles;
-            Precio = precio;
-            Stocks = stocks;
-            NoFactura = noFactura;
-            Automovil = automovil;
-            Categoria = categoria;
-        }
-
-        public Repuesto(string idRepuesto, string detalles, int precio, int stocks, Automovil automovil, Categoria categoria)
-        {
-            this.idRepuesto = idRepuesto;
-            Detalles = detalles;
-            Precio = precio;
-            Stocks = stocks;
-            Automovil = automovil;
-            Categoria = categoria;
+            categoria = new Categoria();
+            automovil = new Automovil();
         }
     }
 }

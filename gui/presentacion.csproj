@@ -121,6 +121,12 @@
     <Compile Include="frmRegistrarRepuestos.Designer.cs">
       <DependentUpon>frmRegistrarRepuestos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistroVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroVentas.Designer.cs">
+      <DependentUpon>frmRegistroVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRepuestos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistroProveedor.resx">
       <DependentUpon>frmRegistroProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroVentas.resx">
+      <DependentUpon>frmRegistroVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentas2.resx">
       <DependentUpon>frmVentas2.cs</DependentUpon>
