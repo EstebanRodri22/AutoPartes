@@ -8,15 +8,11 @@ namespace ENTITY
 {
     public class Ventas : Movimientos
     {
-        private Cliente Cliente { get; set; }
-        private Repuesto Repuesto { get; set; }
-        private InfoGarantia InfoGarantia { get; set; }
+        public Cliente Cliente { get; set; }
 
-        public Ventas(string noFactura, int cantidad, DateTime fechaFactura, double valorFactura) : base(noFactura, cantidad, fechaFactura, valorFactura)
-        {
-           
-        }
+        public InfoGarantia InfoGarantia { get; set; }
 
-     
+        public Ventas () { Cliente = new Cliente(); }
+
     }
 }

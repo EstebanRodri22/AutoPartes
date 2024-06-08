@@ -87,7 +87,9 @@
     <Compile Include="RegionRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CombosBoxRepository.cs" />
+    <Compile Include="RepuestoRepository.cs" />
     <Compile Include="VehiculoRepository.cs" />
+    <Compile Include="VentasRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ENTITY\ENTITY.csproj">

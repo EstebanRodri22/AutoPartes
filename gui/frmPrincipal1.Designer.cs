@@ -325,6 +325,7 @@ namespace presentacion
             this.btnRegistrarVenta.TabIndex = 4;
             this.btnRegistrarVenta.Text = "REGISTRAR";
             this.btnRegistrarVenta.UseVisualStyleBackColor = true;
+            this.btnRegistrarVenta.Click += new System.EventHandler(this.btnRegistrarVenta_Click);
             // 
             // btnBuscarVentas
             // 

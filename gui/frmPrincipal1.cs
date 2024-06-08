@@ -233,6 +233,12 @@ namespace presentacion
             HideSubMenu();
         }
 
+        private void btnRegistrarVenta_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmRegistroVentas());
+            HideSubMenu();
+        }
+
         private void btnRegistrarCompra_Click(object sender, EventArgs e)
         {
            OpenChildForm(new frmRegistrarCompra());
