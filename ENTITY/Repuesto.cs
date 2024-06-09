@@ -8,13 +8,13 @@ namespace ENTITY
 {
     public class Repuesto
     {
-        private string idRepuesto {  get; set; }
-        private string Detalles { get; set; }
-        private int Precio { get; set; }
-        private int Stocks { get; set; }
-        private string NoFactura { get; set; }
-        private Automovil automovil { get; set; }
-        private Categoria categoria { get; set; }
+        public string idRepuesto {  get; set; }
+        public string Detalles { get; set; }
+        public int Precio { get; set; }
+        public int cantidad { get; set; }
+        public string NoFactura { get; set; }
+        public Automovil automovil { get; set; }
+        public Categoria categoria { get; set; }
 
         public Repuesto()
         {

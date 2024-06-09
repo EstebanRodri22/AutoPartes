@@ -9,11 +9,11 @@ namespace ENTITY
     public class PiezaMecanica : Repuesto
     {
 
-        private string IdPiezaMecanica {  get; set; }
+        public string IdPiezaMecanica {  get; set; }
 
-        private string Durabilidad {  get; set; }
-        private string Material {  get; set; } 
-        private string Dimensiones { get; set; }
+        public string Durabilidad {  get; set; }
+        public string Material {  get; set; }
+        public string Dimensiones { get; set; }
 
         public PiezaMecanica() { }
 

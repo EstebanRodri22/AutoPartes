@@ -40,7 +40,7 @@ namespace DAL
             return ultimoConsecutivo;
         }
 
-        // Métodos específicos que llaman al método genérico
+
      
 
         public string registrarInventario(InventarioAutomovil inventario, string procedureName)
