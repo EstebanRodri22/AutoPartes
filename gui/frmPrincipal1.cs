@@ -208,12 +208,13 @@ namespace presentacion
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmRepuestos());
+            HideSubMenu();
         }
 
         private void btnRegistrarProducto_Click(object sender, EventArgs e)
         {
-          OpenChildForm(new frmRepuestos());
+          OpenChildForm(new frmRegistrarRepuestos());
             HideSubMenu();
         }
 

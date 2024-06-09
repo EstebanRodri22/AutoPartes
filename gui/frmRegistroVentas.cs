@@ -85,18 +85,6 @@ namespace gui
                 venta.Cliente.identificacion = "1135";
                 MessageBox.Show(ventasServices.registrarVentas(venta, "PR_Insertar_ventas") );
 
-                foreach (DataGridViewRow row in dgvMostrarRepuestos.Rows)
-                {
-                    if (row.Cells["ID_Repuesto"].Value != null)
-                    {
-                        string idRepuesto = row.Cells["ID_Repuesto"].Value.ToString();
-
-                        // Actualizar la columna VentaID en la tabla Repuestos
-                        repuestosServices.actualizarNoFactura(idRepuesto, noFactura);
-                    }
-                }
-
-                MessageBox.Show("Venta guardada y repuestos actualizados correctamente.");
             }
             catch (Exception ex)
             {

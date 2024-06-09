@@ -25,9 +25,40 @@ namespace BILL
             return repuestosTable;
         }
 
-        public string actualizarNoFactura(string idRepuesto, string NoFactura)
+        public string registrarPiezaElectrica(PiezaElectrica piezaElectrica, string procedureName)
         {
-            return repuesto.actualizarNoFactura(idRepuesto, NoFactura);
+            try 
+            { 
+                 return repuesto.registrarPiezaElectrica(piezaElectrica, procedureName);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocio: " + ex.Message, ex);
+            }
+        }
+
+        public string registrarPiezaMecanica(PiezaMecanica pieza, string procedureName)
+        {
+            try
+            {
+                return repuesto.registrarPiezaMecanica(pieza, procedureName);
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("error en la capa de negocio:" + ex.Message, ex);
+            }
+        }
+
+        public string generarConcecutivo(string tabla, string columna)
+        {
+            try
+            {
+                return repuesto.GenerarConsecutivo(tabla, columna);
+
+            }catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocio " + ex.Message ,ex);
+            }
         }
     }
 }

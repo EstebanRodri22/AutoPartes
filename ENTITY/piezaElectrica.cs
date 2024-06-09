@@ -8,9 +8,9 @@ namespace ENTITY
 {
     public class PiezaElectrica : Repuesto
     {
-        private string IdPiezaElectrica { get; set; }
-        private string voltaje { get; set; }
-        private string resistencia { get; set; }
+        public string IdPiezaElectrica { get; set; }
+        public string voltaje { get; set; }
+        public string resistencia { get; set; }
 
         public PiezaElectrica()
         {
