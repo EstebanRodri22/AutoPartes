@@ -32,127 +32,135 @@ namespace gui
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            btnCerrar = new Label();
-            dataGridView1 = new DataGridView();
-            btnVenta = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            textBox1 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnVenta = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(287, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(115, 28);
-            label1.TabIndex = 0;
-            label1.Text = "REPUESTOS";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(224, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "REPUESTOS";
             // 
             // btnCerrar
             // 
-            btnCerrar.AutoSize = true;
-            btnCerrar.BackColor = Color.WhiteSmoke;
-            btnCerrar.Cursor = Cursors.Hand;
-            btnCerrar.Font = new Font("Segoe UI", 10F);
-            btnCerrar.ForeColor = Color.FromArgb(64, 64, 64);
-            btnCerrar.Location = new Point(12, 9);
-            btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(17, 19);
-            btnCerrar.TabIndex = 3;
-            btnCerrar.Text = "X";
-            btnCerrar.Click += btnCerrar_Click;
+            this.btnCerrar.AutoSize = true;
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCerrar.Image = global::gui.Properties.Resources.cancelar;
+            this.btnCerrar.Location = new System.Drawing.Point(6, 9);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(41, 57);
+            this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.Text = "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ \r\n‎ ‎ ‎ ‎ ‎ ‎ ‎ \r\n‎ ‎ ‎ ";
             // 
             // dataGridView1
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(63, 120);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(573, 353);
-            dataGridView1.TabIndex = 4;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(54, 104);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(491, 306);
+            this.dataGridView1.TabIndex = 4;
             // 
             // btnVenta
             // 
-            btnVenta.IconChar = FontAwesome.Sharp.IconChar.None;
-            btnVenta.IconColor = Color.Black;
-            btnVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnVenta.Location = new Point(562, 489);
-            btnVenta.Name = "btnVenta";
-            btnVenta.Size = new Size(114, 33);
-            btnVenta.TabIndex = 5;
-            btnVenta.Text = "Vender";
-            btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnVenta.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnVenta.IconColor = System.Drawing.Color.Black;
+            this.btnVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVenta.Location = new System.Drawing.Point(482, 424);
+            this.btnVenta.Name = "btnVenta";
+            this.btnVenta.Size = new System.Drawing.Size(98, 29);
+            this.btnVenta.TabIndex = 5;
+            this.btnVenta.Text = "Vender";
+            this.btnVenta.UseVisualStyleBackColor = true;
             // 
             // iconButton3
             // 
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton3.IconColor = Color.Black;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(126, 489);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(124, 33);
-            iconButton3.TabIndex = 7;
-            iconButton3.Text = "eliminar";
-            iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(124, 424);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(106, 29);
+            this.iconButton3.TabIndex = 7;
+            this.iconButton3.Text = "Eliminar";
+            this.iconButton3.UseVisualStyleBackColor = true;
             // 
             // iconButton2
             // 
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton2.IconColor = Color.Black;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(12, 489);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(108, 33);
-            iconButton2.TabIndex = 6;
-            iconButton2.Text = "Editar";
-            iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(10, 424);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(93, 29);
+            this.iconButton2.TabIndex = 6;
+            this.iconButton2.Text = "Editar";
+            this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // iconButton1
             // 
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton1.IconColor = Color.Black;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(428, 489);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(105, 33);
-            iconButton1.TabIndex = 8;
-            iconButton1.Text = "añadir";
-            iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(367, 424);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(90, 29);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.Text = "Añadir";
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(232, 77);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(229, 23);
-            textBox1.TabIndex = 9;
-            textBox1.Text = "FILTRO";
+            this.textBox1.Location = new System.Drawing.Point(199, 67);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(197, 20);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "FILTRO";
             // 
-            // frmProductos
+            // frmRepuestos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(703, 562);
-            Controls.Add(textBox1);
-            Controls.Add(iconButton1);
-            Controls.Add(iconButton3);
-            Controls.Add(iconButton2);
-            Controls.Add(btnVenta);
-            Controls.Add(dataGridView1);
-            Controls.Add(btnCerrar);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "frmProductos";
-            Text = "frmProductos";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
+            this.ClientSize = new System.Drawing.Size(603, 487);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.iconButton3);
+            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.btnVenta);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmRepuestos";
+            this.Text = "frmProductos";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

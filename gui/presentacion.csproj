@@ -177,6 +177,9 @@
     <EmbeddedResource Include="frmRegistroVentas.resx">
       <DependentUpon>frmRegistroVentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRepuestos.resx">
+      <DependentUpon>frmRepuestos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmVentas2.resx">
       <DependentUpon>frmVentas2.cs</DependentUpon>
     </EmbeddedResource>
