@@ -39,13 +39,13 @@ namespace DAL
 
                     cmd.ExecuteNonQuery();
 
-                    return $"se Inserto la Compra corectamente ";
+                    return $"Compra Registrada corectamente ";
                 }
 
             }
             catch(OracleException ex)
             {
-                throw new Exception("Error al insertar la Compra: " + ex.Message, ex);
+                throw new Exception("No pudimos Registrar la Compra: " + ex.Message, ex);
             }
             finally
             {
