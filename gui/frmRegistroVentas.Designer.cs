@@ -58,6 +58,7 @@
             // 
             // txtBuscarRepuesto
             // 
+            this.txtBuscarRepuesto.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtBuscarRepuesto.Location = new System.Drawing.Point(41, 62);
             this.txtBuscarRepuesto.Name = "txtBuscarRepuesto";
             this.txtBuscarRepuesto.Size = new System.Drawing.Size(201, 20);
@@ -75,14 +76,17 @@
             // btnCobrar
             // 
             this.btnCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCobrar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCobrar.IconColor = System.Drawing.Color.Black;
+            this.btnCobrar.IconChar = FontAwesome.Sharp.IconChar.ClipboardCheck;
+            this.btnCobrar.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCobrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCobrar.Location = new System.Drawing.Point(385, 357);
+            this.btnCobrar.IconSize = 32;
+            this.btnCobrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCobrar.Location = new System.Drawing.Point(393, 346);
             this.btnCobrar.Name = "btnCobrar";
-            this.btnCobrar.Size = new System.Drawing.Size(105, 32);
+            this.btnCobrar.Size = new System.Drawing.Size(95, 43);
             this.btnCobrar.TabIndex = 4;
             this.btnCobrar.Text = "Cobrar";
+            this.btnCobrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCobrar.UseVisualStyleBackColor = true;
             this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
             // 
@@ -90,6 +94,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(237, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 20);
