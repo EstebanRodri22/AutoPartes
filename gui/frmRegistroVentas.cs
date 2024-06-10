@@ -16,6 +16,8 @@ namespace gui
     {
         RepuestosServices repuestosServices = new RepuestosServices();
         VentasServices ventasServices = new VentasServices();
+        int cantidadRepuestos = 0;
+        int sumarPrecios = 0;
         public frmRegistroVentas()
         {
             InitializeComponent();
@@ -49,7 +51,8 @@ namespace gui
                     string idRepuesto = txtBuscarRepuesto.Text; // Reemplaza esto con tu id_repuesto
                     DataTable dt = repuestosServices.GetRepuestoById(idRepuesto);
 
-                    MessageBox.Show($"Filas obtenidas: {dt.Rows.Count}");
+
+                    cantidadRepuestos++;
                     // Agrega cada fila del DataTable al DataGridView
                     foreach (DataRow row in dt.Rows)
                     {
@@ -59,9 +62,13 @@ namespace gui
                         dataGridViewRow.Cells["categoria"].Value = row["name_categoria"];
                         dataGridViewRow.Cells["precio"].Value = row["Precio"];
                         dataGridViewRow.Cells["Detalle"].Value = row["Detalle"];
-                        dataGridViewRow.Cells["Stock"].Value = row["Stock"];   
-             
+
+                        sumarPrecios += int.Parse(row["Precio"].ToString());
+
+                        lblValorTotal.Text = sumarPrecios.ToString(); 
                     }
+                    
+                    
                 }
                 catch (Exception ex)
                 {
@@ -73,18 +80,34 @@ namespace gui
         private void btnCobrar_Click(object sender, EventArgs e)
         {
             Ventas venta = new Ventas();
+            List<RepuestoVendido> repuestos = new List<RepuestoVendido>();
             try
             {
                 // Generar un nuevo número de factura
-                string noFactura = ventasServices.obtenerNoFactura();
 
+                foreach (DataGridViewRow row in dgvMostrarRepuestos.Rows)
+                {
+                    if (!row.IsNewRow)
+                    {
+                        RepuestoVendido repuestoVendido = new RepuestoVendido
+                        {
+                            idRepuesto = Convert.ToString(row.Cells["Id_Repuesto"].Value),
+                            cantidad = 1 // Aquí podrías obtener la cantidad según tu lógica
+                        };
+
+                        repuestos.Add(repuestoVendido);
+                    }
+                }
                 // Insertar una nueva venta en la tabla Ventas y obtener el ID de la nueva venta
-                venta.NoFactura = noFactura;
-                venta.Cantidad = 2;
-                venta.ValorFactura = 1200;
-                venta.Cliente.identificacion = "1135";
-                MessageBox.Show(ventasServices.registrarVentas(venta, "PR_Insertar_ventas") );
+                venta.ValorFactura = sumarPrecios;
+                venta.Cantidad = cantidadRepuestos;
+                venta.Cliente.identificacion = "1134";
+                venta.InfoGarantia.IdGarantia = "27";
+                venta.InfoGarantia.FechaFin = DateTime.Now;
+                venta.InfoGarantia.detalles = "Al pelo";
+                MessageBox.Show(ventasServices.registrarVentas(venta,repuestos, "PR_Insertar_ventas") );
 
+                cantidadRepuestos = 0;
             }
             catch (Exception ex)
             {

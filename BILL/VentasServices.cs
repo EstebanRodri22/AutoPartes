@@ -14,16 +14,16 @@ namespace BILL
         VentasRepository ventasRepository;
         public VentasServices() { ventasRepository = new VentasRepository(); }
 
-        public string obtenerNoFactura()
+        public string obtenerNoFactura(string tabla, string columna)
         {
-            return ventasRepository.GenerarConsecutivo();
+            return ventasRepository.GenerarConsecutivo(tabla, columna);
         }
 
-        public string registrarVentas(Ventas venta, string ProcedureName)
+        public string registrarVentas(Ventas venta,List<RepuestoVendido> repuestos, string ProcedureName)
         {
             try
             {
-                return ventasRepository.registrarVentas(venta, ProcedureName);
+                return ventasRepository.registrarVentas(venta, repuestos,ProcedureName);
             }
             catch (Exception ex)
             {

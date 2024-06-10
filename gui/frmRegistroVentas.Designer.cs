@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btnEliminarProducto = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblValorTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarRepuestos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -123,22 +123,22 @@
             this.btnEliminarProducto.Text = "Eliminar";
             this.btnEliminarProducto.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblValorTotal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(511, 362);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 22);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "$ 40.0";
+            this.lblValorTotal.AutoSize = true;
+            this.lblValorTotal.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorTotal.Location = new System.Drawing.Point(511, 362);
+            this.lblValorTotal.Name = "lblValorTotal";
+            this.lblValorTotal.Size = new System.Drawing.Size(70, 22);
+            this.lblValorTotal.TabIndex = 8;
+            this.lblValorTotal.Text = "$ 40.0";
             // 
             // frmRegistroVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 414);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(597, 414);
+            this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.btnEliminarProducto);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label2);
@@ -166,6 +166,6 @@
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton btnEliminarProducto;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblValorTotal;
     }
 }
