@@ -32,7 +32,6 @@ namespace gui
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnVenta = new FontAwesome.Sharp.IconButton();
@@ -40,30 +39,21 @@ namespace gui
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.barraTitulo = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.barraTitulo.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(224, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "REPUESTOS";
             // 
             // btnCerrar
             // 
             this.btnCerrar.AutoSize = true;
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCerrar.Image = global::gui.Properties.Resources.cancelar;
-            this.btnCerrar.Location = new System.Drawing.Point(6, 9);
+            this.btnCerrar.Location = new System.Drawing.Point(12, 1);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(41, 57);
             this.btnCerrar.TabIndex = 3;
@@ -76,7 +66,7 @@ namespace gui
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 104);
+            this.dataGridView1.Location = new System.Drawing.Point(54, 121);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(491, 306);
             this.dataGridView1.TabIndex = 4;
@@ -89,7 +79,7 @@ namespace gui
             this.btnVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVenta.IconSize = 23;
             this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVenta.Location = new System.Drawing.Point(482, 424);
+            this.btnVenta.Location = new System.Drawing.Point(482, 433);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(92, 29);
             this.btnVenta.TabIndex = 5;
@@ -106,7 +96,7 @@ namespace gui
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 32;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton3.Location = new System.Drawing.Point(142, 424);
+            this.iconButton3.Location = new System.Drawing.Point(138, 433);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(100, 29);
             this.iconButton3.TabIndex = 7;
@@ -122,7 +112,7 @@ namespace gui
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 32;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.Location = new System.Drawing.Point(31, 424);
+            this.iconButton2.Location = new System.Drawing.Point(28, 433);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(91, 29);
             this.iconButton2.TabIndex = 6;
@@ -138,7 +128,7 @@ namespace gui
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 23;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(387, 424);
+            this.iconButton1.Location = new System.Drawing.Point(387, 433);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(89, 29);
             this.iconButton1.TabIndex = 8;
@@ -148,11 +138,34 @@ namespace gui
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 67);
+            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(199, 82);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 20);
             this.textBox1.TabIndex = 9;
             this.textBox1.Text = "FILTRO";
+            // 
+            // barraTitulo
+            // 
+            this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.barraTitulo.Controls.Add(this.btnCerrar);
+            this.barraTitulo.Controls.Add(this.label2);
+            this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.barraTitulo.Name = "barraTitulo";
+            this.barraTitulo.Size = new System.Drawing.Size(603, 61);
+            this.barraTitulo.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(224, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 30);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Repuestos";
             // 
             // frmRepuestos
             // 
@@ -160,26 +173,25 @@ namespace gui
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(603, 487);
+            this.Controls.Add(this.barraTitulo);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRepuestos";
             this.Text = "frmProductos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.barraTitulo.ResumeLayout(false);
+            this.barraTitulo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Label label1;
         private Label btnCerrar;
         private DataGridView dataGridView1;
         private FontAwesome.Sharp.IconButton btnVenta;
@@ -187,5 +199,7 @@ namespace gui
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private TextBox textBox1;
+        private Panel barraTitulo;
+        private Label label2;
     }
 }
