@@ -31,6 +31,7 @@ namespace presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -40,6 +41,7 @@ namespace presentacion
             this.lblErrorMessage = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +52,7 @@ namespace presentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 306);
+            this.panel1.Size = new System.Drawing.Size(148, 318);
             this.panel1.TabIndex = 8;
             // 
             // txtUsername
@@ -63,7 +65,7 @@ namespace presentacion
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(241, 19);
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Text = "USERNAME";
+            this.txtUsername.Text = "Usuario";
             this.txtUsername.MouseEnter += new System.EventHandler(this.txtUsername_Enter);
             this.txtUsername.MouseLeave += new System.EventHandler(this.txtUsername_Leave);
             // 
@@ -77,7 +79,7 @@ namespace presentacion
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(241, 19);
             this.txtPassword.TabIndex = 2;
-            this.txtPassword.Text = "PASSWORD";
+            this.txtPassword.Text = "Contraseña";
             this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_Leave);
             // 
@@ -115,10 +117,10 @@ namespace presentacion
             this.linkContraseña.LinkColor = System.Drawing.Color.DimGray;
             this.linkContraseña.Location = new System.Drawing.Point(253, 280);
             this.linkContraseña.Name = "linkContraseña";
-            this.linkContraseña.Size = new System.Drawing.Size(182, 16);
+            this.linkContraseña.Size = new System.Drawing.Size(161, 16);
             this.linkContraseña.TabIndex = 0;
             this.linkContraseña.TabStop = true;
-            this.linkContraseña.Text = "¿Ha olvidado su contraseña?";
+            this.linkContraseña.Text = "¿Olvidaste tu contraseña?";
             // 
             // lblErrorMessage
             // 
@@ -153,12 +155,18 @@ namespace presentacion
             this.btnMinimizar.TabIndex = 6;
             this.btnMinimizar.TabStop = false;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(553, 306);
+            this.ClientSize = new System.Drawing.Size(553, 318);
             this.Controls.Add(this.lblErrorMessage);
             this.Controls.Add(this.linkContraseña);
             this.Controls.Add(this.btnLogin);
@@ -190,5 +198,6 @@ namespace presentacion
         private Button btnLogin;
         private LinkLabel linkContraseña;
         private Label lblErrorMessage;
+        private ImageList imageList1;
     }
 }
