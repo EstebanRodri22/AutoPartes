@@ -43,15 +43,16 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
+            this.btnCerrar.ErrorImage = global::gui.Properties.Resources.cancelar;
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.ChevronLeft;
             this.btnCerrar.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrar.IconSize = 25;
-            this.btnCerrar.Location = new System.Drawing.Point(-2, -1);
+            this.btnCerrar.IconSize = 39;
+            this.btnCerrar.Location = new System.Drawing.Point(12, 12);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(25, 26);
+            this.btnCerrar.Size = new System.Drawing.Size(47, 39);
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
             // 
@@ -64,6 +65,7 @@
             // 
             // dgvMostrarRepuestos
             // 
+            this.dgvMostrarRepuestos.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvMostrarRepuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMostrarRepuestos.Location = new System.Drawing.Point(41, 109);
             this.dgvMostrarRepuestos.Name = "dgvMostrarRepuestos";
@@ -72,7 +74,7 @@
             // 
             // btnCobrar
             // 
-            this.btnCobrar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCobrar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCobrar.IconColor = System.Drawing.Color.Black;
             this.btnCobrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -87,10 +89,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(237, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 19);
+            this.label2.Size = new System.Drawing.Size(132, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "AUTO PARTES";
             // 
@@ -110,17 +112,18 @@
             // 
             // btnEliminarProducto
             // 
-            this.btnEliminarProducto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarProducto.IconChar = FontAwesome.Sharp.IconChar.Xmark;
             this.btnEliminarProducto.IconColor = System.Drawing.Color.Red;
             this.btnEliminarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminarProducto.IconSize = 32;
             this.btnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnEliminarProducto.Location = new System.Drawing.Point(25, 346);
+            this.btnEliminarProducto.Location = new System.Drawing.Point(41, 346);
             this.btnEliminarProducto.Name = "btnEliminarProducto";
-            this.btnEliminarProducto.Size = new System.Drawing.Size(125, 38);
+            this.btnEliminarProducto.Size = new System.Drawing.Size(97, 38);
             this.btnEliminarProducto.TabIndex = 7;
             this.btnEliminarProducto.Text = "Eliminar";
+            this.btnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminarProducto.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -137,6 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(593, 414);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminarProducto);

@@ -83,53 +83,66 @@ namespace gui
             // btnVenta
             // 
             this.btnVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnVenta.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnVenta.IconColor = System.Drawing.Color.Black;
+            this.btnVenta.IconChar = FontAwesome.Sharp.IconChar.ClipboardCheck;
+            this.btnVenta.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVenta.IconSize = 23;
+            this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVenta.Location = new System.Drawing.Point(482, 424);
             this.btnVenta.Name = "btnVenta";
-            this.btnVenta.Size = new System.Drawing.Size(98, 29);
+            this.btnVenta.Size = new System.Drawing.Size(92, 29);
             this.btnVenta.TabIndex = 5;
             this.btnVenta.Text = "Vender";
+            this.btnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVenta.UseVisualStyleBackColor = true;
             // 
             // iconButton3
             // 
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
             this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.iconButton3.IconColor = System.Drawing.Color.Red;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(124, 424);
+            this.iconButton3.IconSize = 32;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.Location = new System.Drawing.Point(142, 424);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(106, 29);
+            this.iconButton3.Size = new System.Drawing.Size(100, 29);
             this.iconButton3.TabIndex = 7;
             this.iconButton3.Text = "Eliminar";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.UseVisualStyleBackColor = true;
             // 
             // iconButton2
             // 
             this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Eraser;
+            this.iconButton2.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(10, 424);
+            this.iconButton2.IconSize = 32;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.Location = new System.Drawing.Point(31, 424);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(93, 29);
+            this.iconButton2.Size = new System.Drawing.Size(91, 29);
             this.iconButton2.TabIndex = 6;
             this.iconButton2.Text = "Editar";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // iconButton1
             // 
             this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
+            this.iconButton1.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(367, 424);
+            this.iconButton1.IconSize = 23;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.Location = new System.Drawing.Point(387, 424);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(90, 29);
+            this.iconButton1.Size = new System.Drawing.Size(89, 29);
             this.iconButton1.TabIndex = 8;
             this.iconButton1.Text = "Añadir";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // textBox1
