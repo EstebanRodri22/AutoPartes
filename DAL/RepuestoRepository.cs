@@ -50,12 +50,12 @@ namespace DAL
 
                     cmd.ExecuteNonQuery();
 
-                    return $"se agrego la pieza corectamente ";
+                    return $"Pieza Agregada Exitosamente ";
                 }
             }
             catch (OracleException ex)
             {
-                throw new Exception("Error al registrar la pieza " + ex.Message, ex);
+                throw new Exception("Tuvimos un fallo al registrar la pieza " + ex.Message, ex);
             }
             finally
             {
@@ -96,12 +96,12 @@ namespace DAL
 
                     cmd.ExecuteNonQuery();
 
-                    return $"se agrego la pieza corectamente ";
+                    return $"Pieza Agregada Exitosamente ";
                 }
             }
             catch (OracleException ex)
             {
-                throw new Exception("Error al registrar la pieza " + ex.Message, ex);
+                throw new Exception("Tuvimos un fallo al registrar la pieza " + ex.Message, ex);
             }
             finally
             {
