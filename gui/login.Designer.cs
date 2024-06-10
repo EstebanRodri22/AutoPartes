@@ -57,11 +57,11 @@ namespace presentacion
             // 
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
             this.txtUsername.Location = new System.Drawing.Point(211, 61);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(241, 20);
+            this.txtUsername.Size = new System.Drawing.Size(241, 19);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.Text = "USERNAME";
             this.txtUsername.MouseEnter += new System.EventHandler(this.txtUsername_Enter);
@@ -71,11 +71,11 @@ namespace presentacion
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
             this.txtPassword.Location = new System.Drawing.Point(211, 129);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(241, 20);
+            this.txtPassword.Size = new System.Drawing.Size(241, 19);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.Text = "PASSWORD";
             this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_Enter);
@@ -84,11 +84,11 @@ namespace presentacion
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(291, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 24);
+            this.label1.Size = new System.Drawing.Size(76, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "LOGIN";
             // 
@@ -111,11 +111,11 @@ namespace presentacion
             // 
             this.linkContraseña.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.linkContraseña.AutoSize = true;
-            this.linkContraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkContraseña.LinkColor = System.Drawing.Color.DimGray;
             this.linkContraseña.Location = new System.Drawing.Point(253, 280);
             this.linkContraseña.Name = "linkContraseña";
-            this.linkContraseña.Size = new System.Drawing.Size(199, 17);
+            this.linkContraseña.Size = new System.Drawing.Size(182, 16);
             this.linkContraseña.TabIndex = 0;
             this.linkContraseña.TabStop = true;
             this.linkContraseña.Text = "¿Ha olvidado su contraseña?";
@@ -123,13 +123,13 @@ namespace presentacion
             // lblErrorMessage
             // 
             this.lblErrorMessage.AutoSize = true;
-            this.lblErrorMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrorMessage.ForeColor = System.Drawing.Color.DimGray;
             this.lblErrorMessage.Image = global::gui.Properties.Resources.cancelar1;
             this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblErrorMessage.Location = new System.Drawing.Point(208, 183);
             this.lblErrorMessage.Name = "lblErrorMessage";
-            this.lblErrorMessage.Size = new System.Drawing.Size(98, 16);
+            this.lblErrorMessage.Size = new System.Drawing.Size(88, 15);
             this.lblErrorMessage.TabIndex = 12;
             this.lblErrorMessage.Text = "Error Message";
             this.lblErrorMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

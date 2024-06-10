@@ -36,12 +36,12 @@ namespace DAL
             catch (OracleException ex)
             {
                 // Log the error if needed
-                throw new Exception("Error al abrir la conexión con Oracle.", ex);
+                throw new Exception("Cuidado, Tenemos problemas al abrir la conexión con la base de datos.", ex);
             }
             catch (Exception ex)
             {
                 // Log the error if needed
-                throw new Exception("Error general al abrir la conexión.", ex);
+                throw new Exception("Cuidado, Tenemos problemas al abrir la conexión.", ex);
             }
             return false;
         }

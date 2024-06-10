@@ -46,10 +46,10 @@ namespace gui
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.Location = new System.Drawing.Point(92, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Valor :";
             // 
@@ -62,7 +62,7 @@ namespace gui
             // 
             // btnVehiculo
             // 
-            this.btnVehiculo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnVehiculo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVehiculo.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnVehiculo.Location = new System.Drawing.Point(373, 239);
@@ -76,7 +76,7 @@ namespace gui
             // 
             // btnProveedor
             // 
-            this.btnProveedor.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnProveedor.Location = new System.Drawing.Point(96, 239);
             this.btnProveedor.Name = "btnProveedor";
             this.btnProveedor.Size = new System.Drawing.Size(136, 51);
@@ -88,7 +88,7 @@ namespace gui
             // 
             // btnRegistrarCompra
             // 
-            this.btnRegistrarCompra.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnRegistrarCompra.Location = new System.Drawing.Point(209, 356);
             this.btnRegistrarCompra.Name = "btnRegistrarCompra";
             this.btnRegistrarCompra.Size = new System.Drawing.Size(172, 32);
@@ -100,10 +100,12 @@ namespace gui
             // btnCerrar
             // 
             this.btnCerrar.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCerrar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.btnCerrar.Location = new System.Drawing.Point(10, 10);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(29, 27);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 5;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -111,10 +113,10 @@ namespace gui
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3.Location = new System.Drawing.Point(223, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(202, 22);
+            this.label3.Size = new System.Drawing.Size(178, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "REGISTRAR COMPRA";
             // 
@@ -128,10 +130,10 @@ namespace gui
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.Location = new System.Drawing.Point(30, 151);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 20);
+            this.label4.Size = new System.Drawing.Size(122, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Observaciones :";
             // 
@@ -139,6 +141,7 @@ namespace gui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(589, 453);
             this.Controls.Add(this.txtObservaciones);
             this.Controls.Add(this.label4);
