@@ -16,6 +16,7 @@ namespace gui
     {
         RepuestosServices repuestosServices = new RepuestosServices();
         VentasServices ventasServices = new VentasServices();
+        DataTable dt;
         int cantidadRepuestos = 0;
         int sumarPrecios = 0;
         public frmRegistroVentas()
@@ -34,7 +35,6 @@ namespace gui
                 dgvMostrarRepuestos.Columns.Add("categoria", "categoria");
                 dgvMostrarRepuestos.Columns.Add("precio", "precio");
                 dgvMostrarRepuestos.Columns.Add("detalle", "detalle");
-                dgvMostrarRepuestos.Columns.Add("stock", "stock");
 
             }
         }
@@ -49,7 +49,7 @@ namespace gui
                 try
                 {
                     string idRepuesto = txtBuscarRepuesto.Text; // Reemplaza esto con tu id_repuesto
-                    DataTable dt = repuestosServices.GetRepuestoById(idRepuesto);
+                    dt = repuestosServices.GetRepuestoById(idRepuesto);
 
 
                     cantidadRepuestos++;
@@ -83,8 +83,6 @@ namespace gui
             List<RepuestoVendido> repuestos = new List<RepuestoVendido>();
             try
             {
-                // Generar un nuevo número de factura
-
                 foreach (DataGridViewRow row in dgvMostrarRepuestos.Rows)
                 {
                     if (!row.IsNewRow)
@@ -101,18 +99,26 @@ namespace gui
                 // Insertar una nueva venta en la tabla Ventas y obtener el ID de la nueva venta
                 venta.ValorFactura = sumarPrecios;
                 venta.Cantidad = cantidadRepuestos;
-                venta.Cliente.identificacion = "1134";
-                venta.InfoGarantia.IdGarantia = "27";
+                venta.Cliente.identificacion = "1127";
                 venta.InfoGarantia.FechaFin = DateTime.Now;
-                venta.InfoGarantia.detalles = "Al pelo";
+                venta.InfoGarantia.detalles = "probar 2";
                 MessageBox.Show(ventasServices.registrarVentas(venta,repuestos, "PR_Insertar_ventas") );
 
-                cantidadRepuestos = 0;
+
+                limpiarTodo();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al guardar la venta: {ex.Message}");
             }
+        }
+
+       public void limpiarTodo()
+        {
+            sumarPrecios = 0;
+            cantidadRepuestos = 0;
+            txtBuscarRepuesto.Clear();
+            dt.Clear();
         }
     }
 }

@@ -18,6 +18,30 @@ namespace DAL
         {
 
         }
+        public DataTable getVentas(string procedureName)
+        {
+            DataTable ventas = new DataTable();
+            try
+            {
+                using (OracleCommand command = new OracleCommand(procedureName, Connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    OracleParameter cursorParameter = command.Parameters.Add("p_cursor", OracleDbType.RefCursor);
+                    cursorParameter.Direction = ParameterDirection.Output;
+
+                    using (OracleDataAdapter adapter = new OracleDataAdapter(command))
+                    {
+                        adapter.Fill(ventas);
+                    }
+                }
+                return ventas;
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception($"Error al recuperar las ventas" + ex.Message);
+            }
+        }
 
         public string registrarVentas(Ventas venta, List<RepuestoVendido> repuestosVendidos, string ProcedureName)
         {
@@ -25,6 +49,7 @@ namespace DAL
             AbrirConexion();
             OracleTransaction transaction = Connection.BeginTransaction();
             string noFactura = GenerarConsecutivo("administrador.movimientos", "No_factura");
+            string id_garantia = GenerarConsecutivo("administrador.info_garantia", "id_garantia");
             try
             {
                 
@@ -38,7 +63,7 @@ namespace DAL
                     cmd.Parameters.Add("p_CantidadMovimientos", OracleDbType.Int64).Value = venta.Cantidad;
                     cmd.Parameters.Add("P_valor_Factura", OracleDbType.Double).Value = venta.ValorFactura;
                     cmd.Parameters.Add("p_identificacion", OracleDbType.Varchar2).Value = venta.Cliente.identificacion;
-                    cmd.Parameters.Add("p_Id_garantia", OracleDbType.Varchar2).Value = venta.InfoGarantia.IdGarantia;
+                    cmd.Parameters.Add("p_Id_garantia", OracleDbType.Varchar2).Value = id_garantia;
                     cmd.Parameters.Add("p_fechaFin", OracleDbType.Date).Value = venta.InfoGarantia.FechaFin;
                     cmd.Parameters.Add("p_detalles", OracleDbType.Varchar2).Value = venta.InfoGarantia.detalles;
                     cmd.ExecuteNonQuery();
