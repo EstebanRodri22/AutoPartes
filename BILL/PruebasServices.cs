@@ -27,6 +27,11 @@ namespace BILL
                 return pruebasRepository.getDataTable(procedureName);
             }
 
+            public DataTable getRepuestos(string procedureName)
+        {
+            return pruebasRepository.getDataTable(procedureName);
+        }
+
         }
     }
 

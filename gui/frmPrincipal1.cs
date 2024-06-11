@@ -19,11 +19,6 @@ namespace presentacion
         {
             InitializeComponent();
             CustomizeDesing();
-            //from para que se pueda ajustar a la pantalla, activar el borde
-            //this.Text = string.Empty;
-            //this.ControlBox = false; 
-            //this.DoubleBuffered = true;
-            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
@@ -126,7 +121,7 @@ namespace presentacion
 
         //metodo para abir un form hijo, sobre el panelContenedor para mostarlo en panatalla
         private Form activeForm = null;
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -175,7 +170,7 @@ namespace presentacion
 
         }
 
-        private void HideSubMenu()
+        public void HideSubMenu()
         {
             if (panelProductoSubMenu.Visible == true)
             {

@@ -34,8 +34,6 @@ namespace gui
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -105,27 +103,9 @@ namespace gui
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(73, 140);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ID :";
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(113, 139);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(185, 20);
-            this.txtID.TabIndex = 2;
-            // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(113, 180);
+            this.txtPrecio.Location = new System.Drawing.Point(113, 149);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(185, 20);
             this.txtPrecio.TabIndex = 4;
@@ -135,7 +115,7 @@ namespace gui
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(40, 267);
+            this.label2.Location = new System.Drawing.Point(40, 236);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 3;
@@ -143,7 +123,7 @@ namespace gui
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(113, 224);
+            this.txtCantidad.Location = new System.Drawing.Point(113, 193);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(185, 20);
             this.txtCantidad.TabIndex = 6;
@@ -153,7 +133,7 @@ namespace gui
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(46, 180);
+            this.label3.Location = new System.Drawing.Point(46, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 5;
@@ -161,7 +141,7 @@ namespace gui
             // 
             // txtDetalle
             // 
-            this.txtDetalle.Location = new System.Drawing.Point(113, 264);
+            this.txtDetalle.Location = new System.Drawing.Point(113, 233);
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(185, 20);
             this.txtDetalle.TabIndex = 8;
@@ -171,7 +151,7 @@ namespace gui
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(23, 225);
+            this.label4.Location = new System.Drawing.Point(23, 194);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 7;
@@ -235,7 +215,7 @@ namespace gui
             // cmbAutomoviles
             // 
             this.cmbAutomoviles.FormattingEnabled = true;
-            this.cmbAutomoviles.Location = new System.Drawing.Point(113, 303);
+            this.cmbAutomoviles.Location = new System.Drawing.Point(113, 272);
             this.cmbAutomoviles.Name = "cmbAutomoviles";
             this.cmbAutomoviles.Size = new System.Drawing.Size(185, 21);
             this.cmbAutomoviles.TabIndex = 14;
@@ -245,7 +225,7 @@ namespace gui
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(19, 303);
+            this.label7.Location = new System.Drawing.Point(19, 272);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 16);
             this.label7.TabIndex = 13;
@@ -419,8 +399,6 @@ namespace gui
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.barraTitulo);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -443,8 +421,6 @@ namespace gui
 
         private Panel barraTitulo;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private Label label1;
-        private TextBox txtID;
         private TextBox txtPrecio;
         private Label label2;
         private TextBox txtCantidad;

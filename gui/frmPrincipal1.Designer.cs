@@ -538,7 +538,7 @@ namespace presentacion
 
         #endregion
         private Panel barraTitulo;
-        private Panel panelContenedor;
+        public Panel panelContenedor;
         private PictureBox btnCerrar;
         private PictureBox btnRestaurar;
         private Panel menuVertical;
