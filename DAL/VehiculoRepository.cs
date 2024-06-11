@@ -45,7 +45,7 @@ namespace DAL
             }
             catch (OracleException ex)
             {
-                throw new Exception($"Error al ejecutar la consulta para obtener los Automoviles", ex);
+                throw new Exception($"Tenemos Problemas al ejecutar la consulta para obtener los Automoviles", ex);
             }
             finally
             {
@@ -114,7 +114,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al insertar el automovil: " + ex.Message, ex);
+                throw new Exception("Tenemos Problemas al insertar el automovil: " + ex.Message, ex);
             }
             finally
             {

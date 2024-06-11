@@ -34,6 +34,7 @@ namespace presentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal1));
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
@@ -208,7 +209,7 @@ namespace presentacion
             this.btnRegistrarProducto.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegistrarProducto.FlatAppearance.BorderSize = 0;
             this.btnRegistrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarProducto.ForeColor = System.Drawing.Color.White;
             this.btnRegistrarProducto.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
             this.btnRegistrarProducto.IconColor = System.Drawing.Color.White;
@@ -229,7 +230,7 @@ namespace presentacion
             this.btnBuscarProducto.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBuscarProducto.FlatAppearance.BorderSize = 0;
             this.btnBuscarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarProducto.ForeColor = System.Drawing.Color.White;
             this.btnBuscarProducto.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnBuscarProducto.IconColor = System.Drawing.Color.White;
@@ -278,7 +279,7 @@ namespace presentacion
             this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInventario.FlatAppearance.BorderSize = 0;
             this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventario.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.btnInventario.ForeColor = System.Drawing.Color.White;
             this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.Box;
             this.btnInventario.IconColor = System.Drawing.Color.White;
@@ -311,7 +312,7 @@ namespace presentacion
             this.btnRegistrarVenta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegistrarVenta.FlatAppearance.BorderSize = 0;
             this.btnRegistrarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarVenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarVenta.ForeColor = System.Drawing.Color.White;
             this.btnRegistrarVenta.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
             this.btnRegistrarVenta.IconColor = System.Drawing.Color.White;
@@ -332,7 +333,7 @@ namespace presentacion
             this.btnBuscarVentas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBuscarVentas.FlatAppearance.BorderSize = 0;
             this.btnBuscarVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarVentas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarVentas.ForeColor = System.Drawing.Color.White;
             this.btnBuscarVentas.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnBuscarVentas.IconColor = System.Drawing.Color.White;
@@ -353,7 +354,7 @@ namespace presentacion
             this.btnVentas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnVentas.FlatAppearance.BorderSize = 0;
             this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVentas.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.btnVentas.ForeColor = System.Drawing.Color.White;
             this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
             this.btnVentas.IconColor = System.Drawing.Color.White;
@@ -386,7 +387,7 @@ namespace presentacion
             this.btnRegistrarCompra.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegistrarCompra.FlatAppearance.BorderSize = 0;
             this.btnRegistrarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarCompra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarCompra.ForeColor = System.Drawing.Color.White;
             this.btnRegistrarCompra.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
             this.btnRegistrarCompra.IconColor = System.Drawing.Color.White;
@@ -407,7 +408,7 @@ namespace presentacion
             this.btnBuscarCompras.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBuscarCompras.FlatAppearance.BorderSize = 0;
             this.btnBuscarCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCompras.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarCompras.ForeColor = System.Drawing.Color.White;
             this.btnBuscarCompras.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnBuscarCompras.IconColor = System.Drawing.Color.White;
@@ -427,7 +428,7 @@ namespace presentacion
             this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCompras.FlatAppearance.BorderSize = 0;
             this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompras.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.btnCompras.ForeColor = System.Drawing.Color.White;
             this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.Shop;
             this.btnCompras.IconColor = System.Drawing.Color.White;
@@ -450,7 +451,7 @@ namespace presentacion
             this.btnProductos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProductos.FlatAppearance.BorderSize = 0;
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.IconChar = FontAwesome.Sharp.IconChar.Car;
             this.btnProductos.IconColor = System.Drawing.Color.White;
@@ -479,6 +480,7 @@ namespace presentacion
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(31, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(141, 114);

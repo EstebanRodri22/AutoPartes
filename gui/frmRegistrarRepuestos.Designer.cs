@@ -76,17 +76,17 @@ namespace gui
             this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.barraTitulo.Location = new System.Drawing.Point(0, 0);
             this.barraTitulo.Name = "barraTitulo";
-            this.barraTitulo.Size = new System.Drawing.Size(599, 29);
+            this.barraTitulo.Size = new System.Drawing.Size(602, 60);
             this.barraTitulo.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(187, 8);
+            this.label6.Location = new System.Drawing.Point(203, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 17);
+            this.label6.Size = new System.Drawing.Size(171, 25);
             this.label6.TabIndex = 13;
             this.label6.Text = "Registro Repuesto";
             // 
@@ -98,7 +98,7 @@ namespace gui
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 24;
-            this.iconPictureBox1.Location = new System.Drawing.Point(572, 2);
+            this.iconPictureBox1.Location = new System.Drawing.Point(575, 18);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(24, 27);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,23 +108,24 @@ namespace gui
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label1.Location = new System.Drawing.Point(76, 95);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(73, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 17);
+            this.label1.Size = new System.Drawing.Size(26, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID :";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(116, 94);
+            this.txtID.Location = new System.Drawing.Point(113, 139);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(185, 20);
             this.txtID.TabIndex = 2;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(116, 135);
+            this.txtPrecio.Location = new System.Drawing.Point(113, 180);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(185, 20);
             this.txtPrecio.TabIndex = 4;
@@ -132,16 +133,17 @@ namespace gui
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label2.Location = new System.Drawing.Point(43, 222);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(40, 267);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Detalle :";
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(116, 179);
+            this.txtCantidad.Location = new System.Drawing.Point(113, 224);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(185, 20);
             this.txtCantidad.TabIndex = 6;
@@ -149,16 +151,17 @@ namespace gui
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label3.Location = new System.Drawing.Point(49, 135);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(46, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Precio :";
             // 
             // txtDetalle
             // 
-            this.txtDetalle.Location = new System.Drawing.Point(116, 219);
+            this.txtDetalle.Location = new System.Drawing.Point(113, 264);
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(185, 20);
             this.txtDetalle.TabIndex = 8;
@@ -166,10 +169,11 @@ namespace gui
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label4.Location = new System.Drawing.Point(26, 180);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(23, 225);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 17);
+            this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Cantidad :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -177,52 +181,61 @@ namespace gui
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label5.Location = new System.Drawing.Point(22, 52);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(19, 97);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 17);
+            this.label5.Size = new System.Drawing.Size(72, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Categoria :";
             // 
             // cmbCategoria
             // 
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(116, 52);
+            this.cmbCategoria.Location = new System.Drawing.Point(113, 97);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(185, 21);
             this.cmbCategoria.TabIndex = 10;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.btnRegistrar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnRegistrar.IconColor = System.Drawing.Color.Black;
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrar.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
+            this.btnRegistrar.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRegistrar.Location = new System.Drawing.Point(177, 303);
+            this.btnRegistrar.IconSize = 25;
+            this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistrar.Location = new System.Drawing.Point(185, 350);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(91, 36);
+            this.btnRegistrar.Size = new System.Drawing.Size(96, 36);
             this.btnRegistrar.TabIndex = 11;
             this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCancelar.IconColor = System.Drawing.Color.Black;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.btnCancelar.IconColor = System.Drawing.Color.Red;
             this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCancelar.Location = new System.Drawing.Point(46, 303);
+            this.btnCancelar.IconSize = 32;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.Location = new System.Drawing.Point(29, 350);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(91, 36);
+            this.btnCancelar.Size = new System.Drawing.Size(94, 36);
             this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // cmbAutomoviles
             // 
             this.cmbAutomoviles.FormattingEnabled = true;
-            this.cmbAutomoviles.Location = new System.Drawing.Point(116, 258);
+            this.cmbAutomoviles.Location = new System.Drawing.Point(113, 303);
             this.cmbAutomoviles.Name = "cmbAutomoviles";
             this.cmbAutomoviles.Size = new System.Drawing.Size(185, 21);
             this.cmbAutomoviles.TabIndex = 14;
@@ -230,10 +243,11 @@ namespace gui
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label7.Location = new System.Drawing.Point(22, 258);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(19, 303);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 17);
+            this.label7.Size = new System.Drawing.Size(72, 16);
             this.label7.TabIndex = 13;
             this.label7.Text = "Automovil :";
             // 
@@ -241,7 +255,8 @@ namespace gui
             // 
             this.groupBox1.Controls.Add(this.rbtnPiezaElectrica);
             this.groupBox1.Controls.Add(this.rbtnPiezaMecanica);
-            this.groupBox1.Location = new System.Drawing.Point(387, 52);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(382, 81);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 74);
             this.groupBox1.TabIndex = 15;
@@ -251,6 +266,7 @@ namespace gui
             // rbtnPiezaElectrica
             // 
             this.rbtnPiezaElectrica.AutoSize = true;
+            this.rbtnPiezaElectrica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbtnPiezaElectrica.Location = new System.Drawing.Point(30, 43);
             this.rbtnPiezaElectrica.Name = "rbtnPiezaElectrica";
             this.rbtnPiezaElectrica.Size = new System.Drawing.Size(95, 17);
@@ -264,6 +280,7 @@ namespace gui
             // 
             this.rbtnPiezaMecanica.AutoSize = true;
             this.rbtnPiezaMecanica.Checked = true;
+            this.rbtnPiezaMecanica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbtnPiezaMecanica.Location = new System.Drawing.Point(30, 20);
             this.rbtnPiezaMecanica.Name = "rbtnPiezaMecanica";
             this.rbtnPiezaMecanica.Size = new System.Drawing.Size(101, 17);
@@ -285,7 +302,8 @@ namespace gui
             this.grBoxMecanica.Controls.Add(this.txtMaterial);
             this.grBoxMecanica.Controls.Add(this.txtDimensiones);
             this.grBoxMecanica.Controls.Add(this.txtDurabilidad);
-            this.grBoxMecanica.Location = new System.Drawing.Point(321, 132);
+            this.grBoxMecanica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grBoxMecanica.Location = new System.Drawing.Point(324, 179);
             this.grBoxMecanica.Name = "grBoxMecanica";
             this.grBoxMecanica.Size = new System.Drawing.Size(266, 207);
             this.grBoxMecanica.TabIndex = 16;
@@ -294,6 +312,7 @@ namespace gui
             // lblResistencia
             // 
             this.lblResistencia.AutoSize = true;
+            this.lblResistencia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblResistencia.Location = new System.Drawing.Point(98, 111);
             this.lblResistencia.Name = "lblResistencia";
             this.lblResistencia.Size = new System.Drawing.Size(62, 13);
@@ -303,6 +322,7 @@ namespace gui
             // lblMaterial
             // 
             this.lblMaterial.AutoSize = true;
+            this.lblMaterial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblMaterial.Location = new System.Drawing.Point(109, 126);
             this.lblMaterial.Name = "lblMaterial";
             this.lblMaterial.Size = new System.Drawing.Size(44, 13);
@@ -311,6 +331,7 @@ namespace gui
             // 
             // txtResistencia
             // 
+            this.txtResistencia.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtResistencia.Location = new System.Drawing.Point(80, 127);
             this.txtResistencia.Name = "txtResistencia";
             this.txtResistencia.Size = new System.Drawing.Size(100, 20);
@@ -319,6 +340,7 @@ namespace gui
             // lblVoltaje
             // 
             this.lblVoltaje.AutoSize = true;
+            this.lblVoltaje.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblVoltaje.Location = new System.Drawing.Point(109, 28);
             this.lblVoltaje.Name = "lblVoltaje";
             this.lblVoltaje.Size = new System.Drawing.Size(39, 13);
@@ -328,6 +350,7 @@ namespace gui
             // lblDimensiones
             // 
             this.lblDimensiones.AutoSize = true;
+            this.lblDimensiones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblDimensiones.Location = new System.Drawing.Point(93, 71);
             this.lblDimensiones.Name = "lblDimensiones";
             this.lblDimensiones.Size = new System.Drawing.Size(67, 13);
@@ -337,6 +360,7 @@ namespace gui
             // lblDurabilidad
             // 
             this.lblDurabilidad.AutoSize = true;
+            this.lblDurabilidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblDurabilidad.Location = new System.Drawing.Point(93, 16);
             this.lblDurabilidad.Name = "lblDurabilidad";
             this.lblDurabilidad.Size = new System.Drawing.Size(60, 13);
@@ -345,6 +369,7 @@ namespace gui
             // 
             // txtVoltaje
             // 
+            this.txtVoltaje.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtVoltaje.Location = new System.Drawing.Point(80, 44);
             this.txtVoltaje.Name = "txtVoltaje";
             this.txtVoltaje.Size = new System.Drawing.Size(100, 20);
@@ -352,6 +377,7 @@ namespace gui
             // 
             // txtMaterial
             // 
+            this.txtMaterial.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtMaterial.Location = new System.Drawing.Point(80, 142);
             this.txtMaterial.Name = "txtMaterial";
             this.txtMaterial.Size = new System.Drawing.Size(100, 20);
@@ -359,6 +385,7 @@ namespace gui
             // 
             // txtDimensiones
             // 
+            this.txtDimensiones.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtDimensiones.Location = new System.Drawing.Point(80, 87);
             this.txtDimensiones.Name = "txtDimensiones";
             this.txtDimensiones.Size = new System.Drawing.Size(100, 20);
@@ -366,6 +393,7 @@ namespace gui
             // 
             // txtDurabilidad
             // 
+            this.txtDurabilidad.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtDurabilidad.Location = new System.Drawing.Point(80, 32);
             this.txtDurabilidad.Name = "txtDurabilidad";
             this.txtDurabilidad.Size = new System.Drawing.Size(100, 20);
@@ -375,7 +403,8 @@ namespace gui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 361);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
+            this.ClientSize = new System.Drawing.Size(602, 408);
             this.Controls.Add(this.grBoxMecanica);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmbAutomoviles);
@@ -393,6 +422,7 @@ namespace gui
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.barraTitulo);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRegistrarRepuestos";
             this.Text = "frmRegistroProducto";

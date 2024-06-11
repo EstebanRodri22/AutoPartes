@@ -45,7 +45,7 @@ namespace DAL
             }
             catch (OracleException ex)
             {
-                throw new Exception("Error al insertar el proveedor: " + ex.Message, ex);
+                throw new Exception("Intente nuevamente insertar el proveedor: " + ex.Message, ex);
             }
             finally
             {

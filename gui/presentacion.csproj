@@ -150,6 +150,9 @@
     <EmbeddedResource Include="frmAuromoviles.resx">
       <DependentUpon>frmAuromoviles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCompras2.resx">
+      <DependentUpon>frmCompras2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOptionClientes2.resx">
       <DependentUpon>frmOptionClientes2.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistroVentas.resx">
       <DependentUpon>frmRegistroVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepuestos.resx">
+      <DependentUpon>frmRepuestos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentas2.resx">
       <DependentUpon>frmVentas2.cs</DependentUpon>

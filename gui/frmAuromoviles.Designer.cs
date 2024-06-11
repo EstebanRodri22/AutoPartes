@@ -36,32 +36,39 @@
             // 
             // btnInventario
             // 
-            this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnInventario.IconColor = System.Drawing.Color.Black;
+            this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
+            this.btnInventario.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnInventario.Location = new System.Drawing.Point(91, 274);
+            this.btnInventario.IconSize = 32;
+            this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInventario.Location = new System.Drawing.Point(91, 272);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(125, 38);
+            this.btnInventario.Size = new System.Drawing.Size(85, 38);
             this.btnInventario.TabIndex = 1;
             this.btnInventario.Text = "Registrar";
+            this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInventario.UseVisualStyleBackColor = true;
             this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // btnCargar
             // 
-            this.btnCargar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCargar.IconColor = System.Drawing.Color.Black;
+            this.btnCargar.IconChar = FontAwesome.Sharp.IconChar.LaptopFile;
+            this.btnCargar.IconColor = System.Drawing.Color.Red;
             this.btnCargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargar.Location = new System.Drawing.Point(278, 271);
+            this.btnCargar.IconSize = 32;
+            this.btnCargar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargar.Location = new System.Drawing.Point(343, 271);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(130, 41);
+            this.btnCargar.Size = new System.Drawing.Size(81, 41);
             this.btnCargar.TabIndex = 2;
-            this.btnCargar.Text = "cargar";
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCargar.UseVisualStyleBackColor = true;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // dgvAutomov
             // 
+            this.dgvAutomov.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvAutomov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAutomov.Location = new System.Drawing.Point(91, 32);
             this.dgvAutomov.Name = "dgvAutomov";
@@ -72,6 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(535, 351);
             this.Controls.Add(this.dgvAutomov);
             this.Controls.Add(this.btnCargar);

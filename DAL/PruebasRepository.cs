@@ -42,7 +42,7 @@ namespace DAL
             catch (Exception ex)
             {
                 // Log the error if needed
-                throw new Exception("Error al obtener las ventas.", ex);
+                throw new Exception("Estamos teniendo problemas al obtener las ventas.", ex);
             }
             finally
             {

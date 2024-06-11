@@ -38,7 +38,7 @@ namespace DAL
             }
             catch (OracleException ex)
             {
-                throw new Exception($"Error al ejecutar la consulta para obtener datos de la tabla {tableName}", ex);
+                throw new Exception($"Estamos teniendo problemas al ejecutar la consulta para obtener datos de la tabla {tableName}", ex);
             }
             finally
             {

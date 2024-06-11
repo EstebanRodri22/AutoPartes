@@ -67,12 +67,12 @@ namespace DAL
 
                     command.ExecuteNonQuery();
 
-                    return $"se registro el inventario corectamente ";
+                    return $"Su inventario fue registrado corectamente ";
                 }
             }
             catch (OracleException ex)
             {
-                throw new Exception("Error al registrar el inventario " + ex.Message, ex);
+                throw new Exception("Tuvimos un fallo al registrar el inventario " + ex.Message, ex);
             }
             finally
             {

@@ -31,79 +31,98 @@ namespace gui
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            btnCerrar = new FontAwesome.Sharp.IconPictureBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
-            SuspendLayout();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
+            this.barraTitulo = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.barraTitulo.SuspendLayout();
+            this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(52, 47);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(564, 328);
-            dataGridView1.TabIndex = 0;
-            // 
-            // btnCerrar
-            // 
-            btnCerrar.BackColor = SystemColors.Control;
-            btnCerrar.ForeColor = SystemColors.ControlText;
-            btnCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
-            btnCerrar.IconColor = SystemColors.ControlText;
-            btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnCerrar.IconSize = 22;
-            btnCerrar.Location = new Point(12, 11);
-            btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(25, 22);
-            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
-            btnCerrar.TabIndex = 1;
-            btnCerrar.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(247, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(177, 21);
-            label1.TabIndex = 2;
-            label1.Text = "HISTORIAL COMPRAS";
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(46, 79);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(483, 284);
+            this.dataGridView1.TabIndex = 0;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(218, 392);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 23);
-            textBox1.TabIndex = 3;
-            textBox1.Text = "BUSCAR";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            this.textBox1.Location = new System.Drawing.Point(190, 385);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(211, 20);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "BUSCAR";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // frmCompras
+            // btnCerrar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(689, 450);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Controls.Add(btnCerrar);
-            Controls.Add(dataGridView1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "frmCompras";
-            Text = "frmCompras";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.AngleLeft;
+            this.btnCerrar.IconColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.IconSize = 30;
+            this.btnCerrar.Location = new System.Drawing.Point(3, 19);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(33, 30);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.TabStop = false;
+            // 
+            // barraTitulo
+            // 
+            this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.barraTitulo.Controls.Add(this.label3);
+            this.barraTitulo.Controls.Add(this.btnCerrar);
+            this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.barraTitulo.Name = "barraTitulo";
+            this.barraTitulo.Size = new System.Drawing.Size(590, 63);
+            this.barraTitulo.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(161, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(259, 30);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Historial De Compras";
+            // 
+            // frmCompras2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
+            this.ClientSize = new System.Drawing.Size(590, 437);
+            this.Controls.Add(this.barraTitulo);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmCompras2";
+            this.Text = "frmCompras";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.barraTitulo.ResumeLayout(false);
+            this.barraTitulo.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private DataGridView dataGridView1;
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
-        private Label label1;
         private TextBox textBox1;
+        private Panel barraTitulo;
+        private Label label3;
     }
 }

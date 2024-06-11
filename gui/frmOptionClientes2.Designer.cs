@@ -38,39 +38,43 @@ namespace gui
             // 
             // iconButton1
             // 
-            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
+            this.iconButton1.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(74, 45);
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.Location = new System.Drawing.Point(64, 70);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(169, 86);
+            this.iconButton1.Size = new System.Drawing.Size(165, 86);
             this.iconButton1.TabIndex = 0;
             this.iconButton1.Text = "NUEVO CLIENTE";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // iconButton2
             // 
-            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
+            this.iconButton2.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(308, 45);
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.Location = new System.Drawing.Point(327, 70);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(169, 86);
+            this.iconButton2.Size = new System.Drawing.Size(197, 86);
             this.iconButton2.TabIndex = 1;
             this.iconButton2.Text = "CLIENTE EXISTENTE";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
             this.btnCerrar.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCerrar.IconSize = 19;
-            this.btnCerrar.Location = new System.Drawing.Point(530, 3);
+            this.btnCerrar.Location = new System.Drawing.Point(543, 3);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 19);
             this.btnCerrar.TabIndex = 2;
@@ -78,7 +82,8 @@ namespace gui
             // 
             // frmOptionClientes2
             // 
-            this.ClientSize = new System.Drawing.Size(553, 186);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
+            this.ClientSize = new System.Drawing.Size(575, 243);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
