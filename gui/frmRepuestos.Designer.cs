@@ -72,7 +72,9 @@ namespace gui
             // 
             // btnEditar
             // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.btnEditar.IconColor = System.Drawing.SystemColors.ActiveCaption;
@@ -120,6 +122,9 @@ namespace gui
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminar.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.Xmark;
@@ -137,6 +142,9 @@ namespace gui
             // 
             // btnCargar
             // 
+            this.btnCargar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnCargar.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
             this.btnCargar.IconColor = System.Drawing.SystemColors.ActiveCaption;
