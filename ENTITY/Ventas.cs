@@ -12,7 +12,11 @@ namespace ENTITY
 
         public InfoGarantia InfoGarantia { get; set; }
 
-        public Ventas () { Cliente = new Cliente(); }
+        public Ventas () 
+        { 
+            Cliente = new Cliente();
+            InfoGarantia = new InfoGarantia();
+        }
 
     }
 }

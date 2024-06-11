@@ -3,7 +3,9 @@ using ENTITY;
 using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,16 +16,29 @@ namespace BILL
         VentasRepository ventasRepository;
         public VentasServices() { ventasRepository = new VentasRepository(); }
 
-        public string obtenerNoFactura()
+        public string obtenerNoFactura(string tabla, string columna)
         {
-            return ventasRepository.GenerarConsecutivo();
+            return ventasRepository.GenerarConsecutivo(tabla, columna);
         }
 
-        public string registrarVentas(Ventas venta, string ProcedureName)
+        public DataTable getVentas(string procedureName)
         {
             try
             {
-                return ventasRepository.registrarVentas(venta, ProcedureName);
+                return ventasRepository.getVentas(procedureName);
+            }
+            catch (Exception ex) 
+            { 
+                throw new Exception($"error en ventasRepository "+ex.Message);
+            }
+            
+        }
+
+        public string registrarVentas(Ventas venta,List<RepuestoVendido> repuestos, string ProcedureName)
+        {
+            try
+            {
+                return ventasRepository.registrarVentas(venta, repuestos,ProcedureName);
             }
             catch (Exception ex)
             {

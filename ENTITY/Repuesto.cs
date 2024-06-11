@@ -13,6 +13,7 @@ namespace ENTITY
         public int Precio { get; set; }
         public int cantidad { get; set; }
         public string NoFactura { get; set; }
+        
         public Automovil automovil { get; set; }
         public Categoria categoria { get; set; }
 

@@ -45,11 +45,13 @@
     <Compile Include="Categoria.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Compras.cs" />
+    <Compile Include="DetalleVenta.cs" />
     <Compile Include="EstadoGarantia.cs" />
     <Compile Include="EstadoInventario.cs" />
     <Compile Include="IBaseEntity.cs" />
     <Compile Include="InfoGarantia.cs" />
     <Compile Include="InventarioAutomovil.cs" />
+    <Compile Include="InventarioRepuesto.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Movimientos.cs" />
     <Compile Include="Persona.cs" />
@@ -59,6 +61,7 @@
     <Compile Include="Proveedor.cs" />
     <Compile Include="Region.cs" />
     <Compile Include="Repuesto.cs" />
+    <Compile Include="RepuestoVendido.cs" />
     <Compile Include="TipoDocumento.cs" />
     <Compile Include="Ventas.cs" />
   </ItemGroup>
