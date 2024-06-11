@@ -241,6 +241,8 @@
     <Content Include="Resources\LOGOS.png" />
     <Content Include="Resources\maxi.png" />
     <Content Include="Resources\maximizar.png" />
+    <None Include="Resources\maximizar1.png" />
+    <None Include="Resources\maximizar2.png" />
     <Content Include="Resources\minimazar.png" />
     <Content Include="Resources\Minimize_Icon.png" />
     <Content Include="Resources\pagos.png" />
@@ -252,6 +254,7 @@
     <Content Include="Resources\productos2.png" />
     <Content Include="Resources\reportes.png" />
     <Content Include="Resources\res.png" />
+    <None Include="Resources\restaurar-ventana.png" />
     <Content Include="Resources\search-interface-symbol.png" />
     <Content Include="Resources\slide.png" />
     <Content Include="Resources\venta.png" />

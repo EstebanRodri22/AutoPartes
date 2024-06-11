@@ -85,8 +85,8 @@ namespace presentacion
         {
             this.Size = new Size(SizeW, SizeH);
             this.Location = new Point(LocationX, LocationY);
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
+            btnMaximizar.Visible = false;
+            btnMaximizar2.Visible = true;
         }
 
         int LocationX, LocationY, SizeW, SizeH;
@@ -100,8 +100,8 @@ namespace presentacion
                 SizeH = this.Size.Height;
                 this.Size = Screen.PrimaryScreen.WorkingArea.Size;
                 this.Location = Screen.PrimaryScreen.WorkingArea.Location;
-                btnRestaurar.Visible = true;
-                btnMaximizar.Visible = false;
+                btnMaximizar.Visible = true;
+                btnMaximizar2.Visible = false;
             }
             else
             {
@@ -112,8 +112,8 @@ namespace presentacion
         // el panel barra de titulo al sostener el click puede mover la ventana y este es su metodo
         private void barraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
+            btnMaximizar.Visible = false;
+            btnMaximizar2.Visible = true;
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
 
@@ -239,6 +239,11 @@ namespace presentacion
         {
             OpenChildForm(new frmCompras2());
             HideSubMenu();
+        }
+
+        private void panelContenedor_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void btnRegistrarCompra_Click(object sender, EventArgs e)

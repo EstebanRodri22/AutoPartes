@@ -36,13 +36,13 @@ namespace gui
             this.btnVehiculo = new System.Windows.Forms.Button();
             this.btnProveedor = new System.Windows.Forms.Button();
             this.btnRegistrarCompra = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.barraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -105,19 +105,6 @@ namespace gui
             this.btnRegistrarCompra.UseVisualStyleBackColor = true;
             this.btnRegistrarCompra.Click += new System.EventHandler(this.btnRegistrarCompra_Click);
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCerrar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnCerrar.Location = new System.Drawing.Point(12, 21);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(29, 27);
-            this.btnCerrar.TabIndex = 5;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
             // txtObservaciones
             // 
             this.txtObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -140,7 +127,7 @@ namespace gui
             // 
             // barraTitulo
             // 
-            this.barraTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.barraTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.barraTitulo.Controls.Add(this.label5);
             this.barraTitulo.Controls.Add(this.btnCerrar);
@@ -160,6 +147,19 @@ namespace gui
             this.label5.TabIndex = 9;
             this.label5.Text = "Registrar Compra";
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCerrar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnCerrar.Location = new System.Drawing.Point(12, 21);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(29, 27);
+            this.btnCerrar.TabIndex = 5;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // frmRegistrarCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,9 +178,9 @@ namespace gui
             this.Name = "frmRegistrarCompra";
             this.Text = "frmCompras";
             this.Load += new System.EventHandler(this.frmRegistrarCompra_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.barraTitulo.ResumeLayout(false);
             this.barraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

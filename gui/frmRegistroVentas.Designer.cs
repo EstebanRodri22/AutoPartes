@@ -33,7 +33,6 @@
             this.txtBuscarRepuesto = new System.Windows.Forms.TextBox();
             this.dgvMostrarRepuestos = new System.Windows.Forms.DataGridView();
             this.btnCobrar = new FontAwesome.Sharp.IconButton();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btnEliminarProducto = new FontAwesome.Sharp.IconButton();
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,7 +40,6 @@
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarRepuestos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.barraTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,21 +99,6 @@
             this.btnCobrar.UseVisualStyleBackColor = true;
             this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 20;
-            this.iconPictureBox1.Location = new System.Drawing.Point(248, 109);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(28, 20);
-            this.iconPictureBox1.TabIndex = 6;
-            this.iconPictureBox1.TabStop = false;
-            // 
             // btnEliminarProducto
             // 
             this.btnEliminarProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -153,7 +136,7 @@
             // 
             // barraTitulo
             // 
-            this.barraTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.barraTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.barraTitulo.Controls.Add(this.label4);
             this.barraTitulo.Controls.Add(this.btnCerrar);
@@ -183,7 +166,6 @@
             this.Controls.Add(this.barraTitulo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminarProducto);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.btnCobrar);
             this.Controls.Add(this.dgvMostrarRepuestos);
             this.Controls.Add(this.txtBuscarRepuesto);
@@ -192,7 +174,6 @@
             this.Text = "frmRegistroVentas";
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarRepuestos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.barraTitulo.ResumeLayout(false);
             this.barraTitulo.PerformLayout();
             this.ResumeLayout(false);
@@ -206,7 +187,6 @@
         private System.Windows.Forms.TextBox txtBuscarRepuesto;
         private System.Windows.Forms.DataGridView dgvMostrarRepuestos;
         private FontAwesome.Sharp.IconButton btnCobrar;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton btnEliminarProducto;
 
         private System.Windows.Forms.Label lblValorTotal;
