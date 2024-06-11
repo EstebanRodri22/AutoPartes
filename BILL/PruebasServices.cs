@@ -19,8 +19,14 @@ namespace BILL
 
             public DataTable getVentas(string procedureName)
             {
-                return pruebasRepository.getVentas(procedureName);
+                return pruebasRepository.getDataTable(procedureName);
             }
+       
+            public DataTable getCompras(string procedureName)
+            {
+                return pruebasRepository.getDataTable(procedureName);
+            }
+
         }
     }
 

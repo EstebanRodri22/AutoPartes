@@ -31,28 +31,29 @@ namespace gui
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridCompras = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnCargar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCompras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.barraTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // gridCompras
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(483, 284);
-            this.dataGridView1.TabIndex = 0;
+            this.gridCompras.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gridCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCompras.Location = new System.Drawing.Point(46, 79);
+            this.gridCompras.Name = "gridCompras";
+            this.gridCompras.Size = new System.Drawing.Size(483, 284);
+            this.gridCompras.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 385);
+            this.textBox1.Location = new System.Drawing.Point(280, 385);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(211, 20);
             this.textBox1.TabIndex = 3;
@@ -96,19 +97,30 @@ namespace gui
             this.label3.TabIndex = 9;
             this.label3.Text = "Historial De Compras";
             // 
+            // btnCargar
+            // 
+            this.btnCargar.Location = new System.Drawing.Point(66, 383);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(83, 23);
+            this.btnCargar.TabIndex = 12;
+            this.btnCargar.Text = "CARGAR";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
             // frmCompras2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(590, 437);
+            this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.barraTitulo);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridCompras);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCompras2";
             this.Text = "frmCompras";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCompras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.barraTitulo.ResumeLayout(false);
             this.barraTitulo.PerformLayout();
@@ -119,10 +131,11 @@ namespace gui
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView gridCompras;
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
         private TextBox textBox1;
         private Panel barraTitulo;
         private Label label3;
+        private Button btnCargar;
     }
 }

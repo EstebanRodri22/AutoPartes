@@ -422,6 +422,7 @@ namespace presentacion
             this.btnBuscarCompras.TabIndex = 3;
             this.btnBuscarCompras.Text = "CONSULTAR";
             this.btnBuscarCompras.UseVisualStyleBackColor = true;
+            this.btnBuscarCompras.Click += new System.EventHandler(this.btnBuscarCompras_Click);
             // 
             // btnCompras
             // 
@@ -502,6 +503,7 @@ namespace presentacion
             // tmFechaHora
             // 
             this.tmFechaHora.Enabled = true;
+            this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
             // frmPrincipal1
             // 

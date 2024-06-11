@@ -19,14 +19,14 @@ namespace DAL
             cmd = new OracleCommand();
         }
 
-        public DataTable getVentas(string procedureName)
+        public DataTable getDataTable(string proceduraName)
         {
-            DataTable ventasTable = new DataTable();
+            DataTable dataTable = new DataTable();
             try
             {
                 AbrirConexion();
 
-                using (cmd = new OracleCommand(procedureName, Connection))
+                using (cmd = new OracleCommand(proceduraName, Connection))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
@@ -35,22 +35,23 @@ namespace DAL
 
                     using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
                     {
-                        adapter.Fill(ventasTable);
+                        adapter.Fill(dataTable);
                     }
                 }
             }
             catch (Exception ex)
             {
                 // Log the error if needed
-                throw new Exception("Estamos teniendo problemas al obtener las ventas.", ex);
+                throw new Exception("Estamos teniendo problemas al obtener las compras.", ex);
             }
             finally
             {
                 CerrarConexion();
             }
 
-            return ventasTable;
+            return dataTable;
         }
+       
 
     }
 }
