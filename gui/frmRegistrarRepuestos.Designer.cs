@@ -72,9 +72,9 @@ namespace gui
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.barraTitulo.Controls.Add(this.label6);
             this.barraTitulo.Controls.Add(this.iconPictureBox1);
-            this.barraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.barraTitulo.Location = new System.Drawing.Point(-13, 0);
             this.barraTitulo.Name = "barraTitulo";
-            this.barraTitulo.Size = new System.Drawing.Size(602, 60);
+            this.barraTitulo.Size = new System.Drawing.Size(602, 105);
             this.barraTitulo.TabIndex = 0;
             // 
             // label6
@@ -82,7 +82,7 @@ namespace gui
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(203, 20);
+            this.label6.Location = new System.Drawing.Point(209, 39);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(171, 25);
             this.label6.TabIndex = 13;
@@ -91,14 +91,14 @@ namespace gui
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.AngleLeft;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ButtonHighlight;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 24;
-            this.iconPictureBox1.Location = new System.Drawing.Point(575, 18);
+            this.iconPictureBox1.IconSize = 37;
+            this.iconPictureBox1.Location = new System.Drawing.Point(22, 29);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(24, 27);
+            this.iconPictureBox1.Size = new System.Drawing.Size(37, 45);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
@@ -106,7 +106,7 @@ namespace gui
             // txtPrecio
             // 
             this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrecio.Location = new System.Drawing.Point(113, 149);
+            this.txtPrecio.Location = new System.Drawing.Point(100, 194);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(185, 20);
             this.txtPrecio.TabIndex = 4;
@@ -117,7 +117,7 @@ namespace gui
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(40, 236);
+            this.label2.Location = new System.Drawing.Point(27, 281);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 3;
@@ -126,7 +126,7 @@ namespace gui
             // txtCantidad
             // 
             this.txtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidad.Location = new System.Drawing.Point(113, 193);
+            this.txtCantidad.Location = new System.Drawing.Point(100, 238);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(185, 20);
             this.txtCantidad.TabIndex = 6;
@@ -137,7 +137,7 @@ namespace gui
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(46, 149);
+            this.label3.Location = new System.Drawing.Point(33, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 5;
@@ -146,7 +146,7 @@ namespace gui
             // txtDetalle
             // 
             this.txtDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDetalle.Location = new System.Drawing.Point(113, 233);
+            this.txtDetalle.Location = new System.Drawing.Point(100, 278);
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(185, 20);
             this.txtDetalle.TabIndex = 8;
@@ -157,7 +157,7 @@ namespace gui
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(23, 194);
+            this.label4.Location = new System.Drawing.Point(10, 239);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 7;
@@ -170,7 +170,7 @@ namespace gui
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(19, 97);
+            this.label5.Location = new System.Drawing.Point(6, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 16);
             this.label5.TabIndex = 9;
@@ -180,7 +180,7 @@ namespace gui
             // 
             this.cmbCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(113, 97);
+            this.cmbCategoria.Location = new System.Drawing.Point(100, 142);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(185, 21);
             this.cmbCategoria.TabIndex = 10;
@@ -195,7 +195,7 @@ namespace gui
             this.btnRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRegistrar.IconSize = 25;
             this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistrar.Location = new System.Drawing.Point(185, 350);
+            this.btnRegistrar.Location = new System.Drawing.Point(172, 395);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(96, 36);
             this.btnRegistrar.TabIndex = 11;
@@ -214,7 +214,7 @@ namespace gui
             this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCancelar.IconSize = 32;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(29, 350);
+            this.btnCancelar.Location = new System.Drawing.Point(16, 395);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(94, 36);
             this.btnCancelar.TabIndex = 12;
@@ -226,7 +226,7 @@ namespace gui
             // 
             this.cmbAutomoviles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbAutomoviles.FormattingEnabled = true;
-            this.cmbAutomoviles.Location = new System.Drawing.Point(113, 272);
+            this.cmbAutomoviles.Location = new System.Drawing.Point(100, 317);
             this.cmbAutomoviles.Name = "cmbAutomoviles";
             this.cmbAutomoviles.Size = new System.Drawing.Size(185, 21);
             this.cmbAutomoviles.TabIndex = 14;
@@ -237,7 +237,7 @@ namespace gui
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(19, 272);
+            this.label7.Location = new System.Drawing.Point(6, 317);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 16);
             this.label7.TabIndex = 13;
@@ -249,7 +249,7 @@ namespace gui
             this.groupBox1.Controls.Add(this.rbtnPiezaElectrica);
             this.groupBox1.Controls.Add(this.rbtnPiezaMecanica);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(382, 81);
+            this.groupBox1.Location = new System.Drawing.Point(369, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 74);
             this.groupBox1.TabIndex = 15;
@@ -297,7 +297,7 @@ namespace gui
             this.grBoxMecanica.Controls.Add(this.txtDimensiones);
             this.grBoxMecanica.Controls.Add(this.txtDurabilidad);
             this.grBoxMecanica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.grBoxMecanica.Location = new System.Drawing.Point(324, 179);
+            this.grBoxMecanica.Location = new System.Drawing.Point(311, 224);
             this.grBoxMecanica.Name = "grBoxMecanica";
             this.grBoxMecanica.Size = new System.Drawing.Size(266, 207);
             this.grBoxMecanica.TabIndex = 16;
@@ -398,7 +398,7 @@ namespace gui
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
-            this.ClientSize = new System.Drawing.Size(602, 408);
+            this.ClientSize = new System.Drawing.Size(589, 453);
             this.Controls.Add(this.grBoxMecanica);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmbAutomoviles);

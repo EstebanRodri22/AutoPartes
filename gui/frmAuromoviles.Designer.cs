@@ -42,7 +42,7 @@
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInventario.IconSize = 32;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInventario.Location = new System.Drawing.Point(94, 362);
+            this.btnInventario.Location = new System.Drawing.Point(86, 457);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(85, 38);
             this.btnInventario.TabIndex = 1;
@@ -59,7 +59,7 @@
             this.btnCargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCargar.IconSize = 32;
             this.btnCargar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargar.Location = new System.Drawing.Point(390, 362);
+            this.btnCargar.Location = new System.Drawing.Point(434, 457);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(81, 41);
             this.btnCargar.TabIndex = 2;
@@ -73,9 +73,9 @@
             this.dgvAutomov.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAutomov.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvAutomov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAutomov.Location = new System.Drawing.Point(33, 39);
+            this.dgvAutomov.Location = new System.Drawing.Point(66, 125);
             this.dgvAutomov.Name = "dgvAutomov";
-            this.dgvAutomov.Size = new System.Drawing.Size(514, 287);
+            this.dgvAutomov.Size = new System.Drawing.Size(510, 299);
             this.dgvAutomov.TabIndex = 3;
             // 
             // frmAuromoviles
@@ -83,7 +83,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
-            this.ClientSize = new System.Drawing.Size(589, 453);
+            this.ClientSize = new System.Drawing.Size(637, 520);
             this.Controls.Add(this.dgvAutomov);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnInventario);
