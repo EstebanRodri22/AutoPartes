@@ -1,4 +1,5 @@
 ﻿namespace gui
+
 {
     partial class frmRegistroVentas
     {
