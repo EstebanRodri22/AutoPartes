@@ -47,6 +47,7 @@ namespace gui
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -58,6 +59,7 @@ namespace gui
             // 
             // txtValor
             // 
+            this.txtValor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtValor.Location = new System.Drawing.Point(182, 91);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(327, 20);
@@ -65,6 +67,7 @@ namespace gui
             // 
             // btnVehiculo
             // 
+            this.btnVehiculo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnVehiculo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVehiculo.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -79,6 +82,7 @@ namespace gui
             // 
             // btnProveedor
             // 
+            this.btnProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnProveedor.Location = new System.Drawing.Point(60, 259);
             this.btnProveedor.Name = "btnProveedor";
@@ -91,6 +95,7 @@ namespace gui
             // 
             // btnRegistrarCompra
             // 
+            this.btnRegistrarCompra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegistrarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnRegistrarCompra.Location = new System.Drawing.Point(207, 350);
             this.btnRegistrarCompra.Name = "btnRegistrarCompra";
@@ -115,6 +120,7 @@ namespace gui
             // 
             // txtObservaciones
             // 
+            this.txtObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtObservaciones.Location = new System.Drawing.Point(182, 153);
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(327, 20);
@@ -122,6 +128,7 @@ namespace gui
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -133,10 +140,10 @@ namespace gui
             // 
             // barraTitulo
             // 
+            this.barraTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.barraTitulo.Controls.Add(this.label5);
             this.barraTitulo.Controls.Add(this.btnCerrar);
-            this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.barraTitulo.Location = new System.Drawing.Point(0, 0);
             this.barraTitulo.Name = "barraTitulo";
             this.barraTitulo.Size = new System.Drawing.Size(589, 71);

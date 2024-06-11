@@ -47,6 +47,7 @@ namespace gui
             // 
             // gridVentas
             // 
+            this.gridVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gridVentas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridVentas.Location = new System.Drawing.Point(68, 89);
@@ -81,6 +82,7 @@ namespace gui
             // 
             // txtFiltro
             // 
+            this.txtFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFiltro.Location = new System.Drawing.Point(188, 390);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(205, 20);
@@ -90,6 +92,7 @@ namespace gui
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(48, 390);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 20);
@@ -100,10 +103,10 @@ namespace gui
             // 
             // barraTitulo
             // 
+            this.barraTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.barraTitulo.Controls.Add(this.label3);
             this.barraTitulo.Controls.Add(this.btnCerrar);
-            this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.barraTitulo.Location = new System.Drawing.Point(0, 0);
             this.barraTitulo.Name = "barraTitulo";
             this.barraTitulo.Size = new System.Drawing.Size(586, 63);

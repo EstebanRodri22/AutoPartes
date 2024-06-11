@@ -60,9 +60,7 @@ namespace gui
             // 
             // gridRepuestos
             // 
-            this.gridRepuestos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridRepuestos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gridRepuestos.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridRepuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridRepuestos.Location = new System.Drawing.Point(54, 121);
@@ -72,9 +70,7 @@ namespace gui
             // 
             // btnEditar
             // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.btnEditar.IconColor = System.Drawing.SystemColors.ActiveCaption;
@@ -91,6 +87,7 @@ namespace gui
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textBox1.Location = new System.Drawing.Point(199, 82);
             this.textBox1.Name = "textBox1";
@@ -122,9 +119,7 @@ namespace gui
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminar.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.Xmark;
@@ -142,9 +137,7 @@ namespace gui
             // 
             // btnCargar
             // 
-            this.btnCargar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCargar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnCargar.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
             this.btnCargar.IconColor = System.Drawing.SystemColors.ActiveCaption;

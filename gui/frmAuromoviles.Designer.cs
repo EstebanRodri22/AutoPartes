@@ -36,6 +36,7 @@
             // 
             // btnInventario
             // 
+            this.btnInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
             this.btnInventario.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -52,6 +53,7 @@
             // 
             // btnCargar
             // 
+            this.btnCargar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCargar.IconChar = FontAwesome.Sharp.IconChar.LaptopFile;
             this.btnCargar.IconColor = System.Drawing.Color.Red;
             this.btnCargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -68,6 +70,7 @@
             // 
             // dgvAutomov
             // 
+            this.dgvAutomov.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAutomov.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvAutomov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAutomov.Location = new System.Drawing.Point(91, 32);
