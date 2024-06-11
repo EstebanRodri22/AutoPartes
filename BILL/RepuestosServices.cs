@@ -13,9 +13,9 @@ namespace BILL
     {
         private RepuestoRepository repuesto = new RepuestoRepository();
 
-        public DataTable GetRepuestoById(string idRepuesto)
+        public DataTable GetRepuestoById(string idRepuesto, string procedureName)
         {
-            DataTable repuestosTable = repuesto.GetRepuestoById(idRepuesto);
+            DataTable repuestosTable = repuesto.GetRepuestoById(idRepuesto, procedureName);
 
             if (repuestosTable.Rows.Count == 0)
             {

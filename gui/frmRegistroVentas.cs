@@ -32,6 +32,7 @@ namespace gui
             if (dgvMostrarRepuestos.Columns.Count == 0)
             {
                 dgvMostrarRepuestos.Columns.Add("ID_Repuesto", "ID_Repuesto");
+                dgvMostrarRepuestos.Columns.Add("cantidad", "cantidad");
                 dgvMostrarRepuestos.Columns.Add("categoria", "categoria");
                 dgvMostrarRepuestos.Columns.Add("precio", "precio");
                 dgvMostrarRepuestos.Columns.Add("detalle", "detalle");
@@ -42,15 +43,10 @@ namespace gui
         {
             if (e.KeyCode == Keys.Enter)
             {
-                // Cuando el usuario presiona Enter, busca el repuesto y muestra los detalles en el DataGridView
-                //string idRepuesto = txtBuscarRepuesto.Text;
-                //DataTable dt = repuestosServices.GetRepuestoById(idRepuesto);
-                //dgvMostrarRepuestos.DataSource = dt;
                 try
                 {
-                    string idRepuesto = txtBuscarRepuesto.Text; // Reemplaza esto con tu id_repuesto
-                    dt = repuestosServices.GetRepuestoById(idRepuesto);
-
+                    string idRepuesto = txtBuscarRepuesto.Text; 
+                    dt = repuestosServices.GetRepuestoById(idRepuesto, "obtener_repuesto");
 
                     cantidadRepuestos++;
                     // Agrega cada fila del DataTable al DataGridView
@@ -59,6 +55,7 @@ namespace gui
                         int index = dgvMostrarRepuestos.Rows.Add();
                         DataGridViewRow dataGridViewRow = dgvMostrarRepuestos.Rows[index];
                         dataGridViewRow.Cells["ID_Repuesto"].Value = row["ID_Repuesto"];
+                        dataGridViewRow.Cells["cantidad"].Value = row["cantidad"];
                         dataGridViewRow.Cells["categoria"].Value = row["name_categoria"];
                         dataGridViewRow.Cells["precio"].Value = row["Precio"];
                         dataGridViewRow.Cells["Detalle"].Value = row["Detalle"];

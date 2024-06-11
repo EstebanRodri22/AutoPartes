@@ -110,17 +110,30 @@ namespace DAL
         }
 
 
-        public DataTable GetRepuestoById(string idRepuesto)
+        public DataTable GetRepuestoById(string idRepuesto, string procedureName)
         {
-            string query = "SELECT r.id_repuesto, c.name_categoria, r.precio, r.detalle FROM repuestos r JOIN categorias c ON (r.id_categoria = c.id_categoria) WHERE (id_repuesto = :id)";
-            cmd = new OracleCommand(query, Connection);
-            cmd.Parameters.Add(":id", idRepuesto);
-
-            OracleDataAdapter adapter = new OracleDataAdapter(cmd);
             DataTable repuestoTable = new DataTable();
-            adapter.Fill(repuestoTable);
+            using (cmd = new OracleCommand(procedureName, Connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
 
-            return repuestoTable;
+                OracleParameter idParam = new OracleParameter("p_id_repuestos", OracleDbType.Varchar2, ParameterDirection.Input);
+                idParam.Value = idRepuesto; 
+                cmd.Parameters.Add(idParam);
+
+                OracleParameter cursorParam = new OracleParameter("p_cursor", OracleDbType.RefCursor, ParameterDirection.Output);
+                cmd.Parameters.Add(cursorParam);
+
+                AbrirConexion();
+                cmd.ExecuteNonQuery();
+
+                using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+                {
+                    adapter.Fill(repuestoTable);
+                }
+
+                return repuestoTable;
+            }
         }
 
         public string GenerarConsecutivo(string tabla, string columna)
