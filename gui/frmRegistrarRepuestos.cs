@@ -158,5 +158,30 @@ namespace gui
             cargarCategrias();
             cargarAutomoviles();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            // Limpiar los campos de entrada
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
+            // Limpiar los campos de entrada
+            txtCantidad.Text = "";
+            txtDetalle.Text = "";
+            txtDimensiones.Text = "";
+            txtDurabilidad.Text = "";
+            txtMaterial.Text = "";
+            txtPrecio.Text = "";
+            txtResistencia.Text = "";
+            txtVoltaje.Text = "";
+
+            // Limpiar la selección del ComboBox
+            cmbAutomoviles.SelectedItem = null;
+            cmbCategoria.SelectedItem = null;   
+            
+        }
+
     }
 }

@@ -54,8 +54,14 @@ namespace gui
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
+            txtPlaca.Text = "";
+            txtModelo.Text = "";
+            txtVin.Text = "";
+            cmbMarca.Text = "";
+
         }
+
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -88,7 +94,7 @@ namespace gui
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if(automovil == null)
+            if (automovil == null)
             {
                 automovil = new Automovil();
             }
@@ -98,9 +104,22 @@ namespace gui
             automovil.VIN = txtVin.Text;
             automovil.Marca = (Marca)cmbMarca.SelectedItem;
             this.DialogResult = DialogResult.OK;
-            this.Close();
 
+            
+            LimpiarCampos();
+
+            this.Close();
         }
+
+        private void LimpiarCampos()
+        {
+            
+            txtPlaca.Text = "";
+            txtModelo.Text = "";
+            txtVin.Text = "";
+            cmbMarca.SelectedItem = null; 
+        }
+
 
         private void CargarMarcas()
         {
