@@ -39,6 +39,8 @@ namespace gui
             this.fecha1 = new System.Windows.Forms.DateTimePicker();
             this.fecha2 = new System.Windows.Forms.DateTimePicker();
             this.btnFiltrar = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridCompras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.barraTitulo.SuspendLayout();
@@ -49,7 +51,7 @@ namespace gui
             this.gridCompras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gridCompras.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridCompras.Location = new System.Drawing.Point(44, 146);
+            this.gridCompras.Location = new System.Drawing.Point(43, 188);
             this.gridCompras.Name = "gridCompras";
             this.gridCompras.Size = new System.Drawing.Size(483, 220);
             this.gridCompras.TabIndex = 0;
@@ -77,7 +79,7 @@ namespace gui
             this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.barraTitulo.Location = new System.Drawing.Point(0, 0);
             this.barraTitulo.Name = "barraTitulo";
-            this.barraTitulo.Size = new System.Drawing.Size(590, 63);
+            this.barraTitulo.Size = new System.Drawing.Size(589, 63);
             this.barraTitulo.TabIndex = 11;
             // 
             // label3
@@ -94,7 +96,7 @@ namespace gui
             // btnCargar
             // 
             this.btnCargar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnCargar.Location = new System.Drawing.Point(106, 388);
+            this.btnCargar.Location = new System.Drawing.Point(105, 430);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(83, 23);
             this.btnCargar.TabIndex = 12;
@@ -104,24 +106,27 @@ namespace gui
             // 
             // fecha1
             // 
-            this.fecha1.Location = new System.Drawing.Point(44, 101);
+            this.fecha1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.fecha1.Location = new System.Drawing.Point(44, 140);
             this.fecha1.Name = "fecha1";
-            this.fecha1.Size = new System.Drawing.Size(200, 20);
+            this.fecha1.Size = new System.Drawing.Size(217, 20);
             this.fecha1.TabIndex = 13;
             // 
             // fecha2
             // 
-            this.fecha2.Location = new System.Drawing.Point(327, 101);
+            this.fecha2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.fecha2.Location = new System.Drawing.Point(325, 140);
             this.fecha2.Name = "fecha2";
-            this.fecha2.Size = new System.Drawing.Size(200, 20);
+            this.fecha2.Size = new System.Drawing.Size(212, 20);
             this.fecha2.TabIndex = 14;
             // 
             // btnFiltrar
             // 
+            this.btnFiltrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFiltrar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFiltrar.IconColor = System.Drawing.Color.Black;
             this.btnFiltrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFiltrar.Location = new System.Drawing.Point(411, 388);
+            this.btnFiltrar.Location = new System.Drawing.Point(414, 430);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
             this.btnFiltrar.TabIndex = 15;
@@ -129,12 +134,36 @@ namespace gui
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(322, 107);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Fecha Final:";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(41, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Fecha de inicio:";
+            // 
             // frmCompras2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
-            this.ClientSize = new System.Drawing.Size(590, 437);
+            this.ClientSize = new System.Drawing.Size(589, 479);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.fecha2);
             this.Controls.Add(this.fecha1);
@@ -149,6 +178,7 @@ namespace gui
             this.barraTitulo.ResumeLayout(false);
             this.barraTitulo.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -162,5 +192,7 @@ namespace gui
         private DateTimePicker fecha1;
         private DateTimePicker fecha2;
         private FontAwesome.Sharp.IconButton btnFiltrar;
+        private Label label1;
+        private Label label2;
     }
 }
