@@ -112,8 +112,8 @@ namespace presentacion
 
             }
             else msgError("Please enter username.");
-            
-           
+
+            this.Close();
         }
 
         public void msgError(string msg)

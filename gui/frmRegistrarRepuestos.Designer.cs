@@ -60,17 +60,18 @@ namespace gui
             this.txtMaterial = new System.Windows.Forms.TextBox();
             this.txtDimensiones = new System.Windows.Forms.TextBox();
             this.txtDurabilidad = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.grBoxMecanica.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // barraTitulo
             // 
             this.barraTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.barraTitulo.Controls.Add(this.label6);
             this.barraTitulo.Controls.Add(this.iconPictureBox1);
             this.barraTitulo.Location = new System.Drawing.Point(-13, 0);
             this.barraTitulo.Name = "barraTitulo";
@@ -82,7 +83,7 @@ namespace gui
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(209, 39);
+            this.label6.Location = new System.Drawing.Point(169, 115);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(171, 25);
             this.label6.TabIndex = 13;
@@ -106,7 +107,7 @@ namespace gui
             // txtPrecio
             // 
             this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrecio.Location = new System.Drawing.Point(100, 194);
+            this.txtPrecio.Location = new System.Drawing.Point(116, 64);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(185, 20);
             this.txtPrecio.TabIndex = 4;
@@ -117,7 +118,7 @@ namespace gui
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(27, 281);
+            this.label2.Location = new System.Drawing.Point(40, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 3;
@@ -126,7 +127,7 @@ namespace gui
             // txtCantidad
             // 
             this.txtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidad.Location = new System.Drawing.Point(100, 238);
+            this.txtCantidad.Location = new System.Drawing.Point(116, 108);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(185, 20);
             this.txtCantidad.TabIndex = 6;
@@ -137,7 +138,7 @@ namespace gui
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(33, 194);
+            this.label3.Location = new System.Drawing.Point(44, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 5;
@@ -146,7 +147,7 @@ namespace gui
             // txtDetalle
             // 
             this.txtDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDetalle.Location = new System.Drawing.Point(100, 278);
+            this.txtDetalle.Location = new System.Drawing.Point(116, 159);
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(185, 20);
             this.txtDetalle.TabIndex = 8;
@@ -157,7 +158,7 @@ namespace gui
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(10, 239);
+            this.label4.Location = new System.Drawing.Point(29, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 7;
@@ -170,7 +171,7 @@ namespace gui
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(6, 142);
+            this.label5.Location = new System.Drawing.Point(26, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 16);
             this.label5.TabIndex = 9;
@@ -180,7 +181,7 @@ namespace gui
             // 
             this.cmbCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(100, 142);
+            this.cmbCategoria.Location = new System.Drawing.Point(116, 27);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(185, 21);
             this.cmbCategoria.TabIndex = 10;
@@ -195,7 +196,7 @@ namespace gui
             this.btnRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRegistrar.IconSize = 25;
             this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistrar.Location = new System.Drawing.Point(172, 395);
+            this.btnRegistrar.Location = new System.Drawing.Point(174, 285);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(96, 36);
             this.btnRegistrar.TabIndex = 11;
@@ -214,7 +215,7 @@ namespace gui
             this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCancelar.IconSize = 32;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(16, 395);
+            this.btnCancelar.Location = new System.Drawing.Point(43, 289);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(94, 36);
             this.btnCancelar.TabIndex = 12;
@@ -227,7 +228,7 @@ namespace gui
             // 
             this.cmbAutomoviles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbAutomoviles.FormattingEnabled = true;
-            this.cmbAutomoviles.Location = new System.Drawing.Point(100, 317);
+            this.cmbAutomoviles.Location = new System.Drawing.Point(116, 215);
             this.cmbAutomoviles.Name = "cmbAutomoviles";
             this.cmbAutomoviles.Size = new System.Drawing.Size(185, 21);
             this.cmbAutomoviles.TabIndex = 14;
@@ -238,7 +239,7 @@ namespace gui
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(6, 317);
+            this.label7.Location = new System.Drawing.Point(29, 219);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 16);
             this.label7.TabIndex = 13;
@@ -250,7 +251,7 @@ namespace gui
             this.groupBox1.Controls.Add(this.rbtnPiezaElectrica);
             this.groupBox1.Controls.Add(this.rbtnPiezaMecanica);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(369, 126);
+            this.groupBox1.Location = new System.Drawing.Point(364, 18);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 74);
             this.groupBox1.TabIndex = 15;
@@ -275,7 +276,7 @@ namespace gui
             this.rbtnPiezaMecanica.AutoSize = true;
             this.rbtnPiezaMecanica.Checked = true;
             this.rbtnPiezaMecanica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbtnPiezaMecanica.Location = new System.Drawing.Point(30, 20);
+            this.rbtnPiezaMecanica.Location = new System.Drawing.Point(24, 20);
             this.rbtnPiezaMecanica.Name = "rbtnPiezaMecanica";
             this.rbtnPiezaMecanica.Size = new System.Drawing.Size(101, 17);
             this.rbtnPiezaMecanica.TabIndex = 0;
@@ -298,7 +299,7 @@ namespace gui
             this.grBoxMecanica.Controls.Add(this.txtDimensiones);
             this.grBoxMecanica.Controls.Add(this.txtDurabilidad);
             this.grBoxMecanica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.grBoxMecanica.Location = new System.Drawing.Point(311, 224);
+            this.grBoxMecanica.Location = new System.Drawing.Point(311, 118);
             this.grBoxMecanica.Name = "grBoxMecanica";
             this.grBoxMecanica.Size = new System.Drawing.Size(266, 207);
             this.grBoxMecanica.TabIndex = 16;
@@ -394,26 +395,35 @@ namespace gui
             this.txtDurabilidad.Size = new System.Drawing.Size(100, 20);
             this.txtDurabilidad.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.grBoxMecanica);
+            this.panel1.Controls.Add(this.cmbAutomoviles);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.txtPrecio);
+            this.panel1.Controls.Add(this.btnRegistrar);
+            this.panel1.Controls.Add(this.btnCancelar);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.txtCantidad);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtDetalle);
+            this.panel1.Controls.Add(this.cmbCategoria);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(0, 97);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(589, 344);
+            this.panel1.TabIndex = 17;
+            // 
             // frmRegistrarRepuestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(589, 453);
-            this.Controls.Add(this.grBoxMecanica);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.cmbAutomoviles);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.cmbCategoria);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtDetalle);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.barraTitulo);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -421,12 +431,13 @@ namespace gui
             this.Text = "frmRegistroProducto";
             this.Load += new System.EventHandler(this.frmRegistrarRepuestos_Load);
             this.barraTitulo.ResumeLayout(false);
-            this.barraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.grBoxMecanica.ResumeLayout(false);
             this.grBoxMecanica.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,5 +474,6 @@ namespace gui
         private Label lblVoltaje;
         private TextBox txtResistencia;
         private TextBox txtVoltaje;
+        private Panel panel1;
     }
 }
