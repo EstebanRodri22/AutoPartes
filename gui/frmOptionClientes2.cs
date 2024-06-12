@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ENTITY;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace gui
 {
     public partial class frmOptionClientes2 : Form
     {
+        Cliente Cliente;
         public frmOptionClientes2()
         {
             InitializeComponent();
@@ -20,6 +22,13 @@ namespace gui
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnNuevoCliente_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmRegistroCliente2 frm = new frmRegistroCliente2(Cliente);
+            frm.ShowDialog();
         }
     }
 }

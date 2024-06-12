@@ -16,12 +16,15 @@ namespace gui
     {
         RepuestosServices repuestosServices = new RepuestosServices();
         VentasServices ventasServices = new VentasServices();
+        
         DataTable dt;
         int cantidadRepuestos = 0;
         int sumarPrecios = 0;
+        private Cliente cliente;
         public frmRegistroVentas()
         {
             InitializeComponent();
+            
             txtBuscarRepuesto.KeyDown -= txtBuscarRepuesto_KeyDown;
             txtBuscarRepuesto.KeyDown += txtBuscarRepuesto_KeyDown;
             cargarColumnas();
@@ -76,6 +79,11 @@ namespace gui
 
         private void btnCobrar_Click(object sender, EventArgs e)
         {
+            if (cliente == null)
+            {
+                MessageBox.Show("Debe registrar un proveedor y un vehículo antes de guardar la compra.");
+                return;
+            }
             Ventas venta = new Ventas();
             List<RepuestoVendido> repuestos = new List<RepuestoVendido>();
             try
@@ -96,9 +104,11 @@ namespace gui
                 // Insertar una nueva venta en la tabla Ventas y obtener el ID de la nueva venta
                 venta.ValorFactura = sumarPrecios;
                 venta.Cantidad = cantidadRepuestos;
-                venta.Cliente.identificacion = "1127";
+                venta.Cliente.identificacion = cliente.identificacion;
                 venta.InfoGarantia.FechaFin = DateTime.Now;
                 venta.InfoGarantia.detalles = "probar 2";
+
+
                 MessageBox.Show(ventasServices.registrarVentas(venta,repuestos, "PR_Insertar_ventas") );
 
 
@@ -115,7 +125,20 @@ namespace gui
             sumarPrecios = 0;
             cantidadRepuestos = 0;
             txtBuscarRepuesto.Clear();
+            cliente = null;
             dt.Clear();
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+
+            frmRegistroCliente2 registrarCliente = new frmRegistroCliente2(cliente);
+            if (registrarCliente.ShowDialog() == DialogResult.OK)
+            {
+                cliente = registrarCliente.cliente;
+            }
+        }
+
+
     }
 }

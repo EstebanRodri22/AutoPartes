@@ -30,26 +30,27 @@ namespace gui
         /// </summary>
         private void InitializeComponent()
         {
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnNuevoCliente = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // iconButton1
+            // btnNuevoCliente
             // 
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
-            this.iconButton1.IconColor = System.Drawing.SystemColors.ActiveCaption;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(64, 70);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(165, 86);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "NUEVO CLIENTE";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.btnNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnNuevoCliente.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
+            this.btnNuevoCliente.IconColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnNuevoCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNuevoCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevoCliente.Location = new System.Drawing.Point(64, 70);
+            this.btnNuevoCliente.Name = "btnNuevoCliente";
+            this.btnNuevoCliente.Size = new System.Drawing.Size(165, 86);
+            this.btnNuevoCliente.TabIndex = 0;
+            this.btnNuevoCliente.Text = "NUEVO CLIENTE";
+            this.btnNuevoCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoCliente.UseVisualStyleBackColor = true;
+            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
             // 
             // iconButton2
             // 
@@ -86,7 +87,7 @@ namespace gui
             this.ClientSize = new System.Drawing.Size(575, 243);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.iconButton2);
-            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.btnNuevoCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmOptionClientes2";
             this.Text = "frmOpcionClientes";
@@ -97,7 +98,7 @@ namespace gui
 
         #endregion
 
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnNuevoCliente;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
     }

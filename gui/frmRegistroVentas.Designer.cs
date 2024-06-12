@@ -38,6 +38,7 @@
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCliente = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarRepuestos)).BeginInit();
             this.barraTitulo.SuspendLayout();
@@ -150,12 +151,26 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Digite ID repuesto a buscar :";
             // 
+            // btnCliente
+            // 
+            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCliente.IconColor = System.Drawing.Color.Black;
+            this.btnCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCliente.Location = new System.Drawing.Point(460, 82);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(103, 37);
+            this.btnCliente.TabIndex = 13;
+            this.btnCliente.Text = "CLIENTE";
+            this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            // 
             // frmRegistroVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(593, 414);
+            this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.barraTitulo);
@@ -187,5 +202,6 @@
         private System.Windows.Forms.Panel barraTitulo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconButton btnCliente;
     }
 }
