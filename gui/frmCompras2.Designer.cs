@@ -96,9 +96,9 @@ namespace gui
             // btnCargar
             // 
             this.btnCargar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnCargar.Location = new System.Drawing.Point(105, 430);
+            this.btnCargar.Location = new System.Drawing.Point(105, 414);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(83, 23);
+            this.btnCargar.Size = new System.Drawing.Size(83, 39);
             this.btnCargar.TabIndex = 12;
             this.btnCargar.Text = "CARGAR";
             this.btnCargar.UseVisualStyleBackColor = true;
@@ -109,7 +109,7 @@ namespace gui
             this.fecha1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.fecha1.Location = new System.Drawing.Point(44, 140);
             this.fecha1.Name = "fecha1";
-            this.fecha1.Size = new System.Drawing.Size(217, 20);
+            this.fecha1.Size = new System.Drawing.Size(205, 20);
             this.fecha1.TabIndex = 13;
             // 
             // fecha2
@@ -123,14 +123,17 @@ namespace gui
             // btnFiltrar
             // 
             this.btnFiltrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnFiltrar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnFiltrar.IconColor = System.Drawing.Color.Black;
+            this.btnFiltrar.IconChar = FontAwesome.Sharp.IconChar.Neuter;
+            this.btnFiltrar.IconColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnFiltrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFiltrar.Location = new System.Drawing.Point(414, 430);
+            this.btnFiltrar.IconSize = 25;
+            this.btnFiltrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFiltrar.Location = new System.Drawing.Point(364, 414);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrar.Size = new System.Drawing.Size(83, 39);
             this.btnFiltrar.TabIndex = 15;
             this.btnFiltrar.Text = "FILTRAR";
+            this.btnFiltrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
