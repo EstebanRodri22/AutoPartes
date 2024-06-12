@@ -18,7 +18,7 @@ namespace BILL
             comprasRepository = new ComprasRepository();
             pruebasRepository = new PruebasRepository();
         }
-
+        
         public string InsertarCompra(Compras compra, string ProcedureName)
         {
             try

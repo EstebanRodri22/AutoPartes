@@ -68,7 +68,7 @@ namespace gui
             // 
             // barraTitulo
             // 
-            this.barraTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.barraTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.barraTitulo.Controls.Add(this.label6);
             this.barraTitulo.Controls.Add(this.iconPictureBox1);
