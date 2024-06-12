@@ -58,7 +58,7 @@ namespace presentacion
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(241, 19);
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Text = "Usuario";
+            this.txtUsername.Text = "USERNAME";
             this.txtUsername.MouseEnter += new System.EventHandler(this.txtUsername_Enter);
             this.txtUsername.MouseLeave += new System.EventHandler(this.txtUsername_Leave);
             // 
@@ -72,7 +72,7 @@ namespace presentacion
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(241, 19);
             this.txtPassword.TabIndex = 2;
-            this.txtPassword.Text = "Contraseña";
+            this.txtPassword.Text = "PASSWORD";
             this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_Leave);
             // 

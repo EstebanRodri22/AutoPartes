@@ -17,7 +17,7 @@ namespace gui
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrincipal1());
+            Application.Run(new login());
         }
     }
 }

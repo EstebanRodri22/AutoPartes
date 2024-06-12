@@ -76,6 +76,7 @@ namespace gui
                 services.InsertarCompra(compra, "insertar_compras");
 
                 MessageBox.Show("Compra registrada exitosamente.");
+                liampiarEntorno();
             }
             catch(Exception ex)
             {
@@ -83,6 +84,14 @@ namespace gui
             }
 
             
+        }
+
+        private void liampiarEntorno()
+        {
+            txtObservaciones.Text = null;
+            txtValor.Text = null;
+            automovil = null;
+            proveedor = null;
         }
 
         private void frmRegistrarCompra_Load(object sender, EventArgs e)
