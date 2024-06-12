@@ -26,7 +26,7 @@ namespace gui
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCargar_Click(object sender, EventArgs e)
         {
             gridVentas.DataSource = bll.getVentas("get_ventas");
         }

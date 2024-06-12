@@ -11,10 +11,12 @@ namespace BILL
     public class ComprasServices
     {
         ComprasRepository comprasRepository;
+        PruebasRepository pruebasRepository;
 
         public ComprasServices()
         {
             comprasRepository = new ComprasRepository();
+            pruebasRepository = new PruebasRepository();
         }
 
         public string InsertarCompra(Compras compra, string ProcedureName)
@@ -28,5 +30,6 @@ namespace BILL
                 throw new Exception("Error en la capa de negocio: " + ex.Message, ex);
             }
         }
+
     }
 }

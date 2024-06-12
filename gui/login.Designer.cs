@@ -37,13 +37,10 @@ namespace presentacion
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.linkContraseña = new System.Windows.Forms.LinkLabel();
             this.lblErrorMessage = new System.Windows.Forms.Label();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -95,26 +92,13 @@ namespace presentacion
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(211, 229);
+            this.btnLogin.Location = new System.Drawing.Point(211, 242);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(267, 30);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "ACCEDER";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // linkContraseña
-            // 
-            this.linkContraseña.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.linkContraseña.AutoSize = true;
-            this.linkContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkContraseña.LinkColor = System.Drawing.Color.DimGray;
-            this.linkContraseña.Location = new System.Drawing.Point(253, 280);
-            this.linkContraseña.Name = "linkContraseña";
-            this.linkContraseña.Size = new System.Drawing.Size(161, 16);
-            this.linkContraseña.TabIndex = 0;
-            this.linkContraseña.TabStop = true;
-            this.linkContraseña.Text = "¿Olvidaste tu contraseña?";
             // 
             // lblErrorMessage
             // 
@@ -130,16 +114,6 @@ namespace presentacion
             this.lblErrorMessage.Text = "Error Message";
             this.lblErrorMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblErrorMessage.Visible = false;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Image = global::gui.Properties.Resources.cancelar;
-            this.btnCerrar.Location = new System.Drawing.Point(529, 0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 22);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 7;
-            this.btnCerrar.TabStop = false;
             // 
             // imageList1
             // 
@@ -174,19 +148,15 @@ namespace presentacion
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(553, 318);
             this.Controls.Add(this.lblErrorMessage);
-            this.Controls.Add(this.linkContraseña);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";
-            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -195,12 +165,10 @@ namespace presentacion
         }
 
         #endregion
-        private PictureBox btnCerrar;
         private TextBox txtUsername;
         private TextBox txtPassword;
         private Label label1;
         private Button btnLogin;
-        private LinkLabel linkContraseña;
         private Label lblErrorMessage;
         private ImageList imageList1;
         private Panel panel1;

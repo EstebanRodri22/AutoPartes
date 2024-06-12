@@ -34,10 +34,8 @@ namespace gui
         {
             this.btnCerrar = new System.Windows.Forms.Label();
             this.gridRepuestos = new System.Windows.Forms.DataGridView();
-            this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnEliminar = new FontAwesome.Sharp.IconButton();
             this.btnCargar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridRepuestos)).BeginInit();
             this.barraTitulo.SuspendLayout();
@@ -69,23 +67,6 @@ namespace gui
             this.gridRepuestos.Size = new System.Drawing.Size(491, 306);
             this.gridRepuestos.TabIndex = 4;
             // 
-            // btnEditar
-            // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
-            this.btnEditar.IconColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEditar.IconSize = 32;
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.Location = new System.Drawing.Point(39, 433);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(91, 29);
-            this.btnEditar.TabIndex = 6;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
             // barraTitulo
             // 
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -107,24 +88,6 @@ namespace gui
             this.label2.Size = new System.Drawing.Size(135, 30);
             this.label2.TabIndex = 9;
             this.label2.Text = "Repuestos";
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.btnEliminar.IconColor = System.Drawing.Color.Red;
-            this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEliminar.IconSize = 32;
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminar.Location = new System.Drawing.Point(477, 433);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 29);
-            this.btnEliminar.TabIndex = 7;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnCargar
             // 
@@ -152,8 +115,6 @@ namespace gui
             this.ClientSize = new System.Drawing.Size(603, 487);
             this.Controls.Add(this.barraTitulo);
             this.Controls.Add(this.btnCargar);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.gridRepuestos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRepuestos";
@@ -168,10 +129,8 @@ namespace gui
         #endregion
         private Label btnCerrar;
         private DataGridView gridRepuestos;
-        private FontAwesome.Sharp.IconButton btnEditar;
         private Panel barraTitulo;
         private Label label2;
-        private IconButton btnEliminar;
         private IconButton btnCargar;
     }
 }

@@ -36,9 +36,9 @@ namespace gui
             this.gridVentas = new System.Windows.Forms.DataGridView();
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtFiltro = new System.Windows.Forms.TextBox();
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnCargar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridVentas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.barraTitulo.SuspendLayout();
@@ -51,7 +51,7 @@ namespace gui
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridVentas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridVentas.Location = new System.Drawing.Point(68, 89);
+            this.gridVentas.Location = new System.Drawing.Point(69, 69);
             this.gridVentas.Name = "gridVentas";
             this.gridVentas.Size = new System.Drawing.Size(417, 281);
             this.gridVentas.TabIndex = 0;
@@ -81,17 +81,6 @@ namespace gui
             this.label1.TabIndex = 2;
             this.label1.Text = "HISTORIAL VENTAS";
             // 
-            // txtFiltro
-            // 
-            this.txtFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFiltro.Location = new System.Drawing.Point(188, 390);
-            this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(205, 20);
-            this.txtFiltro.TabIndex = 3;
-            this.txtFiltro.Text = "BUSCAR";
-            this.txtFiltro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // barraTitulo
             // 
             this.barraTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -115,14 +104,27 @@ namespace gui
             this.label3.TabIndex = 9;
             this.label3.Text = "Historial De Ventas";
             // 
+            // btnCargar
+            // 
+            this.btnCargar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCargar.IconColor = System.Drawing.Color.Black;
+            this.btnCargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargar.Location = new System.Drawing.Point(212, 391);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(111, 46);
+            this.btnCargar.TabIndex = 13;
+            this.btnCargar.Text = "CARGAR";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
             // frmVentas2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(586, 440);
+            this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.barraTitulo);
-            this.Controls.Add(this.txtFiltro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridVentas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -142,9 +144,9 @@ namespace gui
             private DataGridView gridVentas;
             private FontAwesome.Sharp.IconPictureBox btnCerrar;
             private Label label1;
-            private TextBox txtFiltro;
         private Panel barraTitulo;
         private Label label3;
+        private IconButton btnCargar;
     }
     
 }
