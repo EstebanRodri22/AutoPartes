@@ -74,7 +74,7 @@ namespace gui
             this.barraTitulo.Controls.Add(this.iconPictureBox1);
             this.barraTitulo.Location = new System.Drawing.Point(-13, 0);
             this.barraTitulo.Name = "barraTitulo";
-            this.barraTitulo.Size = new System.Drawing.Size(602, 105);
+            this.barraTitulo.Size = new System.Drawing.Size(602, 96);
             this.barraTitulo.TabIndex = 0;
             // 
             // label6

@@ -51,9 +51,9 @@ namespace gui
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridVentas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridVentas.Location = new System.Drawing.Point(69, 69);
+            this.gridVentas.Location = new System.Drawing.Point(80, 105);
             this.gridVentas.Name = "gridVentas";
-            this.gridVentas.Size = new System.Drawing.Size(417, 281);
+            this.gridVentas.Size = new System.Drawing.Size(417, 260);
             this.gridVentas.TabIndex = 0;
             // 
             // btnCerrar
@@ -106,10 +106,11 @@ namespace gui
             // 
             // btnCargar
             // 
+            this.btnCargar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCargar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCargar.IconColor = System.Drawing.Color.Black;
             this.btnCargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargar.Location = new System.Drawing.Point(212, 391);
+            this.btnCargar.Location = new System.Drawing.Point(222, 382);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(111, 46);
             this.btnCargar.TabIndex = 13;
